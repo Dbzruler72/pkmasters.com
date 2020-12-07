@@ -1,0 +1,121 @@
+<!--#include virtual="header.html" -->
+<style type="text/css">
+input:hover
+{
+border-color: #757D90;
+}
+input:focus
+{
+border-color: #8891A4;
+background-color: #162038;
+</style>
+
+<script type="text/javascript">
+<!--
+var nickname = document.getElementsByName('nickname');
+var isDefault = new Boolean(true);
+
+function checkDefault()
+{
+if (isDefault)
+{
+nickname[0].value = '';
+isDefault = false;
+}
+}
+
+function checkEmpty()
+{
+if (nickname[0].value == '')
+{
+nickname[0].value = 'I_Love_PKM';
+isDefault = true;
+}
+}
+
+function switchWindow()
+{
+document.getElementById('chatLogin').style.display = 'none';
+document.getElementById('chatMain').style.display = '';
+loadChat();
+}
+-->
+</script>
+
+<!-- BEGIN CHAT --> <table class="main" cellspacing="0" cellpadding="0" id="chat">
+<tr>
+<td style="text-align: center;" id="chatLogin">
+<div style="margin-bottom: 15px;">
+*-P.K.Masters-*  IRC Chat
+</div> <!-- title text -->
+<table style="margin: auto;">
+<tr>
+<td>
+Nickname<br />
+</td>
+<td>
+<input type="text" name="nickname" id="nickname" value="I_Love_PKM" onclick="checkDefault();" onblur="checkEmpty();" />
+</td>
+</tr>
+<tr>
+<td>
+Password<br />
+<div style="font-size: 8px; text-align: center;">
+(Optional)
+</div> <!-- optional text -->
+</td>
+<td>
+<input type="password" id="password" />
+</td>
+</tr>
+</table>
+<div>
+<input type="submit" value="Enter" onclick="switchWindow();" />
+</div> <!-- enter button -->
+</td>
+<td style="display: none;" id="chatMain">
+<div style="text-align: center;">
+<div style="margin-bottom: 15px;">
+*-P.K.Masters-*  IRC Chat
+</div> <!-- title text -->
+<script type="text/javascript">
+<!--
+function loadChat()
+{
+document.getElementById('chatMain').innerHTML = '<applet code="IRCApplet.class" archive="irc.jar,pixx.jar" style="width: 965px; height: 600px;" />'
++ '<param name="CABINETS" value="irc.cab,securedirc.cab,pixx.cab" />'
++ '<param name="nick" value="' + document.getElementById('nickname').value + '" />'
++ '<param name="password" value="' + document.getElementById('password').value + '" />'
++ '<param name="name" value="I_Love_PKM" />'
++ '<param name="host" value="IRC.SwiftIRC.net" />'
++ '<param name="gui" value="pixx" />'
++ '<param name="quitmessage" value="Join  *-P.K.M-*  at pkmasters.com" />'
++ '<param name="serveralias" value="*-P.K.Masters-*  IRC" />'
++ '<param name="useinfo" value="true" />'
++ '<param name="command1" value="/join #PKM">'
+
++ '<param name="style:sourcefontrule1" value="all all Verdana 12" />'
++ '<param name="style:highlightlinks" value="true" />'
+
++ '<param name="pixx:timestamp" value="true" />'
++ '<param name="pixx:highlight" value="true" />'
++ '<param name="pixx:highlightnick" value="true" />'
++ '<param name="pixx:nickfield" value="true" />'
++ '<param name="pixx:styleselector" value="true" />'
++ '<param name="pixx:setfontonstyle" value="true" />'
++ '<param name="pixx:helppage" value="http://wiki.swiftirc.net/index.php/Main_Page" />'
++ '<param name="pixx:showchanlist" value="false" />'
++ '<param name="pixx:showabout" value="false" />'
++ '<param name="pixx:nicklistwidth" value="130" />'
++ '<param name="pixx:youjoin" value="true" />'
++ '<param name="pixx:scrollspeed" value="20" />'
++ '<param name="pixx:displaychannelmode" value="false" />'
++ '</applet>';
+}
+-->
+</script>
+</div>
+</td>
+</tr>
+<!-- END CHAT --> </table>
+<!--#include virtual="footer.html" -->

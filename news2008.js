@@ -1,0 +1,11 @@
+/** News Archive for 2008
+If no title, leave blank: ''
+
+addNews('title', 'date', 'name', 'content');
+*/
+
+addNews('Parkour &amp; RuneScape', 'Saturday, June 28, 2008', 'Dbzruler72', '<div class="paragraph">Whew!  It has been <i>quite</i> a while since the last update in May, no, no...April?  No, no...Mar-March?  For three months, the site went without an update, with the exceptions of a few minor adjustments.</div><div class="paragraph">Today, I caught up on everything, &amp; I\'m sure you\'ll be pleased.  To start, May\'s Master of the Month has been updated, &amp; you may find that in the RuneScape section.  In addition, 28 varied events have found their way to the Events page in the RuneScape section.  You may ask why "varied" is used; well, many new types of events, such as Arcanists, Revenant Hunting, Fire Fests, &amp; many more have made themselves as part of our schedule.  In light of this event update, our RuneScape war record has seen a modification.  Although we can no longer hold the title of Undefeated, our war record is still wonderful.</div><div class="paragraph">The first parkour video has arrived!  Finally, our main stream videos are coming out--no more of that free running shtuff (ugh...).  The video, called  *-P.K.Masters-*  Evasion, describes itself: evasion!  Head over to the parkour section of the website, &amp; you will find what parkour is really used for (and it\'s not to be flashy).  Have fun, &amp; thank summer for giving me the time to do this update.</div>');
+
+addNews('Master of the Month', 'Monday, March 17, 2008', 'Dbzruler72', '<div class="paragraph">Enjoy our newest feature: Master of the Month.  The Master of the Month is based on activity, attitude, &amp; overall performance.  The first ever Master of the Month is Angry555!  You may see his profile in the RuneScape section.</div>');
+
+addNews('Event Update', 'Sunday, March 2, 2008', 'Dbzruler72', '<div class="paragraph">All events up until now have been updated in the RuneScape section.  The scoreboard has also been updated with all our new records.</div>');

@@ -1,0 +1,19 @@
+<!--#include virtual="header.html" -->
+<!-- BEGIN LINKS --> <table class="main" cellspacing="0" cellpadding="0" id="links">
+<tr>
+<td>
+<div class="link"><a onclick="window.open('http://tip.it/runescape/');"><img src="tipIt.gif" style="border: none; float: left;" alt="Rune Tips" /></a>Widely credited as the first ever RuneScape fansite, Tip.It offers skill and quest guides, maps, calculators, databases, and of course, tips.  Originally founded by STEEL Corporation Inc. Dmonik, BlueRose13x, Lightning, Starlude, Xentia, Kibble, Rodrigo, DOC IRON 9, Sir Beachy, Stud6900, Hitman X, and Silverion in 2001.</div>
+<div class="linkSeparator"></div>
+<div class="link"><a onclick="window.open('http://zybez.net/');"><img src="zybez.png" style="border: none; float: right;" alt="Zybez Runescape Help" /></a>Zybez was created in 2001 to provide tips, tricks, and general help.  As quoted from the Zybez website, their "main goal since day one has been to focus on quality and innovation."</div>
+<div class="linkSeparator"></div>
+<div class="link"><a onclick="window.open('http://worldplayonline.com/');"><img src="worldPlayOnline.png" style="border: none; float: left;" alt="World Play Online" /></a>As quoted from WPO's website: "World Play Online was produced with only 1 single goal. That goal is to be the hybrid nitch between most fansites and our belief that the gamers should get most of the glory for the games. We are here to bring live information from the gaming world along with updated information on teams that play our favorite games. We have put forth hundreds of man hours to take this site to the next generation of technology for our audience. We believe in what we do and we will become one of the Top Gaming Sites Online!"</div>
+<div class="linkSeparator"></div>
+<div class="link"><a onclick="window.open('http://opera.com/');"><img src="opera.png" style="border: none; float: right;" alt="Opera" /></a>Both a web browser and internet suite, Opera is known for its strict adherence to web standards and innovations now imitated by many popular browsers such as Firefox, Internet Explorer, Safari, and Google Chrome.  As well as web browsing, Opera can send and receive e-mail via its built-in e-mail client, use IRC, download via BitTorrent, read web feeds, and allow almost full customization of its interface.  Despite its speed and rife and diverse functionality, Opera continues to hold less than three percent of total desktop browser market share.<br />
+<br />
+For complete compatibility of this website, use this browser.</div>
+<div class="linkSeparator"></div>
+<div class="link"><a onclick="window.open('http://tsm8.com/');"><img src="tsm8.png" style="border: none; float: left;" alt="Free TeamSpeak Channels" /></a>Tsm8 provides our free TeamSpeak channel.  To receive one of your own, simply request and obey the rules.</div>
+</td>
+</tr>
+<!-- END LINKS --> </table>
+<!--#include virtual="footer.html" -->
