@@ -1,179 +1,247 @@
 <!--# set var="title" value="*-P.K.Masters-*  clan" -->
 <!--# set var="description" value="The RuneScape PKing clan, led by Dbzruler72, that reigned from 2002 to 2010." -->
-<!--# set var="isHomepage" value="true" -->
-<!--# set var="isEventsPage" value="false" -->
+<!--# set var="currPage" value="home" -->
 <!--# set var="isArticle" value="false" -->
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title><!--# echo var="title" --></title>
 		<meta name="description" content="<!--# echo var="description" -->" />
+		<meta name="author" content="Dbzruler72" />
+		<meta name="copyright" content="Dbzruler72" />
+		<meta name="generator" content="Notepad2, Visual Studio Code" />
+		<meta name="rating" content="general" />
+		<!--# if expr="$currPage == events" --><meta name="robots" content="follow, index" /><!--# else --><meta name="robots" content="follow, index, noimageindex" /><!--# endif -->
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
+		<meta http-equiv="Cache-Control" content="Public" />
 		
 		<meta property="og:title" content="<!--# echo var="title" -->" />
 		<meta property="og:description" content="<!--# echo var="description" -->" />
 		<meta property="og:type" content="website" />
 		<meta property="og:image" content="media/banner.gif" />
 		<meta property="og:url" content="https://pkmasters.com/" />
-		<meta property="og:description" content="<!--# echo var="description" -->" />
 		<meta property="og:locale" content="en_US" />
-		<!--# if expr="$isHomepage" value="false" -->
-		<meta property="og:site_name" content="*-P.K.Masters-*  clan" />
-		<!--# endif -->
+		<!--# if expr="$currPage != home" --><meta property="og:site_name" content="*-P.K.Masters-*  clan" /><!--# endif -->
 		<meta property="twitter:title" content="<!--# echo var="title" -->" />
 		<meta property="twitter:description" content="<!--# echo var="description" -->" />
 		<meta property="twitter:image" content="media/banner.gif" />
-		<!--# if expr="$isArticle = true" -->
-		<meta property="article:author" content="" />
+		
+		<!--# if expr="$isArticle == true" --><meta property="article:author" content="" />
 		<meta property="article:expiration_time" content="" />
 		<meta property="article:modified_time" content="<!--# echo var="LAST_MODIFIED" --> />
 		<meta property="article:published_time" content="" />
 		<meta property="article:section" content="" />
-		<meta property="article:tag" content="" />
-		<!--# endif -->
+		<meta property="article:tag" content="" /><!--# endif -->
+		<style type="text/css">
+			.navigation {
+				width: 193px;
+				height: 43px;
+			}
+			.main	{
+				width: 965px;
+				margin: auto;
+			}
+			.separate {
+				margin-top: 20px;
+			}
+			.event:hover {
+				text-decoration: underline overline;
+			}
+			.eventInformation { /* intentionally blank */
+			}
+			.eventSeparator {
+				height: 5px;
+				background-image: url(separator.jpg);
+				background-repeat: no-repeat;
+				background-position: center center;
+				margin: 10px 0px 10px 0px;
+			}
+			.eventList {
+				height: 520px;
+				overflow-y: scroll;
+			}
+			.link {
+				text-align: justify;
+				margin-bottom: 30px;
+			}
+			.linkSeparator {
+				height: 5px;
+				background-image: url(separator.jpg);
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+			.url {
+				cursor: pointer;
+				color: #4E616E;
+			}
+			.history {
+				text-indent: 50px;
+				text-align: justify;
+			}
+			.historyTable {
+				text-align: center;
+				width: 300px;
+			}
+			.historyImage {
+				width: 300px;
+				cursor: pointer;
+			}
+			.paragraph {
+				text-indent: 50px;
+				margin-bottom: 10px;
+			}
+			.eventListEvent
+				cursor: pointer;
+			}
+			* {
+				font-family: verdana, arial;
+				font-size: 11px;
+			}
+			a {
+				color: #4E616E;
+				text-decoration: none;
+				cursor: pointer;
+			}
+			a:hover {
+				text-decoration: underline overline;
+			}
+			input {
+				background-color: #131C32;
+				border: 1px solid #494F5F;
+				color: #FFF;
+			}
+			body {
+				background-color: #000;
+				margin: 0px 0px 0px 0px;
+				color: #FFF;
+				overflow-y: scroll;
+				scrollbar-face-color: #202020;
+				scrollbar-highlight-color: #000;
+				scrollbar-shadow-color: #000;
+				scrollbar-3dlight-color: #000;
+				scrollbar-arrow-color: #000;
+				scrollbar-track-color: #000;
+				scrollbar-darkshadow-color: #000;
+			}
+		</style>
 
-		<meta name="author" content="Dbzruler72" />
-		<meta name="copyright" content="Dbzruler72" />
-		<meta name="generator" content="Notepad2, Visual Studio Code" />
-		<meta name="rating" content="general" />
-		<!--# if expr="$isEventsPage = false" -->
-		<meta name="robots" content="follow, index, noimageindex" />
-		<!--# elif -->
-		<meta name="robots" content="follow, index" />
-		<!--# endif -->
-		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
-		<meta http-equiv="Cache-Control" content="Public" />
-
-		<link rel="stylesheet" type="text/css" href="main.css" />
+		<style type="text/css">
+			#navContainer {
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: center;
+				align-items: flex-end;
+				align-content: flex-end;
+			}
+			#navContainer > div {
+				width: 193px;
+				height: 43px;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			#navContainer > div:nth-child(1) {
+				background-image: url('media/homeOff.gif');
+			}
+			#navContainer > div:nth-child(1):hover {
+				background-image: url('media/homeOn.gif');
+			}
+			#navContainer > div:nth-child(2) {
+				background-image: url('media/joinOff.gif');
+			}
+			#navContainer > div:nth-child(2):hover {
+				background-image: url('media/joinOn.gif');
+			}
+			#navContainer > div:nth-child(3) {
+				background-image: url('media/eventsOff.gif');
+			}
+			#navContainer > div:nth-child(3):hover {
+				background-image: url('media/eventsOn.gif');
+			}
+			#navContainer > div:nth-child(4) {
+				background-image: url('media/forumOff.gif');
+			}
+			#navContainer > div:nth-child(4):hover {
+				background-image: url('media/forumOn.gif');
+			}
+			#navContainer > div:nth-child(5) {
+				background-image: url('media/linksOff.gif');
+			}
+			#navContainer > div:nth-child(5):hover {
+				background-image: url('media/linksOn.gif');
+			}
+		</style>
 		<script type="text/javascript" src="header.js"></script>
 	</head>
 	<body>
-<div id="preloadFile">
-<script type="text/javascript">
-<!--
-for (i = 0; i < preload.length; i++)
-{
-document.write('<img src="' + preload[i] + '" />');
-}
--->
-</script>
-</div>
+		<!-- BEGIN Preload images -->
+		<span style="display: none;">
+			<script type="text/javascript">
+				<!--
+				for (i = 0; i < preload.length; i++) {
+					document.write('<img src="' + preload[i] + '" />');
+				}
+				//-->
+			</script>
+		</span>
+		<!-- END Preload images -->
 
-
-<!-- 1022 x 645 -->
-<!-- width: 905px -->
-<!-- BEGIN NAVIGATION -->
-<script type="text/javascript">
-<!--
-document.write('<table cellspacing="0" cellpadding="0" class="main">'
-+ '<tr>');
-
-
-
-var allID = ['home', 'join', 'events', 'forum', 'links', 'termsOfUse', 'newsArchive', 'history']; //every page ID.  Includes navigation along with every other non-navigation page
-var navigation = ['home', 'join', 'events', 'forum', 'links'];
-var navigationCapitalize = ['Home', 'Join', 'Events', 'Forum', 'Links'];
-
-for (i = 0; i < navigation.length; i++)
-{
-document.write('<td style="background-image: url(' + navigation[i] + 'Off.gif); cursor: pointer;" class="navigation" onmouseover="toOn(this);" onmouseout="toOff(this);" onclick="navigation(\'' + navigation[i] + '\');" title="' + navigationCapitalize[i] + '" id="navigation' + navigationCapitalize[i] + '"></td>');
+		<!-- BEGIN Navigation -->
+			<div id="navContainer">
+				<div title="Home"></div>
+				<div title="Join"></div>
+				<div title="Events"></div>
+				<div title="Forum"></div>
+				<div title="Links"></div>
+			</div>
+		<!-- END Navigation -->
 
 
 
-var navigationReal = ['index', navigation[1], navigation[2], navigation[3], navigation[4]]; //must match the amount in navigation[]
-var navigationID = new Array();
-navigationID[0] = 'navigationHome'; //homepage is named "index", not "home"
 
-if (i != 0)
-{
-navigationID[i] = 'navigation' + navigationCapitalize[i];
-}
-
-if (location.href.match(navigationReal[i]))
-{
-document.getElementById(navigationID[i]).style.backgroundImage = document.getElementById(navigationID[i]).style.backgroundImage.replace(/Off/, 'CurrentOff');
-}
-}
-if (location.href == 'http://pkmasters.com/' || location.href == 'http://www.pkmasters.com/')
-{
-navigationHome.style.backgroundImage = navigationHome.style.backgroundImage.replace(/Off/, 'CurrentOff');
-}
+		<!-- 1022 x 645 -->
+		<!-- width: 905px -->
+		<!-- BEGIN NAVIGATION -->
+			<script type="text/javascript">
+			<!--
+			document.write('<table cellspacing="0" cellpadding="0" class="main">'
+			+ '<tr>');
 
 
 
-document.write('</tr>'
-+ '</table>');
--->
-</script>
-<!-- END NAVIGATION -->
+			var allID = ['home', 'join', 'events', 'forum', 'links', 'termsOfUse', 'newsArchive', 'history']; //every page ID.  Includes navigation along with every other non-navigation page
+			var navigation = ['home', 'join', 'events', 'forum', 'links'];
+			var navigationCapitalize = ['Home', 'Join', 'Events', 'Forum', 'Links'];
+
+			for (i = 0; i < navigation.length; i++)
+			{
+			document.write('<td style="background-image: url(' + navigation[i] + 'Off.gif); cursor: pointer;" class="navigation" onmouseover="toOn(this);" onmouseout="toOff(this);" onclick="navigation(\'' + navigation[i] + '\');" title="' + navigationCapitalize[i] + '" id="navigation' + navigationCapitalize[i] + '"></td>');
 
 
 
-<!-- BEGIN CONTENT -->
-<div style="background-image: url(foreground.jpg); background-repeat: repeat-y;" class="main">
-<div style="background-image: url(borderTop.jpg); height: 31px;">
-</div> <!-- borderTop -->
+			var navigationReal = ['index', navigation[1], navigation[2], navigation[3], navigation[4]]; //must match the amount in navigation[]
+			var navigationID = new Array();
+			navigationID[0] = 'navigationHome'; //homepage is named "index", not "home"
+
+			if (i != 0)
+			{
+			navigationID[i] = 'navigation' + navigationCapitalize[i];
+			}
+
+			if (location.href.match(navigationReal[i]))
+			{
+			document.getElementById(navigationID[i]).style.backgroundImage = document.getElementById(navigationID[i]).style.backgroundImage.replace(/Off/, 'CurrentOff');
+			}
+			}
+			if (location.href == 'http://pkmasters.com/' || location.href == 'http://www.pkmasters.com/')
+			{
+			navigationHome.style.backgroundImage = navigationHome.style.backgroundImage.replace(/Off/, 'CurrentOff');
+			}
 
 
 
-<!--#include virtual="header.html" -->
-<!-- BEGIN HOME --> <table style="width: 905px;" class="main" cellspacing="0" cellpadding="0" id="home"> <!-- homepage uses a width of 905 unlike every other page, which is 965 pixels wide, because the extra space in between the left and right columns is too large. -->
-<tr>
-<td style="width: 300px; vertical-align: top; margin-left: 500px;">
-<div style="height: 200px; background-image: url(masterJoinOff.jpg); background-repeat: no-repeat; cursor: pointer;" onclick="location.href='http://pkmasters.com/forum/viewtopic.php?f=4&amp;t=303#p3332';" onmouseover="this.style.backgroundImage = this.style.backgroundImage.replace(/Off.jpg|ToOff.gif/, 'On.gif');" onmouseout="this.style.backgroundImage = this.style.backgroundImage.replace(/On.gif/, 'ToOff.gif');">
-</div> <!-- join -->
-<div style="height: 150px; background-image: url(masterOfTheMonthOff.jpg); background-repeat: no-repeat; cursor: pointer;" class="separate" onclick="window.open('http://pkmasters.com/forum/memberlist.php?mode=viewprofile&amp;u=253');" onmouseover="toOn(this);" onmouseout="toOff(this);" title="Master of the Month: hold myHeart">
-</div> <!-- masterOfTheMonth -->
-<div style="height: 26px; background-image: url(memberlist.jpg); background-repeat: no-repeat;" class="separate" title="Memberlist">
-</div> <!-- memberlist -->
-<table style="height: 25px;" cellspacing="0" cellpadding="0">
-<tr>
-<td style="width: 225px; background-image: url(mainOff.jpg); background-repeat: no-repeat; cursor: pointer;" onclick="window.open('http://runehead.com/clans/ml.php?clan=P_K_Masters');" onmouseover="toOn(this);" onmouseout="toOff(this);" title="Main Memberlist">
-</td> <!-- mainMemberlist -->
-<td style="width: 75px; background-image: url(faOff.jpg); background-repeat: no-repeat; cursor: pointer;" onclick="window.open('http://runehead.com/clans/ml.php?clan=PKMasters_FA');" onmouseover="toOn(this);" onmouseout="toOff(this);" title="Future Applicant Memberlist">
-</td> <!-- FA -->
-</tr>
-</table> <!-- Screw floats and absolute positioning.  Tables FTW. -->
-<div style="height: 50px; background-image: url(historyOff.jpg); background-repeat: no-repeat; cursor: pointer;" class="separate" onclick="location.href = 'history.shtml';" onmouseover="toOn(this);" onmouseout="toOff(this);" title="History">
-</div> <!-- history -->
-<div style="height: 5px; background-image: url(separator.jpg); background-position: center bottom; background-repeat: repeat-x;" class="separate">
-</div> <!-- separator above advertisement -->
-<!-- Begin: AdBrite, Generated: 2009-11-08 21:31:32  -->
-<script type="text/javascript">
-<!--
-var AdBrite_Title_Color = '4E616E';
-var AdBrite_Text_Color = 'FFF';
-var AdBrite_Background_Color = '000';
-var AdBrite_Border_Color = '000';
-var AdBrite_URL_Color = '4E616E';
-try{var AdBrite_Iframe=window.top!=window.self?2:1;var AdBrite_Referrer=document.referrer==''?document.location:document.referrer;AdBrite_Referrer=encodeURIComponent(AdBrite_Referrer);}catch(e){var AdBrite_Iframe='';var AdBrite_Referrer='';}
--->
-</script>
-<script type="text/javascript">
-<!--
-document.write(String.fromCharCode(60,83,67,82,73,80,84));document.write(' src="http://ads.adbrite.com/mb/text_group.php?sid=767564&amp;zs=3330305f323530&amp;ifr='+AdBrite_Iframe+'&amp;ref='+AdBrite_Referrer+'" type="text/javascript">');
-document.write(String.fromCharCode(60,47,83,67,82,73,80,84,62));
--->
-</script>
-<div style="text-align: center;"><a onclick="window.open('http://www.adbrite.com/mb/commerce/purchase_form.php?opid=767564&amp;afsid=1');">Your Ad Here</a></div>
-<!-- End: AdBrite -->
-</td> <!-- left -->
-<td style="width: 105px;">
-</td> <!-- separate left from right -->
-<td style="width: 500px; vertical-align: top;">
-<div style="height: 40px; background-image: url(news.jpg); background-repeat: no-repeat; background-position: center center;">
-</div> <!-- News title -->
-<div style="width: 450px; margin: auto;">
-<script type="text/javascript" src="news.js"></script>
-<div style="text-align: right;"><a class="url" onclick="location.href = 'newsArchive.shtml';" onmouseover="localOnMouseOver(this);" onmouseout="localOnMouseOut(this);">News Archive</a></div>
-</div> <!-- News content -->
-<div style="height: 40px; background-image: url(recentEvents.jpg); background-repeat: no-repeat; background-position: center center; margin-top: 40px;">
-</div> <!-- Recent Events title -->
-<div style="text-align: center;">
-<script type="text/javascript" src="events.js"></script>
-</div> <!-- Events content -->
-</td> <!-- right -->
-</tr>
-<!-- END HOME --> </table>
-<!--#include virtual="footer.html" -->
+			document.write('</tr>'
+			+ '</table>');
+			-->
+			</script>
+			<!-- END NAVIGATION -->
