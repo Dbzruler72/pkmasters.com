@@ -19,6 +19,9 @@
 		<!--# if expr="$isHomepage" value="false" -->
 		<meta property="og:site_name" content="*-P.K.Masters-*  clan" />
 		<!--# endif -->
+		<meta property="twitter:title" content="<!--# echo var="title" -->" />
+		<meta property="twitter:description" content="<!--# echo var="description" -->" />
+		<meta property="twitter:image" content="media/banner.gif" />
 		<!--# if expr="$isArticle = true" -->
 		<meta property="article:author" content="" />
 		<meta property="article:expiration_time" content="" />
@@ -28,10 +31,8 @@
 		<meta property="article:tag" content="" />
 		<!--# endif -->
 
-		<meta property="twitter:title" content="<!--# echo var="title" -->" />
-		<meta property="twitter:description" content="<!--# echo var="description" -->" />
-		<meta property="twitter:image" content="media/banner.gif" />
-		
+		<meta name="robots"  />
+
 		<meta name="author" content="Dbzruler72" />
 		<meta name="generator" content="Notepad2" />
 		<meta name="keywords" content="RuneScape, clans, RuneScape clans, runescape clan, 100+ clan, 60+ clan, RuneScape clans RuneScape forums. Best RuneScape clan, RuneScape topsite, advertise my clan, Runescape signatures, RuneScape guides, RuneScape guide, RuneScape skill, skill guides, money making, *-P.K.Masters-*, pkmasters, Dbzruler72" />
