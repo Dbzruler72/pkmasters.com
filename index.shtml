@@ -1,6 +1,7 @@
 <!--# set var="title" value="*-P.K.Masters-*  clan" -->
-<!--# set var="description" value="The RuneScape PKing clan, led by Dbzruler72, that lasted from 2002 to 2010." -->
+<!--# set var="description" value="The RuneScape PKing clan, led by Dbzruler72, that reigned from 2002 to 2010." -->
 <!--# set var="isHomepage" value="true" -->
+<!--# set var="isEventsPage" value="false" -->
 <!--# set var="isArticle" value="false" -->
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -11,6 +12,7 @@
 		<meta name="description" content="<!--# echo var="description" -->" />
 		
 		<meta property="og:title" content="<!--# echo var="title" -->" />
+		<meta property="og:description" content="<!--# echo var="description" -->" />
 		<meta property="og:type" content="website" />
 		<meta property="og:image" content="media/banner.gif" />
 		<meta property="og:url" content="https://pkmasters.com/" />
@@ -31,16 +33,17 @@
 		<meta property="article:tag" content="" />
 		<!--# endif -->
 
-		<meta name="robots"  />
-
 		<meta name="author" content="Dbzruler72" />
-		<meta name="generator" content="Notepad2" />
-		<meta name="keywords" content="RuneScape, clans, RuneScape clans, runescape clan, 100+ clan, 60+ clan, RuneScape clans RuneScape forums. Best RuneScape clan, RuneScape topsite, advertise my clan, Runescape signatures, RuneScape guides, RuneScape guide, RuneScape skill, skill guides, money making, *-P.K.Masters-*, pkmasters, Dbzruler72" />
 		<meta name="copyright" content="Dbzruler72" />
-		<meta name="web_author" content="Dbzruler72" />
-		<meta name="reply-to" content="Dbzruler72@hotmail.com" />
-		<meta name="robots" content="noimageindex" />
-		<meta http-equiv="Content-Language" content="en, English" />
+		<meta name="generator" content="Notepad2, Visual Studio Code" />
+		<meta name="rating" content="general" />
+		<!--# if expr="$isEventsPage = false" -->
+		<meta name="robots" content="follow, index, noimageindex" />
+		<!--# elif -->
+		<meta name="robots" content="follow, index" />
+		<!--# endif -->
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
+		<meta http-equiv="Cache-Control" content="Public" />
 
 		<link rel="stylesheet" type="text/css" href="main.css" />
 		<script type="text/javascript" src="header.js"></script>
