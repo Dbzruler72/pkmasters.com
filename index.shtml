@@ -1,3 +1,8 @@
+<!--# set var="title" value="*-P.K.Masters-*  clan" -->
+<!--# set var="description" value="The RuneScape PKing clan, led by Dbzruler72, that lasted from 2002 to 2010." -->
+<!--# set var="isHomepage" value="true" -->
+<!--# set var="isArticle" value="false" -->
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
@@ -6,15 +11,26 @@
 		<meta name="description" content="<!--# echo var="description" -->" />
 		
 		<meta property="og:title" content="<!--# echo var="title" -->" />
-		<meta property="og:type" content="" />
-		<meta property="og:image" content="" />
-		<meta property="og:url" content="" />
-		<meta property="og:url" content="" />
-		<meta property="og:url" content="" />
-		<meta property="og:url" content="" />
-		<meta property="og:url" content="" />
-		<meta property="og:url" content="" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="media/banner.gif" />
+		<meta property="og:url" content="https://pkmasters.com/" />
+		<meta property="og:description" content="<!--# echo var="description" -->" />
+		<meta property="og:locale" content="en_US" />
+		<!--# if expr="$isHomepage" value="false" -->
+		<meta property="og:site_name" content="*-P.K.Masters-*  clan" />
+		<!--# endif -->
+		<!--# if expr="$isArticle = true" -->
+		<meta property="article:author" content="" />
+		<meta property="article:expiration_time" content="" />
+		<meta property="article:modified_time" content="<!--# echo var="LAST_MODIFIED" --> />
+		<meta property="article:published_time" content="" />
+		<meta property="article:section" content="" />
+		<meta property="article:tag" content="" />
+		<!--# endif -->
 
+		<meta property="twitter:title" content="<!--# echo var="title" -->" />
+		<meta property="twitter:description" content="<!--# echo var="description" -->" />
+		<meta property="twitter:image" content="media/banner.gif" />
 		
 		<meta name="author" content="Dbzruler72" />
 		<meta name="generator" content="Notepad2" />
@@ -95,8 +111,7 @@ document.write('</tr>'
 <div style="background-image: url(borderTop.jpg); height: 31px;">
 </div> <!-- borderTop -->
 
-<!--# set var="title" value="*-P.K.Masters-*  clan" -->
-<!--# set var="description" value="The RuneScape PKing clan, led by Dbzruler72, that lasted from 2002 to 2010." -->
+
 
 <!--#include virtual="header.html" -->
 <!-- BEGIN HOME --> <table style="width: 905px;" class="main" cellspacing="0" cellpadding="0" id="home"> <!-- homepage uses a width of 905 unlike every other page, which is 965 pixels wide, because the extra space in between the left and right columns is too large. -->
