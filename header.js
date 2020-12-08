@@ -1,9 +1,8 @@
 //var preload = ['joinOn.gif', 'eventsOn.gif', 'forumOn.gif', 'linksOn.gif', 'homeOn.gif', 'masterJoinOn.gif', 'masterJoinToOff.gif', 'masterOfTheMonthOn.jpg', 'mainOn.jpg', 'faOn.jpg', 'historyOn.jpg', 'homeCurrentOff.gif', 'eventsCurrentOff.gif', 'linksCurrentOff.gif', 'homeCurrentOn.gif', 'eventsCurrentOn.gif', 'linksCurrentOn.gif', 'tipIt.gif', 'zybez.png', 'worldPlayOnline.png', 'opera.png', 'tsm8.png', 'http://images.freewebs.com/Images/Smilies/Round/biggrin.gif', 'http://images.freewebs.com/Images/Smilies/Round/exclamation.gif', 'http://images.freewebs.com/Images/Smilies/Round/tongue.gif', 'http://images.freewebs.com/Images/Smilies/Round/laugh.gif', 'http://images.freewebs.com/Images/Smilies/Round/cool.gif', 'http://images.freewebs.com/Images/Smilies/Round/dry.gif'];
 var preload = ['joinOn.gif', 'eventsOn.gif', 'forumOn.gif', 'linksOn.gif', 'homeOn.gif', 'masterJoinOn.gif', 'masterJoinToOff.gif', 'masterOfTheMonthOn.jpg', 'mainOn.jpg', 'faOn.jpg', 'historyOn.jpg', 'homeCurrentOff.gif', 'eventsCurrentOff.gif', 'linksCurrentOff.gif', 'homeCurrentOn.gif', 'eventsCurrentOn.gif', 'linksCurrentOn.gif', 'tipIt.gif', 'zybez.png', 'worldPlayOnline.png', 'opera.png', 'tsm8.png'];
 
-for (i = 0; i < preload.length; i++)
-{
-new Image().src = preload[i];
+for (i = 0; i < preload.length; i++) {
+	new Image().src = preload[i];
 }
 
 
