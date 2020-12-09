@@ -91,7 +91,7 @@
 				text-indent: 50px;
 				margin-bottom: 10px;
 			}
-			.eventListEvent
+			.eventListEvent {
 				cursor: pointer;
 			}
 			* {
@@ -140,24 +140,39 @@
 				background-repeat: no-repeat;
 				background-size: contain;
 			}
+			<!--# if expr="$currPage == home" -->
+			#navContainer > div:nth-child(1) {
+				background-image: url('media/homeCurrentOff.gif');
+			}
+			#navContainer > div:nth-child(1):hover {
+				background-image: url('media/homeCurrentOn.gif');
+			}
+			<!--# else -->
 			#navContainer > div:nth-child(1) {
 				background-image: url('media/homeOff.gif');
 			}
 			#navContainer > div:nth-child(1):hover {
 				background-image: url('media/homeOn.gif');
 			}
+			<!--# endif -->
 			#navContainer > div:nth-child(2) {
 				background-image: url('media/joinOff.gif');
 			}
 			#navContainer > div:nth-child(2):hover {
 				background-image: url('media/joinOn.gif');
 			}
+			<!--# if expr="$currPage == events" -->
 			#navContainer > div:nth-child(3) {
-				background-image: url('media/eventsOff.gif');
+				background-image: url('media/eventsCurrentOff.gif');
 			}
+			#navContainer > div:nth-child(3):hover {
+				background-image: url('media/eventsCurrentOn.gif');
+			}
+			<!--# else -->
 			#navContainer > div:nth-child(3):hover {
 				background-image: url('media/eventsOn.gif');
 			}
+			<!-- endif -->
 			#navContainer > div:nth-child(4) {
 				background-image: url('media/forumOff.gif');
 			}
@@ -171,21 +186,28 @@
 				background-image: url('media/linksOn.gif');
 			}
 		</style>
-		<script type="text/javascript" src="header.js"></script>
+
+		<!--# if expr="${HTTP_USER_AGENT} != /Firefox/" -->
+		<link rel="preload" as="image" href="media/homeCurrentOn.gif">
+		<link rel="preload" as="image" href="media/joinCurrentOn.gif" />
+		<link rel="preload" as="image" href="media/eventsCurrentOn.gif" />
+		<link rel="preload" as="image" href="media/forumCurrentOn.gif" />
+		<link rel="preload" as="image" href="media/linksCurrentOn.gif" />
+		<link rel="preload" as="image" href="media/homeOn.gif" />
+		<link rel="preload" as="image" href="media/joinOn.gif" />
+		<link rel="preload" as="image" href="media/eventsOn.gif" />
+		<link rel="preload" as="image" href="media/forumOn.gif" />
+		<link rel="preload" as="image" href="media/linksOn.gif" />
+
+		<link rel="preload" as="image" href="media/faOn.jpg" />
+		<link rel="preload" as="image" href="media/historyOn.jpg" />
+		<link rel="preload" as="image" href="media/mainOn.jpg" />
+		<link rel="preload" as="image" href="media/masterJoinOn.gif" />
+		<link rel="preload" as="image" href="media/masterJoinToOff.gif" />
+		<link rel="preload" as="image" href="media/masterOfTheMonthOn.jpg" />
+		<!--# endif -->
 	</head>
 	<body>
-		<!-- BEGIN Preload images -->
-		<span style="display: none;">
-			<script type="text/javascript">
-				<!--
-				for (i = 0; i < preload.length; i++) {
-					document.write('<img src="' + preload[i] + '" />');
-				}
-				//-->
-			</script>
-		</span>
-		<!-- END Preload images -->
-
 		<!-- BEGIN Navigation -->
 			<div id="navContainer">
 				<div title="Home"></div>
@@ -196,52 +218,22 @@
 			</div>
 		<!-- END Navigation -->
 
+		<!--# if expr="${HTTP_USER_AGENT} == /Firefox/" -->
+		<!-- BEGIN Prefetch.  Some browsers, like Firefox, don't prefetch. -->
+			<script type="text/javascript">
+				preload = [
+					'homeCurrentOn.gif', 'joinCurrentOn.gif', 'eventsCurrentOn.gif', 'forumCurrentOn.gif', 'linksCurrentOn.gif', 'homeOn.gif', 'joinOn.gif', 'eventsOn.gif', 'forumOn.gif', 'linksOn.gif',
+					
+					'faOn.jpg', 'historyOn.jpg', 'mainOn.jpg', 'masterJoinOn.gif', 'masterJoinToOff.gif', 'masterOfTheMonthOn.jpg'
+				];
+				
+				for (var i = 0; i < preload.length; i++)
+					new Image().src = 'media/' + preload[i];
+			</script>
+		<!-- END Prefetch -->
+		<!--# endif -->
 
 
 
 		<!-- 1022 x 645 -->
 		<!-- width: 905px -->
-		<!-- BEGIN NAVIGATION -->
-			<script type="text/javascript">
-			<!--
-			document.write('<table cellspacing="0" cellpadding="0" class="main">'
-			+ '<tr>');
-
-
-
-			var allID = ['home', 'join', 'events', 'forum', 'links', 'termsOfUse', 'newsArchive', 'history']; //every page ID.  Includes navigation along with every other non-navigation page
-			var navigation = ['home', 'join', 'events', 'forum', 'links'];
-			var navigationCapitalize = ['Home', 'Join', 'Events', 'Forum', 'Links'];
-
-			for (i = 0; i < navigation.length; i++)
-			{
-			document.write('<td style="background-image: url(' + navigation[i] + 'Off.gif); cursor: pointer;" class="navigation" onmouseover="toOn(this);" onmouseout="toOff(this);" onclick="navigation(\'' + navigation[i] + '\');" title="' + navigationCapitalize[i] + '" id="navigation' + navigationCapitalize[i] + '"></td>');
-
-
-
-			var navigationReal = ['index', navigation[1], navigation[2], navigation[3], navigation[4]]; //must match the amount in navigation[]
-			var navigationID = new Array();
-			navigationID[0] = 'navigationHome'; //homepage is named "index", not "home"
-
-			if (i != 0)
-			{
-			navigationID[i] = 'navigation' + navigationCapitalize[i];
-			}
-
-			if (location.href.match(navigationReal[i]))
-			{
-			document.getElementById(navigationID[i]).style.backgroundImage = document.getElementById(navigationID[i]).style.backgroundImage.replace(/Off/, 'CurrentOff');
-			}
-			}
-			if (location.href == 'http://pkmasters.com/' || location.href == 'http://www.pkmasters.com/')
-			{
-			navigationHome.style.backgroundImage = navigationHome.style.backgroundImage.replace(/Off/, 'CurrentOff');
-			}
-
-
-
-			document.write('</tr>'
-			+ '</table>');
-			-->
-			</script>
-			<!-- END NAVIGATION -->
