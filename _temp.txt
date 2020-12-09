@@ -1,10 +1,7 @@
 
 
 
-			<!-- BEGIN CONTENT -->
-			<div style="background-image: url(foreground.jpg); background-repeat: repeat-y;" class="main">
-			<div style="background-image: url(borderTop.jpg); height: 31px;">
-			</div> <!-- borderTop -->
+
 
 
 

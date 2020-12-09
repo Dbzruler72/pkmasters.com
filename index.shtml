@@ -130,9 +130,11 @@
 		</style>
 
 		<style type="text/css">
-			* {
+			body {
 				font-family: Verdana, sans-serif;
-				font-size: 11px;
+				font-size: 14pt;
+				letter-spacing: 0.5pt;
+				line-height: 1.5;
 			}
 			#navContainer {
 				display: flex;
@@ -235,6 +237,7 @@
 		<link rel="preload" as="image" href="media/masterOfTheMonthOn.jpg" />
 		<!--# endif -->
 	</head>
+
 	<body>
 		<!-- BEGIN Navigation -->
 			<div id="navContainer">
@@ -264,8 +267,8 @@
 		<!-- 1022 x 645 -->
 		<!-- width: 905px -->
 		<!-- BEGIN Background -->
-		<div style="background-image: url(foreground.jpg); background-repeat: repeat-y;" id="main">
-		<div style="background-image: url(borderTop.jpg); height: 31px;">
-		</div> <!-- borderTop -->
-		Test
+		<div style="background-image: url(media/foreground.jpg); background-repeat: repeat-y;" id="main">
+			<div style="background-image: url(media/borderTop.jpg); height: 31px;">
+				asdfasdf
+			</div> <!-- borderTop -->
 		</div>
