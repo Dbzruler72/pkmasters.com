@@ -7,7 +7,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta charset="UTF-8" />
 		<title><!--# echo var="title" --></title>
 		<meta name="description" content="<!--# echo var="description" -->" />
 		<meta name="author" content="Dbzruler72" />
@@ -20,7 +19,6 @@
 		<meta name="robots" content="follow, index, noimageindex" />
 		<!--# endif -->
 		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
-		<meta http-equiv="Cache-Control" content="Public" />
 		
 		<meta property="og:title" content="<!--# echo var="title" -->" />
 		<meta property="og:description" content="<!--# echo var="description" -->" />
@@ -267,8 +265,6 @@
 		<!-- 1022 x 645 -->
 		<!-- width: 905px -->
 		<!-- BEGIN Background -->
-		<div style="background-image: url(media/foreground.jpg); background-repeat: repeat-y;" id="main">
-			<div style="background-image: url(media/borderTop.jpg); height: 31px;">
-				asdfasdf
-			</div> <!-- borderTop -->
+		<div style="background-image: url('media/foreground.jpg'); background-repeat: repeat-y;" id="main">
+			<div style="background-image: url('media/borderTop.jpg'); height: 31px;"></div>
 		</div>
