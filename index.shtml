@@ -2,17 +2,23 @@
 <!--# set var="description" value="The RuneScape PKing clan, led by Dbzruler72, that reigned from 2002 to 2010." -->
 <!--# set var="currPage" value="home" -->
 <!--# set var="isArticle" value="false" -->
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="UTF-8" />
 		<title><!--# echo var="title" --></title>
 		<meta name="description" content="<!--# echo var="description" -->" />
 		<meta name="author" content="Dbzruler72" />
 		<meta name="copyright" content="Dbzruler72" />
 		<meta name="generator" content="Notepad2, Visual Studio Code" />
 		<meta name="rating" content="general" />
-		<!--# if expr="$currPage == events" --><meta name="robots" content="follow, index" /><!--# else --><meta name="robots" content="follow, index, noimageindex" /><!--# endif -->
+		<!--# if expr="$currPage == events" -->
+		<meta name="robots" content="follow, index" />
+		<!--# else -->
+		<meta name="robots" content="follow, index, noimageindex" />
+		<!--# endif -->
 		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
 		<meta http-equiv="Cache-Control" content="Public" />
 		
@@ -22,17 +28,22 @@
 		<meta property="og:image" content="media/banner.gif" />
 		<meta property="og:url" content="https://pkmasters.com/" />
 		<meta property="og:locale" content="en_US" />
-		<!--# if expr="$currPage != home" --><meta property="og:site_name" content="*-P.K.Masters-*  clan" /><!--# endif -->
+		<!--# if expr="$currPage != home" -->
+		<meta property="og:site_name" content="*-P.K.Masters-*  clan" />
+		<!--# endif -->
 		<meta property="twitter:title" content="<!--# echo var="title" -->" />
 		<meta property="twitter:description" content="<!--# echo var="description" -->" />
 		<meta property="twitter:image" content="media/banner.gif" />
 		
-		<!--# if expr="$isArticle == true" --><meta property="article:author" content="" />
+		<!--# if expr="$isArticle == true" -->
+		<meta property="article:author" content="" />
 		<meta property="article:expiration_time" content="" />
 		<meta property="article:modified_time" content="<!--# echo var="LAST_MODIFIED" --> />
 		<meta property="article:published_time" content="" />
 		<meta property="article:section" content="" />
-		<meta property="article:tag" content="" /><!--# endif -->
+		<meta property="article:tag" content="" />
+		<!--# endif -->
+
 		<style type="text/css">
 			.navigation {
 				width: 193px;
@@ -169,6 +180,9 @@
 				background-image: url('media/eventsCurrentOn.gif');
 			}
 			<!--# else -->
+			#navContainer > div:nth-child(3) {
+				background-image: url('media/eventsOff.gif');
+			}
 			#navContainer > div:nth-child(3):hover {
 				background-image: url('media/eventsOn.gif');
 			}
@@ -179,12 +193,21 @@
 			#navContainer > div:nth-child(4):hover {
 				background-image: url('media/forumOn.gif');
 			}
+			<!--# if expr="$currPage == links" -->
+			#navContainer > div:nth-child(5) {
+				background-image: url('media/linksCurrentOff.gif');
+			}
+			#navContainer > div:nth-child(5):hover {
+				background-image: url('media/linksCurrentOn.gif');
+			}
+			<!-- else -->
 			#navContainer > div:nth-child(5) {
 				background-image: url('media/linksOff.gif');
 			}
 			#navContainer > div:nth-child(5):hover {
 				background-image: url('media/linksOn.gif');
 			}
+			<!-- endif -->
 		</style>
 
 		<!--# if expr="${HTTP_USER_AGENT} != /Firefox/" -->
@@ -219,7 +242,7 @@
 		<!-- END Navigation -->
 
 		<!--# if expr="${HTTP_USER_AGENT} == /Firefox/" -->
-		<!-- BEGIN Prefetch.  Some browsers, like Firefox, don't prefetch. -->
+		<!-- BEGIN Prefetch.  Some browsers, like Firefox, don't prefetch images. -->
 			<script type="text/javascript">
 				preload = [
 					'homeCurrentOn.gif', 'joinCurrentOn.gif', 'eventsCurrentOn.gif', 'forumCurrentOn.gif', 'linksCurrentOn.gif', 'homeOn.gif', 'joinOn.gif', 'eventsOn.gif', 'forumOn.gif', 'linksOn.gif',
