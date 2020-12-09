@@ -145,66 +145,70 @@
 				align-items: flex-end;
 				align-content: flex-end;
 			}
-			#navContainer > div {
+			#navContainer > a {
+				display: block;
 				width: 193px;
 				height: 43px;
+				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: contain;
+				text-indent: 100%;
+				overflow: hidden;
 			}
 			<!--# if expr="$currPage == home" -->
-			#navContainer > div:nth-child(1) {
+			#navContainer > a:nth-child(1) {
 				background-image: url('media/homeCurrentOff.gif');
 			}
-			#navContainer > div:nth-child(1):hover {
+			#navContainer > a:nth-child(1):hover {
 				background-image: url('media/homeCurrentOn.gif');
 			}
 			<!--# else -->
-			#navContainer > div:nth-child(1) {
+			#navContainer > a:nth-child(1) {
 				background-image: url('media/homeOff.gif');
 			}
-			#navContainer > div:nth-child(1):hover {
+			#navContainer > a:nth-child(1):hover {
 				background-image: url('media/homeOn.gif');
 			}
 			<!--# endif -->
-			#navContainer > div:nth-child(2) {
+			#navContainer > a:nth-child(2) {
 				background-image: url('media/joinOff.gif');
 			}
-			#navContainer > div:nth-child(2):hover {
+			#navContainer > a:nth-child(2):hover {
 				background-image: url('media/joinOn.gif');
 			}
 			<!--# if expr="$currPage == events" -->
-			#navContainer > div:nth-child(3) {
+			#navContainer > a:nth-child(3) {
 				background-image: url('media/eventsCurrentOff.gif');
 			}
-			#navContainer > div:nth-child(3):hover {
+			#navContainer > a:nth-child(3):hover {
 				background-image: url('media/eventsCurrentOn.gif');
 			}
 			<!--# else -->
-			#navContainer > div:nth-child(3) {
+			#navContainer > a:nth-child(3) {
 				background-image: url('media/eventsOff.gif');
 			}
-			#navContainer > div:nth-child(3):hover {
+			#navContainer > a:nth-child(3):hover {
 				background-image: url('media/eventsOn.gif');
 			}
 			<!--# endif -->
-			#navContainer > div:nth-child(4) {
+			#navContainer > a:nth-child(4) {
 				background-image: url('media/forumOff.gif');
 			}
-			#navContainer > div:nth-child(4):hover {
+			#navContainer > a:nth-child(4):hover {
 				background-image: url('media/forumOn.gif');
 			}
 			<!--# if expr="$currPage == links" -->
-			#navContainer > div:nth-child(5) {
+			#navContainer > a:nth-child(5) {
 				background-image: url('media/linksCurrentOff.gif');
 			}
-			#navContainer > div:nth-child(5):hover {
+			#navContainer > a:nth-child(5):hover {
 				background-image: url('media/linksCurrentOn.gif');
 			}
 			<!--# else -->
-			#navContainer > div:nth-child(5) {
+			#navContainer > a:nth-child(5) {
 				background-image: url('media/linksOff.gif');
 			}
-			#navContainer > div:nth-child(5):hover {
+			#navContainer > a:nth-child(5):hover {
 				background-image: url('media/linksOn.gif');
 			}
 			<!--# endif -->
@@ -233,11 +237,11 @@
 	<body>
 		<!-- BEGIN Navigation -->
 			<div id="navContainer">
-				<div title="Home"></div>
-				<div title="Join"></div>
-				<div title="Events"></div>
-				<div title="Forum"></div>
-				<div title="Links"></div>
+				<a href="/" title="Home">Home</a>
+				<a href="" title="Join">Join</a>
+				<a href="/events.shtml" title="Events">Events</a>
+				<a href="/forum/" title="Forum">Forum</a>
+				<a href="/links.shtml" title="Links">Links</a>
 			</div>
 		<!-- END Navigation -->
 
