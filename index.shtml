@@ -186,7 +186,7 @@
 			#navContainer > div:nth-child(3):hover {
 				background-image: url('media/eventsOn.gif');
 			}
-			<!-- endif -->
+			<!--# endif -->
 			#navContainer > div:nth-child(4) {
 				background-image: url('media/forumOff.gif');
 			}
@@ -200,14 +200,14 @@
 			#navContainer > div:nth-child(5):hover {
 				background-image: url('media/linksCurrentOn.gif');
 			}
-			<!-- else -->
+			<!--# else -->
 			#navContainer > div:nth-child(5) {
 				background-image: url('media/linksOff.gif');
 			}
 			#navContainer > div:nth-child(5):hover {
 				background-image: url('media/linksOn.gif');
 			}
-			<!-- endif -->
+			<!--# endif -->
 		</style>
 
 		<!--# if expr="${HTTP_USER_AGENT} != /Firefox/" -->
