@@ -49,10 +49,6 @@
 				width: 193px;
 				height: 43px;
 			}
-			.main	{
-				width: 965px;
-				margin: auto;
-			}
 			.separate {
 				margin-top: 20px;
 			}
@@ -105,10 +101,6 @@
 			.eventListEvent {
 				cursor: pointer;
 			}
-			* {
-				font-family: verdana, arial;
-				font-size: 11px;
-			}
 			a {
 				color: #4E616E;
 				text-decoration: none;
@@ -138,6 +130,10 @@
 		</style>
 
 		<style type="text/css">
+			* {
+				font-family: Verdana, sans-serif;
+				font-size: 11px;
+			}
 			#navContainer {
 				display: flex;
 				flex-flow: row nowrap;
@@ -211,6 +207,11 @@
 			#navContainer > a:nth-child(5):hover {
 				background-image: url('media/linksOn.gif');
 			}
+			#main	{
+				display: flex;
+				width: 965px;
+				margin: auto;
+			}
 			<!--# endif -->
 		</style>
 
@@ -260,7 +261,11 @@
 		<!-- END Prefetch -->
 		<!--# endif -->
 
-
-
 		<!-- 1022 x 645 -->
 		<!-- width: 905px -->
+		<!-- BEGIN Background -->
+		<div style="background-image: url(foreground.jpg); background-repeat: repeat-y;" id="main">
+		<div style="background-image: url(borderTop.jpg); height: 31px;">
+		</div> <!-- borderTop -->
+		Test
+		</div>
