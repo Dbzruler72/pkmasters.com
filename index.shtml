@@ -146,63 +146,66 @@
 				text-indent: 100%;
 				overflow: hidden;
 			}
-			<!--# if expr="$currPage == home" -->
+			/* <!--# if expr="$currPage == home" --> */
 			#navContainer > a:nth-child(1) {
 				background-image: url('media/homeCurrentOff.gif');
 			}
 			#navContainer > a:nth-child(1):hover {
 				background-image: url('media/homeCurrentOn.gif');
 			}
-			<!--# else -->
+			/* <!--# else --> */
 			#navContainer > a:nth-child(1) {
 				background-image: url('media/homeOff.gif');
 			}
 			#navContainer > a:nth-child(1):hover {
 				background-image: url('media/homeOn.gif');
 			}
-			<!--# endif -->
+			/* <!--# endif --> */
 			#navContainer > a:nth-child(2) {
 				background-image: url('media/joinOff.gif');
 			}
 			#navContainer > a:nth-child(2):hover {
 				background-image: url('media/joinOn.gif');
 			}
-			<!--# if expr="$currPage == events" -->
+			/* <!--# if expr="$currPage == events" --> */
 			#navContainer > a:nth-child(3) {
 				background-image: url('media/eventsCurrentOff.gif');
 			}
 			#navContainer > a:nth-child(3):hover {
 				background-image: url('media/eventsCurrentOn.gif');
 			}
-			<!--# else -->
+			/* <!--# else --> */
 			#navContainer > a:nth-child(3) {
 				background-image: url('media/eventsOff.gif');
 			}
 			#navContainer > a:nth-child(3):hover {
 				background-image: url('media/eventsOn.gif');
 			}
-			<!--# endif -->
+			/* <!--# endif --> */
 			#navContainer > a:nth-child(4) {
 				background-image: url('media/forumOff.gif');
 			}
 			#navContainer > a:nth-child(4):hover {
 				background-image: url('media/forumOn.gif');
 			}
-			<!--# if expr="$currPage == links" -->
+			/* <!--# if expr="$currPage == links" --> */
 			#navContainer > a:nth-child(5) {
 				background-image: url('media/linksCurrentOff.gif');
 			}
 			#navContainer > a:nth-child(5):hover {
 				background-image: url('media/linksCurrentOn.gif');
 			}
-			<!--# else -->
+			/* <!--# else --> */
 			#navContainer > a:nth-child(5) {
 				background-image: url('media/linksOff.gif');
 			}
 			#navContainer > a:nth-child(5):hover {
 				background-image: url('media/linksOn.gif');
 			}
-			<!--# endif -->
+			/* <!--# endif --> */
+			#contentContainer > div > a {
+				display: block;
+			}
 		</style>
 
 		<!--# if expr="${HTTP_USER_AGENT} != /Firefox/" -->
@@ -228,7 +231,7 @@
 
 	<body>
 		<!-- BEGIN Navigation -->
-		<div id="navContainer" style="display: flex; flex-flow: row wrap; justify-content: center; align-items: flex-end; align-content: flex-end;">
+		<div id="navContainer" style="display: flex; flex-flow: row wrap; justify-content: center; align-content: flex-end;">
 			<a href="/" title="Home">Home</a>
 			<a href="/forum/viewtopic.php?f=4&t=303#p3332" title="Join">Join</a>
 			<a href="/events.shtml" title="Events">Events</a>
@@ -239,11 +242,28 @@
 
 		<div style="background-image: url('media/borderTop.jpg'); background-position: center bottom; background-repeat: no-repeat; background-size: contain; background-size: 100% contain; height: 31px; margin: auto; max-width: var(--homeMaxWidth);"></div>
 		<!-- BEGIN Content -->
-		<div id="contentContainer" style="background-image: url('media/foreground.jpg'); background-position: center top; background-repeat: repeat-y; background-size: contain; display: flex; align-items: flex-start; flex-flow: row nowrap; justify-content: space-between;  margin: auto; max-width: var(--homeMaxWidth)">
-			<div style="display: flex; flex-flow: column nowrap; max-width: 300px; width: 300px; border: 1px solid red;">
-				col 1
+		<div id="contentContainer" style="
+			background-image: url('media/foreground.jpg'); background-position: center top; background-repeat: repeat-y; background-size: contain;
+			display: flex; align-items: flex-start; flex-flow: row nowrap; justify-content: space-between;
+			margin: auto; max-width: var(--homeMaxWidth);">
+			<div style="
+				--colWidth: 300px;
+				display: flex; align-items: flex-start; flex-basis: var(--colWidth); flex-flow: column nowrap;
+				max-width: var(--colWidth);">
+				<a href="/forum/viewtopic.php?f=4&t=303#p3332" style="
+					background-image: url('media/masterJoinOff.jpg'); background-position: center center; background-repeat: no-repeat; background-size: contain;
+					padding-top: 66.67%; width: 100%;
+					border: 2px solid red;" title="Join  *-P.K.Masters-*"></a>
+				<a href="/forum/viewtopic.php?f=4&t=303#p3332" style="
+					background-image: url('media/masterJoinOff.jpg'); background-position: center center; background-repeat: no-repeat; background-size: contain;
+					padding-top: 66.67%; width: 100%;
+					border: 2px solid red;" title="Join  *-P.K.Masters-*"></a>
 			</div>
-			<div style="max-width: 500px; width: 500px; border: 1px solid red;">
+			<div style="
+				--colWidth: 500px;
+				display: flex; align-items: flex-start; flex-basis: var(--colWidth); flex-flow: column nowrap;
+				max-width:  var(--colWidth);
+				border: 1px solid red;">
 				col 2
 			</div>
 		</div>
