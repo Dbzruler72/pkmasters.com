@@ -206,27 +206,16 @@
 			#contentContainer > div > a {
 				display: block;
 			}
+			.colImageLink {
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				width: 100%;
+				text-indent: 100%;
+				overflow: hidden;
+			}
 		</style>
 
-		<!--# if expr="${HTTP_USER_AGENT} != /Firefox/" -->
-		<link rel="preload" as="image" href="media/homeCurrentOn.gif">
-		<link rel="preload" as="image" href="media/joinCurrentOn.gif" />
-		<link rel="preload" as="image" href="media/eventsCurrentOn.gif" />
-		<link rel="preload" as="image" href="media/forumCurrentOn.gif" />
-		<link rel="preload" as="image" href="media/linksCurrentOn.gif" />
-		<link rel="preload" as="image" href="media/homeOn.gif" />
-		<link rel="preload" as="image" href="media/joinOn.gif" />
-		<link rel="preload" as="image" href="media/eventsOn.gif" />
-		<link rel="preload" as="image" href="media/forumOn.gif" />
-		<link rel="preload" as="image" href="media/linksOn.gif" />
-
-		<link rel="preload" as="image" href="media/faOn.jpg" />
-		<link rel="preload" as="image" href="media/historyOn.jpg" />
-		<link rel="preload" as="image" href="media/mainOn.jpg" />
-		<link rel="preload" as="image" href="media/masterJoinOn.gif" />
-		<link rel="preload" as="image" href="media/masterJoinToOff.gif" />
-		<link rel="preload" as="image" href="media/masterOfTheMonthOn.jpg" />
-		<!--# endif -->
 	</head>
 
 	<body>
@@ -250,14 +239,10 @@
 				--colWidth: 300px;
 				display: flex; align-items: flex-start; flex-basis: var(--colWidth); flex-flow: column nowrap;
 				max-width: var(--colWidth);">
-				<a href="/forum/viewtopic.php?f=4&t=303#p3332" style="
-					background-image: url('media/masterJoinOff.jpg'); background-position: center center; background-repeat: no-repeat; background-size: contain;
-					padding-top: 66.67%; width: 100%;
-					border: 2px solid red;" title="Join  *-P.K.Masters-*"></a>
-				<a href="/forum/viewtopic.php?f=4&t=303#p3332" style="
-					background-image: url('media/masterJoinOff.jpg'); background-position: center center; background-repeat: no-repeat; background-size: contain;
-					padding-top: 66.67%; width: 100%;
-					border: 2px solid red;" title="Join  *-P.K.Masters-*"></a>
+				<a class="colImageLink" href="/forum/viewtopic.php?f=4&t=303#p3332" style="
+					background-image: url('media/masterJoinOff.jpg');
+					padding-top: 66.67%;
+					border: 2px solid red;" title="Join  *-P.K.Masters-*">Become a master.  Join.</a>
 			</div>
 			<div style="
 				--colWidth: 500px;

@@ -1,0 +1,20 @@
+
+		<!--# if expr="${HTTP_USER_AGENT} != /Firefox/" -->
+		<link rel="preload" as="image" href="media/homeCurrentOn.gif">
+		<link rel="preload" as="image" href="media/joinCurrentOn.gif" />
+		<link rel="preload" as="image" href="media/eventsCurrentOn.gif" />
+		<link rel="preload" as="image" href="media/forumCurrentOn.gif" />
+		<link rel="preload" as="image" href="media/linksCurrentOn.gif" />
+		<link rel="preload" as="image" href="media/homeOn.gif" />
+		<link rel="preload" as="image" href="media/joinOn.gif" />
+		<link rel="preload" as="image" href="media/eventsOn.gif" />
+		<link rel="preload" as="image" href="media/forumOn.gif" />
+		<link rel="preload" as="image" href="media/linksOn.gif" />
+
+		<link rel="preload" as="image" href="media/faOn.jpg" />
+		<link rel="preload" as="image" href="media/historyOn.jpg" />
+		<link rel="preload" as="image" href="media/mainOn.jpg" />
+		<link rel="preload" as="image" href="media/masterJoinOn.gif" />
+		<link rel="preload" as="image" href="media/masterJoinToOff.gif" />
+		<link rel="preload" as="image" href="media/masterOfTheMonthOn.jpg" />
+		<!--# endif -->
