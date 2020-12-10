@@ -3,7 +3,7 @@
 <!--# set var="currPage" value="home" -->
 <!--# set var="isArticle" value="false" -->
 
-<!DOCTYPE html
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -42,7 +42,7 @@
 		<meta property="article:tag" content="" />
 		<!--# endif -->
 
-		<style type="text/css">
+		<style>
 			.navigation {
 				width: 193px;
 				height: 43px;
@@ -127,19 +127,12 @@
 			}
 		</style>
 
-		<style type="text/css">
+		<style>
 			body {
 				font-family: Verdana, sans-serif;
 				font-size: 14pt;
 				letter-spacing: 0.5pt;
 				line-height: 1.5;
-			}
-			#navContainer {
-				display: flex;
-				flex-flow: row nowrap;
-				justify-content: center;
-				align-items: flex-end;
-				align-content: flex-end;
 			}
 			#navContainer > a {
 				display: block;
@@ -207,11 +200,6 @@
 			#navContainer > a:nth-child(5):hover {
 				background-image: url('media/linksOn.gif');
 			}
-			#main	{
-				display: flex;
-				width: 965px;
-				margin: auto;
-			}
 			<!--# endif -->
 		</style>
 
@@ -238,7 +226,7 @@
 
 	<body>
 		<!-- BEGIN Navigation -->
-			<div id="navContainer">
+			<div id="navContainer" style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: flex-end; align-content: flex-end;">
 				<a href="/" title="Home">Home</a>
 				<a href="/forum/viewtopic.php?f=4&t=303#p3332" title="Join">Join</a>
 				<a href="/events.shtml" title="Events">Events</a>
@@ -247,9 +235,19 @@
 			</div>
 		<!-- END Navigation -->
 
+		<!-- 1022 x 645 -->
+		<!-- width: 905px -->
+		<!-- BEGIN Background -->
+		<div style="background-image: url('media/borderTop.jpg'); height: 31px;"></div>
+		<div id="main" style="background-image: url('media/foreground.jpg'); background-repeat: repeat-y; display: flex; width: 905px; margin: auto;">
+		</div>
+
+
+		
+
 		<!--# if expr="${HTTP_USER_AGENT} == /Firefox/" -->
 		<!-- BEGIN Prefetch.  Some browsers, like Firefox, don't prefetch images. -->
-			<script type="text/javascript">
+			<script>
 				preload = [
 					'homeCurrentOn.gif', 'joinCurrentOn.gif', 'eventsCurrentOn.gif', 'forumCurrentOn.gif', 'linksCurrentOn.gif', 'homeOn.gif', 'joinOn.gif', 'eventsOn.gif', 'forumOn.gif', 'linksOn.gif',
 					
@@ -261,10 +259,5 @@
 			</script>
 		<!-- END Prefetch -->
 		<!--# endif -->
-
-		<!-- 1022 x 645 -->
-		<!-- width: 905px -->
-		<!-- BEGIN Background -->
-		<div style="background-image: url('media/foreground.jpg'); background-repeat: repeat-y;" id="main">
-			<div style="background-image: url('media/borderTop.jpg'); height: 31px;"></div>
-		</div>
+	</body>
+</html>
