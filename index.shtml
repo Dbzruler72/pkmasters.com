@@ -248,11 +248,15 @@
 					--colWidth: 300px;
 					display: flex; align-items: flex-start; flex-basis: var(--colWidth); flex-flow: column nowrap;
 					max-width: var(--colWidth);">
-				<a class="colImageLink" href="/forum/viewtopic.php?f=4&t=303#p3332" onmouseover="masterJoinOn(this);" style="padding-top: 66.67%;" title="Become a master.  Join.">Join  *-P.K.Masters-*</a>
+				<a class="colImageLink" href="/forum/viewtopic.php?f=4&t=303#p3332" onmouseover="masterJoinOn(this);" onmouseout="masterJoinToOff(this);" style="padding-top: 66.67%;" title="Become a master.  Join.">Join  *-P.K.Masters-*</a>
 
 				<script>
 					function masterJoinOn(item) {
 						item.style.backgroundImage = "url('/media/masterJoinOn.gif?" + new Date().getTime() + "')";
+					}
+
+					function masterJoinToOff(item) {
+						item.style.backgroundImage = "url('/media/masterJoinToOff.gif?" + new Date().getTime() + "')";
 					}
 				</script>
 			</div>
