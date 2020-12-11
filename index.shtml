@@ -137,14 +137,17 @@
 				letter-spacing: 0.5pt;
 				line-height: 1.5;
 			}
+			.hideText {
+				font-size: 0px;
+				overflow: hidden;
+				text-indent: 100%;
+			}
 			#navContainer > a {
 				display: block;
 				width: 193px;
 				height: 43px;
 				background-position: center center;
 				background-repeat: no-repeat;
-				text-indent: 100%;
-				overflow: hidden;
 			}
 			/* <!--# if expr="$currPage == home" --> */
 			#navContainer > a:nth-child(1) {
@@ -212,14 +215,7 @@
 				background-repeat: no-repeat;
 				background-size: contain;
 				width: 100%;
-				font-size: 0px;
 			}
-			#contentContainer > div > a:nth-child(1) {
-				background-image: url('/media/masterJoinOff.jpg');
-			}
-			/*#contentContainer > div > a:nth-child(1):hover {
-				background-image: url('/media/masterJoinOn.gif');
-			}*/
 		</style>
 
 	</head>
@@ -227,11 +223,11 @@
 	<body>
 		<!-- BEGIN Navigation -->
 		<div id="navContainer" style="display: flex; flex-flow: row wrap; justify-content: center; align-content: flex-end;">
-			<a href="/" title="Home">Home</a>
-			<a href="/forum/viewtopic.php?f=4&t=303#p3332" title="Join">Join</a>
-			<a href="/events.shtml" title="Events">Events</a>
-			<a href="/forum/" title="Forum">Forum</a>
-			<a href="/links.shtml" title="Links">Links</a>
+			<a class="hideText" href="/" title="Home">Home</a>
+			<a class="hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" title="Join">Join</a>
+			<a class="hideText" href="/events.shtml" title="Events">Events</a>
+			<a class="hideText" href="/forum/" title="Forum">Forum</a>
+			<a class="hideText" href="/links.shtml" title="Links">Links</a>
 		</div>
 		<!-- END Navigation -->
 
@@ -248,17 +244,8 @@
 					--colWidth: 300px;
 					display: flex; align-items: flex-start; flex-basis: var(--colWidth); flex-flow: column nowrap;
 					max-width: var(--colWidth);">
-				<a class="colImageLink" href="/forum/viewtopic.php?f=4&t=303#p3332" onmouseover="masterJoinOn(this);" onmouseout="masterJoinToOff(this);" style="padding-top: 66.67%;" title="Become a master.  Join.">Join  *-P.K.Masters-*</a>
+				<a class="colImageLink hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" onmouseover="masterJoinOn(this);" onmouseout="masterJoinToOff(this);" style="background-image: url('/media/masterJoinOff.jpg'); padding-top: 66.67%;" title="Become a master.  Join.">Join  *-P.K.Masters-*</a>
 
-				<script>
-					function masterJoinOn(item) {
-						item.style.backgroundImage = "url('/media/masterJoinOn.gif?" + new Date().getTime() + "')";
-					}
-
-					function masterJoinToOff(item) {
-						item.style.backgroundImage = "url('/media/masterJoinToOff.gif?" + new Date().getTime() + "')";
-					}
-				</script>
 			</div>
 			<!-- END Left column -->
 			<!-- BEGIN Right column -->
@@ -275,20 +262,30 @@
 
 
 		
+		<footer>
+			<script>
+				function masterJoinOn(item) {
+					item.style.backgroundImage = "url('/media/masterJoinOn.gif?" + new Date().getTime() + "')";
+				}
 
-		<!--# if expr="${HTTP_USER_AGENT} == /Firefox/" -->
-		<!-- BEGIN Prefetch.  Some browsers, like Firefox, don't prefetch images. -->
-		<script>
-			preload = [
-				'homeCurrentOn.gif', 'joinCurrentOn.gif', 'eventsCurrentOn.gif', 'forumCurrentOn.gif', 'linksCurrentOn.gif', 'homeOn.gif', 'joinOn.gif', 'eventsOn.gif', 'forumOn.gif', 'linksOn.gif',
+				function masterJoinToOff(item) {
+					item.style.backgroundImage = "url('/media/masterJoinToOff.gif?" + new Date().getTime() + "')";
+				}
+			</script>
+			<!--# if expr="${HTTP_USER_AGENT} == /Firefox/" -->
+			<!-- BEGIN Prefetch.  Some browsers, like Firefox, don't prefetch images. -->
+			<script>
+				preload = [
+					'homeCurrentOn.gif', 'joinCurrentOn.gif', 'eventsCurrentOn.gif', 'forumCurrentOn.gif', 'linksCurrentOn.gif', 'homeOn.gif', 'joinOn.gif', 'eventsOn.gif', 'forumOn.gif', 'linksOn.gif',
+					
+					'faOn.jpg', 'historyOn.jpg', 'mainOn.jpg', 'masterJoinOn.gif', 'masterJoinToOff.gif', 'masterOfTheMonthOn.jpg'
+				];
 				
-				'faOn.jpg', 'historyOn.jpg', 'mainOn.jpg', 'masterJoinOn.gif', 'masterJoinToOff.gif', 'masterOfTheMonthOn.jpg'
-			];
-			
-			for (var i = 0; i < preload.length; i++)
-				new Image().src = '/media/' + preload[i];
-		</script>
-		<!-- END Prefetch -->
-		<!--# endif -->
+				for (var i = 0; i < preload.length; i++)
+					new Image().src = '/media/' + preload[i];
+			</script>
+			<!-- END Prefetch -->
+			<!--# endif -->
+		</footer>
 	</body>
 </html>

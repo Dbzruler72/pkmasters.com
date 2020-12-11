@@ -1,4 +1,4 @@
-[![Active](https://img.shields.io/badge/Status-Active-green.svg)](https://github.com/Dbzruler72/pkmasters.com/graphs/commit-activity) ![No Maintenance Planned](https://unmaintained.tech/badge.svg) [![Website](https://img.shields.io/website-up-down-green-red/https/pkmasters.com.svg)](https://pkmasters.com/) [![GitHub license](https://img.shields.io/github/license/Dbzruler72/pkmasters.com.svg)](https://github.com/Dbzruler72/pkmasters.com/blob/master/LICENSE)
+[![Active](https://img.shields.io/badge/Status-Active-green.svg)](https://github.com/Dbzruler72/pkmasters.com/graphs/commit-activity) [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/) [![Website](https://img.shields.io/website-up-down-green-red/https/pkmasters.com.svg)](https://pkmasters.com/) [![GitHub license](https://img.shields.io/github/license/Dbzruler72/pkmasters.com.svg)](https://github.com/Dbzruler72/pkmasters.com/blob/master/LICENSE)
 
 
 # \*-P.K.Masters-\*  website
