@@ -217,18 +217,17 @@
 				width: 100%;
 			}
 		</style>
-
 	</head>
 
 	<body>
 		<!-- BEGIN Navigation -->
-		<div id="navContainer" style="display: flex; flex-flow: row wrap; justify-content: center; align-content: flex-end;">
+		<header id="navContainer" style="display: flex; flex-flow: row wrap; justify-content: center; align-content: flex-end;">
 			<a class="hideText" href="/" title="Home">Home</a>
 			<a class="hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" title="Join">Join</a>
 			<a class="hideText" href="/events.shtml" title="Events">Events</a>
 			<a class="hideText" href="/forum/" title="Forum">Forum</a>
 			<a class="hideText" href="/links.shtml" title="Links">Links</a>
-		</div>
+		</header>
 		<!-- END Navigation -->
 
 		<div style="background-image: url('/media/borderTop.jpg'); background-position: center bottom; background-repeat: no-repeat; background-size: contain; background-size: 100% contain; height: 31px; margin: auto; max-width: var(--homeMaxWidth);"></div>
