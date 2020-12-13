@@ -214,7 +214,17 @@
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: contain;
+				margin-top: 20px;
 				width: 100%;
+			}
+			.colImageLink:nth-of-type(2) {
+				background-image: url('/media/masterOfTheMonthOff.jpg');
+			}
+			.colImageLink:nth-of-type(2):hover {
+				background-image: url('/media/masterOfTheMonthOn.jpg');
+			}
+			#contentContainer > div > div:nth-of-type(2) > a {
+				display: block;
 			}
 		</style>
 	</head>
@@ -243,8 +253,13 @@
 					--colWidth: 300px;
 					display: flex; align-items: flex-start; flex-basis: var(--colWidth); flex-flow: column nowrap;
 					max-width: var(--colWidth);">
-				<a class="colImageLink hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" onmouseover="masterJoinOn(this);" onmouseout="masterJoinToOff(this);" style="background-image: url('/media/masterJoinOff.jpg'); padding-top: 66.67%;" title="Become a master.  Join.">Join  *-P.K.Masters-*</a>
-
+				<a class="colImageLink hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" onmouseover="masterJoinOn(this);" onmouseout="masterJoinToOff(this);" style="background-image: url('/media/masterJoinOff.jpg'); margin-top: 0px; padding-top: 66.67%;" title="Become a master.  Join.">Join  *-P.K.Masters-*</a>
+				<a class="colImageLink hideText" href="/forum/memberlist.php?mode=viewprofile&u=253" style="padding-top: 50%;" title="Master of the Month: hold myHeart">Master of the Month: hold myHeart</a>
+				<div class="colImageLink hideText" style="background-image: url('/media/memberlist.jpg'); padding-top: 8.67%;" title="Memberlist">Memberlist</div>
+				<div style="display: flex; flex-basis: var(--colWidth); flex-flow: row nowrap; max-width: var(--colWidth);">
+					<a href="">d</a>
+					<a>sadf</a>
+				</div>
 			</div>
 			<!-- END Left column -->
 			<!-- BEGIN Right column -->
