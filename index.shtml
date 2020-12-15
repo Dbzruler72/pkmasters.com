@@ -259,12 +259,15 @@
 				text-align: justify;
 			}
 			.newsCredit {
+				font-style: normal;
 				margin-top: 15px;
 				text-align: right;
 			}
-			.newsAuthor {
-				display: inline;
-				font-style: normal;
+			.separator {
+				background-image: url('/media/separator.jpg');
+				background-repeat: repeat-x;
+				height: 5px;
+				margin-top: 5px;
 			}
 		</style>
 	</head>
@@ -293,14 +296,14 @@
 					--colWidth: 300px;
 					display: flex; align-items: flex-start; flex-basis: var(--colWidth); flex-flow: column nowrap;
 					max-width: var(--colWidth);">
-				<a class="colImageLink hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" onmouseover="masterJoinOn(this);" onmouseout="masterJoinToOff(this);" style="background-image: url('/media/masterJoinOff.jpg'); margin-top: 0px; padding-top: 66.67%;" title="Become a master.  Join.">Join  *-P.K.Masters-*</a>
+				<a class="colImageLink hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" onmouseover="masterJoinOn(this);" onmouseout="masterJoinToOff(this);" style="background-image: url('/media/masterJoinOff.jpg'); margin-top: 0px; padding-top: calc(calc(200 / 300) * 100%);" title="Become a master.  Join.">Join  *-P.K.Masters-*</a>
 				<a class="colImageLink hideText" href="/forum/memberlist.php?mode=viewprofile&u=253" style="padding-top: 50%;" title="Master of the Month: hold myHeart">Master of the Month: hold myHeart</a>
-				<div class="colImageLink hideText" style="background-image: url('/media/memberlist.jpg'); padding-top: 8.67%;" title="Memberlist">Memberlist</div>
-				<div id="memberlistsContainer" style="display: flex; flex-flow: row nowrap; max-width: (--colWidth); width: 100%;">
-					<a class="colImageLink hideText" href="https://web.archive.org/web/20180804065735/http://runehead.com/clans/ml.php?clan=P_K_Masters" style="margin-top: 0px; padding-top: 8.33%; width: 75%;" title="Main memberlist">Main memberlist</a>
-					<a class="colImageLink hideText" href="https://web.archive.org/web/20180804055150/http://runehead.com/clans/ml.php?clan=PKMasters_FA" style="margin-top: 0px; padding-top: 8.33%; width: 25%;" title="Future Applicant memberlist">Future Applicant memberlist</a>
+				<div class="colImageLink hideText" style="background-image: url('/media/memberlist.jpg'); padding-top: calc(calc(26 / 300) * 100%);" title="Memberlist">Memberlist</div>
+				<div id="memberlistsContainer" style="display: flex; flex-flow: row nowrap; max-width: var(--colWidth); width: 100%; --memberlistsHeight: calc(calc(25 / 300) * 100%)">
+					<a class="colImageLink hideText" href="https://web.archive.org/web/20180804065735/http://runehead.com/clans/ml.php?clan=P_K_Masters" style="margin-top: 0px; padding-top: var(--memberlistsHeight); width: 75%;" title="Main memberlist">Main memberlist</a>
+					<a class="colImageLink hideText" href="https://web.archive.org/web/20180804055150/http://runehead.com/clans/ml.php?clan=PKMasters_FA" style="margin-top: 0px; padding-top: var(--memberlistsHeight); width: 25%;" title="Future Applicant memberlist">Future Applicant memberlist</a>
 				</div>
-				<a class="colImageLink hideText" href="/history.shtml" style="padding-top: 16.67%" title="History">History</a>
+				<a class="colImageLink hideText" href="/history.shtml" style="padding-top: calc(calc(50 / 300) * 100%)" title="History">History</a>
 				<!-- @TODO TS image link here -->
 			</div>
 			<!-- END Left column -->
@@ -309,18 +312,24 @@
 				--colWidth: 500px;
 				display: flex; align-items: flex-start; flex-basis: var(--colWidth); flex-flow: column nowrap;
 				max-width:  var(--colWidth);
-				border: 1px solid red;">
-				<h1 class="colImageLink hideText" style="background-image: url('/media/news.jpg'); margin-top: 0px; padding-top: 8%;" title="News">News</h1>
+				--headingImageHeight: calc(calc(40 / 500) * 100%);">
+				<h1 class="colImageLink hideText" style="background-image: url('/media/news.jpg'); margin-top: 0px; padding-top: var(--headingImageHeight);" title="News">News</h1>
 				<!-- BEGIN News container -->
 				<div style="margin: auto; width: 90%; border: 1px solid white;">
 					<article class="newsItem">
 						<h2 class="newsTitle">Title</h2>
 						<p class="newsContent">Test test test test test test test test test test test test test test test test
 							test test test test test test test test test test test test test test test test test test test test test </p>
-						<footer class="newsCredit">Posted by <address class="newsAuthor">Dbzruler72</address> on <time datetime="YYYY-MM-DD HH:MM">date</time></footer>
+						<address class="newsCredit">Posted by Dbzruler72 on <time datetime="YYYY-MM-DD HH:MM">date</time></address>
 					</article>
+					<div class="separator"></div>
+					<a href="/newsArchive.shtml" style="display: block; text-align: right;" title="News Archive">News Archive</a>
 				</div>
 				<!-- END News container -->
+				<h1 class="colImageLink hideText" style="background-image: url('/media/recentEvents.jpg'); padding-top: var(--headingImageHeight);" title="Recent Events">Recent Events</h1>
+				<!-- BEGIN Events container -->
+
+				<!-- END Events container -->
 			</div>
 			<!-- End Right column -->
 		</main>
