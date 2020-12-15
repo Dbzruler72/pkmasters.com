@@ -262,6 +262,10 @@
 				margin-top: 15px;
 				text-align: right;
 			}
+			.newsAuthor {
+				display: inline;
+				font-style: normal;
+			}
 		</style>
 	</head>
 
@@ -278,7 +282,7 @@
 
 		<div style="background-image: url('/media/borderTop.jpg'); background-position: center bottom; background-repeat: no-repeat; background-size: contain; background-size: 100% contain; height: 31px; margin: auto; max-width: var(--homeMaxWidth);"></div>
 		<!-- BEGIN Content -->
-		<div id="contentContainer"
+		<main id="contentContainer"
 			style="
 				background-image: url('/media/foreground.jpg'); background-position: center top; background-repeat: repeat-y; background-size: contain;
 				display: flex; align-items: flex-start; flex-flow: row nowrap; justify-content: space-between;
@@ -306,18 +310,20 @@
 				display: flex; align-items: flex-start; flex-basis: var(--colWidth); flex-flow: column nowrap;
 				max-width:  var(--colWidth);
 				border: 1px solid red;">
-				<a class="colImageLink hideText" style="background-image: url('/media/news.jpg'); margin-top: 0px; padding-top: 8%;" title="News">News</a>
+				<h1 class="colImageLink hideText" style="background-image: url('/media/news.jpg'); margin-top: 0px; padding-top: 8%;" title="News">News</h1>
+				<!-- BEGIN News container -->
 				<div style="margin: auto; width: 90%; border: 1px solid white;">
-					<div class="newsItem">
-						<div class="newsTitle">Title</div>
-						<div class="newsContent">Test test test test test test test test test test test test test test test test
-							test test test test test test test test test test test test test test test test test test test test test </div>
-						<div class="newsCredit">Posted by author on date</div>
-					</div>
+					<article class="newsItem">
+						<h2 class="newsTitle">Title</h2>
+						<p class="newsContent">Test test test test test test test test test test test test test test test test
+							test test test test test test test test test test test test test test test test test test test test test </p>
+						<footer class="newsCredit">Posted by <address class="newsAuthor">Dbzruler72</address> on <time datetime="YYYY-MM-DD HH:MM">date</time></footer>
+					</article>
 				</div>
+				<!-- END News container -->
 			</div>
 			<!-- End Right column -->
-		</div>
+		</main>
 		<!-- END Content -->
 
 
