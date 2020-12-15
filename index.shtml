@@ -175,6 +175,12 @@
 			.colImageLink:nth-of-type(3):hover {
 				background-image: url('/media/historyOn.jpg');
 			}
+			.image {
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				width: 100%;
+			}
 			#newsContainer > article {
 				margin-top: var(--rightCol_vspace);
 			}
@@ -248,7 +254,7 @@
 					max-width: var(--colWidth);">
 				<a class="colImageLink hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" onmouseover="masterJoinOn(this);" onmouseout="masterJoinToOff(this);" style="background-image: url('/media/masterJoinOff.jpg'); margin-top: 0px; padding-top: calc(calc(200 / 300) * 100%);" title="Become a master.  Join.">Join  *-P.K.Masters-*</a>
 				<a class="colImageLink hideText" href="/forum/memberlist.php?mode=viewprofile&u=253" style="padding-top: 50%;" title="Master of the Month: hold myHeart">Master of the Month: hold myHeart</a>
-				<div class="colImageLink hideText" style="background-image: url('/media/memberlist.jpg'); padding-top: calc(calc(26 / 300) * 100%);" title="Memberlist">Memberlist</div>
+				<div class="image hideText" style="background-image: url('/media/memberlist.jpg'); margin-top: var(--leftCol_vspace); padding-top: calc(calc(26 / 300) * 100%);" title="Memberlist">Memberlist</div>
 				<div id="memberlistsContainer" style="display: flex; flex-flow: row nowrap; max-width: var(--colWidth); width: 100%; --memberlistsHeight: calc(calc(25 / 300) * 100%)">
 					<a class="colImageLink hideText" href="https://web.archive.org/web/20180804065735/http://runehead.com/clans/ml.php?clan=P_K_Masters" style="margin-top: 0px; padding-top: var(--memberlistsHeight); width: 75%;" title="Main memberlist">Main memberlist</a>
 					<a class="colImageLink hideText" href="https://web.archive.org/web/20180804055150/http://runehead.com/clans/ml.php?clan=PKMasters_FA" style="margin-top: 0px; padding-top: var(--memberlistsHeight); width: 25%;" title="Future Applicant memberlist">Future Applicant memberlist</a>
@@ -263,7 +269,7 @@
 				display: flex; align-items: flex-start; flex-basis: var(--colWidth); flex-flow: column nowrap;
 				max-width:  var(--colWidth);
 				--headingImageHeight: calc(calc(40 / 500) * 100%);">
-				<h1 class="colImageLink hideText" style="background-image: url('/media/news.jpg'); margin-top: 0px; padding-top: var(--headingImageHeight);" title="News">News</h1>
+				<h1 class="image hideText" style="background-image: url('/media/news.jpg'); padding-top: var(--headingImageHeight);" title="News">News</h1>
 				<!-- BEGIN News container -->
 				<section id="newsContainer" style="margin: auto; width: 90%;">
 					<article>
@@ -276,7 +282,7 @@
 					<a href="/newsArchive.shtml" style="display: block; text-align: right;" title="News Archive">News Archive</a>
 				</section>
 				<!-- END News container -->
-				<h1 class="colImageLink hideText" style="background-image: url('/media/recentEvents.jpg'); margin-top: calc(var(--rightCol_vspace) * 2); padding-top: var(--headingImageHeight);" title="Recent Events">Recent Events</h1>
+				<h1 class="image hideText" style="background-image: url('/media/recentEvents.jpg'); margin-top: calc(var(--rightCol_vspace) * 2); padding-top: var(--headingImageHeight);" title="Recent Events">Recent Events</h1>
 				<!-- BEGIN Recent Events container -->
 				<section id="recentEventsContainer" style="width: 100%;">
 					<section>
