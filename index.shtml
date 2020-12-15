@@ -112,6 +112,9 @@
 				border: 1px solid #494F5F;
 				color: #FFF;
 			}
+			* {
+				font-size: 11px;
+			}
 			body {
 				background-color: #000;
 				margin: 0px 0px 0px 0px;
@@ -208,7 +211,6 @@
 			/* <!--# endif --> */
 			#contentContainer > div > a {
 				display: block;
-				border: 2px solid red;
 			}
 			.colImageLink {
 				background-position: center center;
@@ -223,20 +225,42 @@
 			.colImageLink:nth-of-type(2):hover {
 				background-image: url('/media/masterOfTheMonthOn.jpg');
 			}
-			#contentContainer > div > div:nth-of-type(2) > a {
+			#memberlistsContainer > a {
 				display: block;
 			}
-			#contentContainer > div > div:nth-of-type(2) > a:nth-child(1) {
+			#memberlistsContainer > a:nth-child(1) {
 				background-image: url('/media/mainOff.jpg');
 			}
-			#contentContainer > div > div:nth-of-type(2) > a:nth-child(1):hover {
+			#memberlistsContainer > a:nth-child(1):hover {
 				background-image: url('/media/mainOn.jpg');
 			}
-			#contentContainer > div > div:nth-of-type(2) > a:nth-child(2) {
+			#memberlistsContainer > a:nth-child(2) {
 				background-image: url('/media/faOff.jpg');
 			}
-			#contentContainer > div > div:nth-of-type(2) > a:nth-child(2):hover {
+			#memberlistsContainer > a:nth-child(2):hover {
 				background-image: url('/media/faOn.jpg');
+			}
+			.colImageLink:nth-of-type(3) {
+				background-image: url('/media/historyOff.jpg');
+			}
+			.colImageLink:nth-of-type(3):hover {
+				background-image: url('/media/historyOn.jpg');
+			}
+			.newsItem {
+				margin-top: 20px;
+			}
+			.newsTitle {
+				font-size: 15px;
+				font-weight: bold;
+				margin-left: 50px;
+			}
+			.newsContent {
+				margin-top: 20px;
+				text-align: justify;
+			}
+			.newsCredit {
+				margin-top: 15px;
+				text-align: right;
 			}
 		</style>
 	</head>
@@ -268,11 +292,12 @@
 				<a class="colImageLink hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" onmouseover="masterJoinOn(this);" onmouseout="masterJoinToOff(this);" style="background-image: url('/media/masterJoinOff.jpg'); margin-top: 0px; padding-top: 66.67%;" title="Become a master.  Join.">Join  *-P.K.Masters-*</a>
 				<a class="colImageLink hideText" href="/forum/memberlist.php?mode=viewprofile&u=253" style="padding-top: 50%;" title="Master of the Month: hold myHeart">Master of the Month: hold myHeart</a>
 				<div class="colImageLink hideText" style="background-image: url('/media/memberlist.jpg'); padding-top: 8.67%;" title="Memberlist">Memberlist</div>
-				<div style="display: flex; flex-flow: row nowrap; max-width: (--colWidth); width: 100%; border: 1px solid red;">
+				<div id="memberlistsContainer" style="display: flex; flex-flow: row nowrap; max-width: (--colWidth); width: 100%;">
 					<a class="colImageLink hideText" href="https://web.archive.org/web/20180804065735/http://runehead.com/clans/ml.php?clan=P_K_Masters" style="margin-top: 0px; padding-top: 8.33%; width: 75%;" title="Main memberlist">Main memberlist</a>
 					<a class="colImageLink hideText" href="https://web.archive.org/web/20180804055150/http://runehead.com/clans/ml.php?clan=PKMasters_FA" style="margin-top: 0px; padding-top: 8.33%; width: 25%;" title="Future Applicant memberlist">Future Applicant memberlist</a>
 				</div>
-				<a class="colImageLink hideText" href="/history.shtml" style="background-image: url('/media/historyOff.jpg'); padding-top: 16.67%" title="History">History</a>
+				<a class="colImageLink hideText" href="/history.shtml" style="padding-top: 16.67%" title="History">History</a>
+				<!-- @TODO TS image link here -->
 			</div>
 			<!-- END Left column -->
 			<!-- BEGIN Right column -->
@@ -281,7 +306,15 @@
 				display: flex; align-items: flex-start; flex-basis: var(--colWidth); flex-flow: column nowrap;
 				max-width:  var(--colWidth);
 				border: 1px solid red;">
-				col 2
+				<a class="colImageLink hideText" style="background-image: url('/media/news.jpg'); margin-top: 0px; padding-top: 8%;" title="News">News</a>
+				<div style="margin: auto; width: 90%; border: 1px solid white;">
+					<div class="newsItem">
+						<div class="newsTitle">Title</div>
+						<div class="newsContent">Test test test test test test test test test test test test test test test test
+							test test test test test test test test test test test test test test test test test test test test test </div>
+						<div class="newsCredit">Posted by author on date</div>
+					</div>
+				</div>
 			</div>
 			<!-- End Right column -->
 		</div>
