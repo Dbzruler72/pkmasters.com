@@ -42,7 +42,7 @@
 		<meta property="article:tag" content="" />
 		<!--# endif -->
 
-		<style>
+		<style> /* Old.  Here for reference; will be removed. */
 			.navigation {
 				width: 193px;
 				height: 43px;
@@ -134,6 +134,7 @@
 			body {
 				--homeMaxWidth: 905px;
 				--maxWidth: 965px;
+				--vspace: 20px;
 
 				font-family: Verdana, sans-serif;
 				font-size: 14pt;
@@ -216,7 +217,7 @@
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: contain;
-				margin-top: 20px;
+				margin-top: var(--vspace);
 				width: 100%;
 			}
 			.colImageLink:nth-of-type(2) {
@@ -247,7 +248,7 @@
 				background-image: url('/media/historyOn.jpg');
 			}
 			.newsItem {
-				margin-top: 20px;
+				margin-top: var(--vspace);
 			}
 			.newsTitle {
 				font-size: 15px;
@@ -255,7 +256,7 @@
 				margin-left: 50px;
 			}
 			.newsContent {
-				margin-top: 20px;
+				margin-top: var(--vspace);
 				text-align: justify;
 			}
 			.newsCredit {
@@ -263,11 +264,25 @@
 				margin-top: 15px;
 				text-align: right;
 			}
-			.separator {
+			.newsSeparator {
 				background-image: url('/media/separator.jpg');
 				background-repeat: repeat-x;
 				height: 5px;
 				margin-top: 5px;
+			}
+			.eventItem {
+				text-align: center;
+				margin-top: var(--vspace);
+			}
+			.eventTitle {
+				font-weight: bold;
+			}
+			.eventSeparator {
+				background-image: url('/media/separator.jpg');
+				background-position: center center;
+				background-repeat: no-repeat;
+				height: 5px;
+				margin-top: 3px;
 			}
 		</style>
 	</head>
@@ -315,27 +330,56 @@
 				--headingImageHeight: calc(calc(40 / 500) * 100%);">
 				<h1 class="colImageLink hideText" style="background-image: url('/media/news.jpg'); margin-top: 0px; padding-top: var(--headingImageHeight);" title="News">News</h1>
 				<!-- BEGIN News container -->
-				<div style="margin: auto; width: 90%; border: 1px solid white;">
+				<div style="margin: auto; width: 90%;">
 					<article class="newsItem">
 						<h2 class="newsTitle">Title</h2>
 						<p class="newsContent">Test test test test test test test test test test test test test test test test
 							test test test test test test test test test test test test test test test test test test test test test </p>
 						<address class="newsCredit">Posted by Dbzruler72 on <time datetime="YYYY-MM-DD HH:MM">date</time></address>
 					</article>
-					<div class="separator"></div>
+					<div class="newsSeparator"></div>
 					<a href="/newsArchive.shtml" style="display: block; text-align: right;" title="News Archive">News Archive</a>
 				</div>
 				<!-- END News container -->
-				<h1 class="colImageLink hideText" style="background-image: url('/media/recentEvents.jpg'); padding-top: var(--headingImageHeight);" title="Recent Events">Recent Events</h1>
-				<!-- BEGIN Events container -->
-
-				<!-- END Events container -->
+				<h1 class="colImageLink hideText" style="background-image: url('/media/recentEvents.jpg'); margin-top: 40px; padding-top: var(--headingImageHeight);" title="Recent Events">Recent Events</h1>
+				<!-- BEGIN Recent Events container -->
+				<div style="width: 100%;">
+					<div class="eventItem">
+						Day, Month Date, Year<br />
+						<span class="eventTitle">Event Name</span>
+					</div>
+					<div class="eventSeparator"></div>
+					<div class="eventItem">
+						Day, Month Date, Year<br />
+						<span class="eventTitle">Event Name</span>
+					</div>
+					<div class="eventSeparator"></div>
+					<div class="eventItem">
+						Day, Month Date, Year<br />
+						<span class="eventTitle">Event Name</span>
+					</div>
+					<div class="eventSeparator"></div>
+					<div class="eventItem">
+						Day, Month Date, Year<br />
+						<span class="eventTitle">Event Name</span>
+					</div>
+					<div class="eventSeparator"></div>
+					<div class="eventItem">
+						Day, Month Date, Year<br />
+						<span class="eventTitle">Event Name</span>
+					</div>
+					<div class="eventSeparator"></div>
+					<div class="eventItem">
+						Day, Month Date, Year<br />
+						<span class="eventTitle">Event Name</span>
+					</div>
+					<div class="eventSeparator"></div>
+				</div>
+				<!-- END Recent Events container -->
 			</div>
 			<!-- End Right column -->
 		</main>
 		<!-- END Content -->
-
-
 		
 		<footer>
 			<script>
