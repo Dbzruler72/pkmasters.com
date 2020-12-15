@@ -247,19 +247,21 @@
 			.colImageLink:nth-of-type(3):hover {
 				background-image: url('/media/historyOn.jpg');
 			}
-			.newsItem {
+			#newsContainer > article {
 				margin-top: var(--vspace);
 			}
-			.newsTitle {
+			#newsContainer > article > h2 {
 				font-size: 15px;
 				font-weight: bold;
 				margin-left: 50px;
 			}
-			.newsContent {
-				margin-top: var(--vspace);
+			#newsContainer > article > p {
 				text-align: justify;
 			}
-			.newsCredit {
+			#newsContainer > article > p:first-of-type {
+				margin-top: var(--vspace);
+			}
+			#newsContainer > article > address {
 				font-style: normal;
 				margin-top: 15px;
 				text-align: right;
@@ -270,12 +272,13 @@
 				height: 5px;
 				margin-top: 5px;
 			}
-			.eventItem {
+			#recentEventsContainer > section {
 				text-align: center;
 				margin-top: var(--vspace);
 			}
-			.eventTitle {
-				font-weight: bold;
+			#recentEventsContainer > section > h2 {
+				margin-top: 0;
+				margin-bottom: 0;
 			}
 			.eventSeparator {
 				background-image: url('/media/separator.jpg');
@@ -330,51 +333,51 @@
 				--headingImageHeight: calc(calc(40 / 500) * 100%);">
 				<h1 class="colImageLink hideText" style="background-image: url('/media/news.jpg'); margin-top: 0px; padding-top: var(--headingImageHeight);" title="News">News</h1>
 				<!-- BEGIN News container -->
-				<div style="margin: auto; width: 90%;">
-					<article class="newsItem">
-						<h2 class="newsTitle">Title</h2>
-						<p class="newsContent">Test test test test test test test test test test test test test test test test
-							test test test test test test test test test test test test test test test test test test test test test </p>
-						<address class="newsCredit">Posted by Dbzruler72 on <time datetime="YYYY-MM-DD HH:MM">date</time></address>
+				<section id="newsContainer" style="margin: auto; width: 90%;">
+					<article>
+						<h2>Title</h2>
+						<p>Test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test</p>
+						<p>Second paragraph test test test test test test test test test test test test test test test test</p>
+						<address>Posted by Dbzruler72 on <time datetime="YYYY-MM-DD HH:MM">date</time></address>
 					</article>
 					<div class="newsSeparator"></div>
 					<a href="/newsArchive.shtml" style="display: block; text-align: right;" title="News Archive">News Archive</a>
-				</div>
+				</section>
 				<!-- END News container -->
 				<h1 class="colImageLink hideText" style="background-image: url('/media/recentEvents.jpg'); margin-top: 40px; padding-top: var(--headingImageHeight);" title="Recent Events">Recent Events</h1>
 				<!-- BEGIN Recent Events container -->
-				<div style="width: 100%;">
-					<div class="eventItem">
+				<section id="recentEventsContainer" style="width: 100%;">
+					<section>
 						Day, Month Date, Year<br />
-						<span class="eventTitle">Event Name</span>
-					</div>
+						<h2>Event Name</h2>
+					</section>
 					<div class="eventSeparator"></div>
-					<div class="eventItem">
+					<section>
 						Day, Month Date, Year<br />
-						<span class="eventTitle">Event Name</span>
-					</div>
+						<h2>Event Name</h2>
+					</section>
 					<div class="eventSeparator"></div>
-					<div class="eventItem">
+					<section>
 						Day, Month Date, Year<br />
-						<span class="eventTitle">Event Name</span>
-					</div>
+						<h2>Event Name</h2>
+					</section>
 					<div class="eventSeparator"></div>
-					<div class="eventItem">
+					<section>
 						Day, Month Date, Year<br />
-						<span class="eventTitle">Event Name</span>
-					</div>
+						<h2>Event Name</h2>
+					</section>
 					<div class="eventSeparator"></div>
-					<div class="eventItem">
+					<section>
 						Day, Month Date, Year<br />
-						<span class="eventTitle">Event Name</span>
-					</div>
+						<h2>Event Name</h2>
+					</section>
 					<div class="eventSeparator"></div>
-					<div class="eventItem">
+					<section>
 						Day, Month Date, Year<br />
-						<span class="eventTitle">Event Name</span>
-					</div>
+						<h2>Event Name</h2>
+					</section>
 					<div class="eventSeparator"></div>
-				</div>
+				</section>
 				<!-- END Recent Events container -->
 			</div>
 			<!-- End Right column -->
