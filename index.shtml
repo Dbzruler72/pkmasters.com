@@ -42,104 +42,32 @@
 		<meta property="article:tag" content="" />
 		<!--# endif -->
 
-		<style> /* Old.  Here for reference; will be removed. */
-			.navigation {
-				width: 193px;
-				height: 43px;
-			}
-			.separate {
-				margin-top: 20px;
-			}
-			.event:hover {
-				text-decoration: underline overline;
-			}
-			.eventInformation { /* intentionally blank */
-			}
-			.eventSeparator {
-				height: 5px;
-				background-image: url(separator.jpg);
-				background-repeat: no-repeat;
-				background-position: center center;
-				margin: 10px 0px 10px 0px;
-			}
-			.eventList {
-				height: 520px;
-				overflow-y: scroll;
-			}
-			.link {
-				text-align: justify;
-				margin-bottom: 30px;
-			}
-			.linkSeparator {
-				height: 5px;
-				background-image: url(separator.jpg);
-				background-repeat: no-repeat;
-				background-position: center center;
-			}
-			.url {
-				cursor: pointer;
-				color: #4E616E;
-			}
-			.history {
-				text-indent: 50px;
-				text-align: justify;
-			}
-			.historyTable {
-				text-align: center;
-				width: 300px;
-			}
-			.historyImage {
-				width: 300px;
-				cursor: pointer;
-			}
-			.paragraph {
-				text-indent: 50px;
-				margin-bottom: 10px;
-			}
-			.eventListEvent {
-				cursor: pointer;
+		<style>
+			* {
+				font-size: 11px;
 			}
 			a {
 				color: #4E616E;
 				text-decoration: none;
-				cursor: pointer;
 			}
 			a:hover {
 				text-decoration: underline overline;
 			}
-			input {
-				background-color: #131C32;
-				border: 1px solid #494F5F;
-				color: #FFF;
-			}
-			* {
-				font-size: 11px;
-			}
-			body {
-				background-color: #000;
-				margin: 0px 0px 0px 0px;
-				color: #FFF;
-				overflow-y: scroll;
-				scrollbar-face-color: #202020;
-				scrollbar-highlight-color: #000;
-				scrollbar-shadow-color: #000;
-				scrollbar-3dlight-color: #000;
-				scrollbar-arrow-color: #000;
-				scrollbar-track-color: #000;
-				scrollbar-darkshadow-color: #000;
-			}
-		</style>
-		<!-- ########################################################################################################### -->
-		<style>
 			body {
 				--homeMaxWidth: 905px;
 				--maxWidth: 965px;
-				--vspace: 20px;
+				--leftCol_vspace: 6.67%;
+				--rightCol_vspace: 4%;
+				--separatorHeight: calc(calc(5 / 250) * 100%);
+				--minSeparatorHeight: 3px;
 
+				color: #FFF;
+				background-color: #000;
 				font-family: Verdana, sans-serif;
 				font-size: 14pt;
 				letter-spacing: 0.5pt;
 				line-height: 1.5;
+				margin: 0px 0px 0px 0px;
 			}
 			.hideText {
 				font-size: 0px;
@@ -217,7 +145,7 @@
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: contain;
-				margin-top: var(--vspace);
+				margin-top: var(--leftCol_vspace);
 				width: 100%;
 			}
 			.colImageLink:nth-of-type(2) {
@@ -248,33 +176,34 @@
 				background-image: url('/media/historyOn.jpg');
 			}
 			#newsContainer > article {
-				margin-top: var(--vspace);
+				margin-top: var(--rightCol_vspace);
 			}
 			#newsContainer > article > h2 {
 				font-size: 15px;
 				font-weight: bold;
-				margin-left: 50px;
+				margin-left: 11.11%;
 			}
 			#newsContainer > article > p {
 				text-align: justify;
 			}
 			#newsContainer > article > p:first-of-type {
-				margin-top: var(--vspace);
+				margin-top: var(--rightCol_vspace);
 			}
 			#newsContainer > article > address {
 				font-style: normal;
-				margin-top: 15px;
+				margin-top: 3.33%;
 				text-align: right;
 			}
 			.newsSeparator {
 				background-image: url('/media/separator.jpg');
 				background-repeat: repeat-x;
-				height: 5px;
-				margin-top: 5px;
+				padding-top: var(--separatorHeight);
+				margin-top: 1%;
+				min-height: var(--minSeparatorHeight);
 			}
 			#recentEventsContainer > section {
 				text-align: center;
-				margin-top: var(--vspace);
+				margin-top: var(--rightCol_vspace);
 			}
 			#recentEventsContainer > section > h2 {
 				margin-top: 0;
@@ -284,8 +213,11 @@
 				background-image: url('/media/separator.jpg');
 				background-position: center center;
 				background-repeat: no-repeat;
-				height: 5px;
-				margin-top: 3px;
+				margin: auto;
+				margin-top: 0.6%;
+				min-height: var(--minSeparatorHeight);
+				padding-top: var(--separatorHeight);
+				width: 50%;
 			}
 		</style>
 	</head>
@@ -344,7 +276,7 @@
 					<a href="/newsArchive.shtml" style="display: block; text-align: right;" title="News Archive">News Archive</a>
 				</section>
 				<!-- END News container -->
-				<h1 class="colImageLink hideText" style="background-image: url('/media/recentEvents.jpg'); margin-top: 40px; padding-top: var(--headingImageHeight);" title="Recent Events">Recent Events</h1>
+				<h1 class="colImageLink hideText" style="background-image: url('/media/recentEvents.jpg'); margin-top: calc(var(--rightCol_vspace) * 2); padding-top: var(--headingImageHeight);" title="Recent Events">Recent Events</h1>
 				<!-- BEGIN Recent Events container -->
 				<section id="recentEventsContainer" style="width: 100%;">
 					<section>

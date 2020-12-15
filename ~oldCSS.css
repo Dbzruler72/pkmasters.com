@@ -1,0 +1,88 @@
+
+		<style> /* Old.  Here for reference; will be removed. */
+			.navigation {
+				width: 193px;
+				height: 43px;
+			}
+			.separate {
+				margin-top: 20px;
+			}
+			.event:hover {
+				text-decoration: underline overline;
+			}
+			.eventInformation { /* intentionally blank */
+			}
+			.eventSeparator {
+				height: 5px;
+				background-image: url(separator.jpg);
+				background-repeat: no-repeat;
+				background-position: center center;
+				margin: 10px 0px 10px 0px;
+			}
+			.eventList {
+				height: 520px;
+				overflow-y: scroll;
+			}
+			.link {
+				text-align: justify;
+				margin-bottom: 30px;
+			}
+			.linkSeparator {
+				height: 5px;
+				background-image: url(separator.jpg);
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+			.url {
+				cursor: pointer;
+				color: #4E616E;
+			}
+			.history {
+				text-indent: 50px;
+				text-align: justify;
+			}
+			.historyTable {
+				text-align: center;
+				width: 300px;
+			}
+			.historyImage {
+				width: 300px;
+				cursor: pointer;
+			}
+			.paragraph {
+				text-indent: 50px;
+				margin-bottom: 10px;
+			}
+			.eventListEvent {
+				cursor: pointer;
+			}
+			a {
+				color: #4E616E;
+				text-decoration: none;
+				cursor: pointer;
+			}
+			a:hover {
+				text-decoration: underline overline;
+			}
+			input {
+				background-color: #131C32;
+				border: 1px solid #494F5F;
+				color: #FFF;
+			}
+			* {
+				font-size: 11px;
+			}
+			body {
+				background-color: #000;
+				margin: 0px 0px 0px 0px;
+				color: #FFF;
+				overflow-y: scroll;
+				scrollbar-face-color: #202020;
+				scrollbar-highlight-color: #000;
+				scrollbar-shadow-color: #000;
+				scrollbar-3dlight-color: #000;
+				scrollbar-arrow-color: #000;
+				scrollbar-track-color: #000;
+				scrollbar-darkshadow-color: #000;
+			}
+		</style>
