@@ -10,7 +10,7 @@ I'm rewriting the entire website while preserving the original design.  The mark
 
 
 # Current Status
-Work in progress.  See the [dev branch](/Dbzruler72/pkmasters.com/tree/dev).
+Work in progress.  See the [dev branch](../../tree/dev).
 
 
 # Dependencies
