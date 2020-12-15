@@ -226,6 +226,18 @@
 			#contentContainer > div > div:nth-of-type(2) > a {
 				display: block;
 			}
+			#contentContainer > div > div:nth-of-type(2) > a:nth-child(1) {
+				background-image: url('/media/mainOff.jpg');
+			}
+			#contentContainer > div > div:nth-of-type(2) > a:nth-child(1):hover {
+				background-image: url('/media/mainOn.jpg');
+			}
+			#contentContainer > div > div:nth-of-type(2) > a:nth-child(2) {
+				background-image: url('/media/faOff.jpg');
+			}
+			#contentContainer > div > div:nth-of-type(2) > a:nth-child(2):hover {
+				background-image: url('/media/faOn.jpg');
+			}
 		</style>
 	</head>
 
@@ -256,9 +268,9 @@
 				<a class="colImageLink hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" onmouseover="masterJoinOn(this);" onmouseout="masterJoinToOff(this);" style="background-image: url('/media/masterJoinOff.jpg'); margin-top: 0px; padding-top: 66.67%;" title="Become a master.  Join.">Join  *-P.K.Masters-*</a>
 				<a class="colImageLink hideText" href="/forum/memberlist.php?mode=viewprofile&u=253" style="padding-top: 50%;" title="Master of the Month: hold myHeart">Master of the Month: hold myHeart</a>
 				<div class="colImageLink hideText" style="background-image: url('/media/memberlist.jpg'); padding-top: 8.67%;" title="Memberlist">Memberlist</div>
-				<div style="display: flex; flex-basis: var(--colWidth); flex-flow: row nowrap; max-width: var(--colWidth);">
-					<a href="">d</a>
-					<a>sadf</a>
+				<div style="display: flex; flex-flow: row nowrap; max-width: (--colWidth); width: 100%; border: 1px solid red;">
+					<a class="colImageLink hideText" href="https://web.archive.org/web/20180804065735/http://runehead.com/clans/ml.php?clan=P_K_Masters" style="margin-top: 0px; padding-top: 8.33%; width: 75%;" title="Main memberlist">Main memberlist</a>
+					<a class="colImageLink hideText" href="https://web.archive.org/web/20180804055150/http://runehead.com/clans/ml.php?clan=PKMasters_FA" style="margin-top: 0px; padding-top: 8.33%; width: 25%;" title="Future Applicant memberlist">Future Applicant memberlist</a>
 				</div>
 			</div>
 			<!-- END Left column -->
