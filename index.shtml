@@ -321,10 +321,10 @@
 		
 		<footer>
 			<script>
-				var nextOn, nextToOff;
+				var nextOn, nextToOff, imageID = 0;
 				
 				function preloadNextOn() {
-					nextOn = "/media/masterJoinOn.gif?" + new Date().getTime();
+					nextOn = "/media/masterJoinOn.gif?" + imageID++;
 					
 					new Image().src = nextOn;
 				}
@@ -332,7 +332,7 @@
 
 				function masterJoinOn(item) {
 					item.style.backgroundImage = "url('" + nextOn + "')";
-					nextToOff = "/media/masterJoinToOff.gif?" + new Date().getTime();
+					nextToOff = "/media/masterJoinToOff.gif?" + imageID++;
 					
 					new Image().src = nextToOff;
 				}
@@ -349,7 +349,7 @@
 				preload = [
 					'homeCurrentOn.gif', 'joinCurrentOn.gif', 'eventsCurrentOn.gif', 'forumCurrentOn.gif', 'linksCurrentOn.gif', 'homeOn.gif', 'joinOn.gif', 'eventsOn.gif', 'forumOn.gif', 'linksOn.gif',
 					
-					'faOn.jpg', 'historyOn.jpg', 'mainOn.jpg', 'masterJoinOn.gif', 'masterJoinToOff.gif', 'masterOfTheMonthOn.jpg'
+					'faOn.jpg', 'historyOn.jpg', 'mainOn.jpg', 'masterOfTheMonthOn.jpg'
 				];
 				
 				for (var i = 0; i < preload.length; i++)
