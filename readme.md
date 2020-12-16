@@ -2,7 +2,7 @@
 
 
 # \*-P.K.Masters-\*  website
-After closing the clan in 2010, I let the website and forum remain largely untouched, aside from a few backend forum updates.  Over the past 10 years, I've felt particularly bad that the website Events page sat contentless, which occurred after I discovered inconsistent behavior in Firefox and Safari that crashed the browsers.  Old  \*-PK.M-\*  members deserve a working website to remember the old days.
+After closing the clan in 2010, I left the website and forum largely untouched, aside from minor forum updates on the back end.  Over the past 10 years, I've felt particularly bad that the website Events page sat contentless.  I had discovered inconsistent behavior in Firefox and Safari that crashed the browsers, so I removed the content altogether, hoping to fix the page one day.  That day has come!  Old  \*-P.K.M-\*  members deserve a working website to remember the old days.
 
 
 # Plans
