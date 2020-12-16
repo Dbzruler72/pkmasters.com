@@ -18,4 +18,4 @@ Work in progress.  See the [dev branch](../../tree/dev) for the latest update.
 
 
 # License
-TBD
+[3-clause BSD license](../../blob/master/LICENSE/)
