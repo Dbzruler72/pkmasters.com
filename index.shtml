@@ -194,22 +194,12 @@
 			.hr {
 				background-image: url('/media/separator.jpg');
 				background-size: contain;
-				border: 1px solid red;
-				min-height: 3px;
 			}
 			#newsContainer .hr {
 				background-repeat: repeat-x;
 				margin-top: 1%;
 				padding-top: 1.11%;
 			}
-			/*.newsSeparator {
-				background-image: url('/media/separator.jpg');
-				background-repeat: repeat-x;
-				margin-top: 1%;
-				min-height: var(--minSeparatorHeight);
-				padding-top: var(--separatorHeight);
-				border: 1px solid red;
-			}*/
 			#recentEventsContainer section {
 				text-align: center;
 				margin-top: var(--rightCol_vspace);
@@ -222,7 +212,7 @@
 				background-position: center top;
 				background-repeat: no-repeat;
 				margin: auto;
-				padding-top: calc(calc(5 / 500) * 100%);
+				padding-top: 1%;
 				width: 50%;
 			}
 		</style>
