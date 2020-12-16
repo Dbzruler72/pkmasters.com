@@ -11,10 +11,8 @@
 		<link rel="preload" as="image" href="media/forumOn.gif" />
 		<link rel="preload" as="image" href="media/linksOn.gif" />
 
+		<link rel="preload" as="image" href="media/masterOfTheMonthOn.jpg" />
+		<link rel="preload" as="image" href="media/mainOn.jpg" />
 		<link rel="preload" as="image" href="media/faOn.jpg" />
 		<link rel="preload" as="image" href="media/historyOn.jpg" />
-		<link rel="preload" as="image" href="media/mainOn.jpg" />
-		<link rel="preload" as="image" href="media/masterJoinOn.gif" />
-		<link rel="preload" as="image" href="media/masterJoinToOff.gif" />
-		<link rel="preload" as="image" href="media/masterOfTheMonthOn.jpg" />
 		<!--# endif -->
