@@ -7,6 +7,7 @@
 <html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
 		<title><!--# echo var="title" --></title>
 		<meta name="description" content="<!--# echo var="description" -->" />
 		<meta name="author" content="Dbzruler72" />
@@ -18,7 +19,6 @@
 		<!--# else -->
 		<meta name="robots" content="follow, index, noimageindex" />
 		<!--# endif -->
-		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
 		
 		<meta property="og:title" content="<!--# echo var="title" -->" />
 		<meta property="og:description" content="<!--# echo var="description" -->" />
@@ -58,16 +58,14 @@
 				--maxWidth: 965px;
 				--leftCol_vspace: 6.67%;
 				--rightCol_vspace: 4%;
-				--separatorHeight: calc(calc(5 / 250) * 100%);
-				--minSeparatorHeight: 3px;
 
 				color: #FFF;
 				background-color: #000;
 				font-family: Verdana, sans-serif;
 				font-size: 14pt;
-				letter-spacing: 0.5pt;
+				letter-spacing: 0.3pt;
 				line-height: 1.5;
-				margin: 0px 0px 0px 0px;
+				margin: 0px;
 			}
 			.hideText {
 				font-size: 0px;
@@ -193,13 +191,23 @@
 				margin-top: 3.33%;
 				text-align: right;
 			}
-			.newsSeparator {
+			.hr {
+				background-image: url('/media/separator.jpg');
+				min-height: 3px;
+				padding-top: calc(calc(5px / 100%) * 100%);
+			}
+			#newsContainer .hr {
+				background-repeat: repeat-x;
+				margin-top: 1%;
+			}
+			/*.newsSeparator {
 				background-image: url('/media/separator.jpg');
 				background-repeat: repeat-x;
-				padding-top: var(--separatorHeight);
 				margin-top: 1%;
 				min-height: var(--minSeparatorHeight);
-			}
+				padding-top: var(--separatorHeight);
+				border: 1px solid red;
+			}*/
 			#recentEventsContainer section {
 				text-align: center;
 				margin-top: var(--rightCol_vspace);
@@ -208,14 +216,10 @@
 				margin-top: 0;
 				margin-bottom: 0;
 			}
-			.eventSeparator {
-				background-image: url('/media/separator.jpg');
-				background-position: center center;
+			#recentEventsContainer .hr {
+				background-position: center top;
 				background-repeat: no-repeat;
 				margin: auto;
-				margin-top: 0.6%;
-				min-height: var(--minSeparatorHeight);
-				padding-top: var(--separatorHeight);
 				width: 50%;
 			}
 		</style>
@@ -271,7 +275,7 @@
 						<p>Second paragraph test test test test test test test test test test test test test test test test</p>
 						<address>Posted by Dbzruler72 on <time datetime="YYYY-MM-DD HH:MM">date</time></address>
 					</article>
-					<div class="newsSeparator"></div>
+					<div class="hr"></div>
 					<div style="text-align: right;"><a href="/newsArchive.shtml" title="News Archive">News Archive</a></div>
 				</section>
 				<!-- END News container -->
@@ -282,32 +286,32 @@
 						Day, Month Date, Year<br />
 						<h2>Event Name</h2>
 					</section>
-					<div class="eventSeparator"></div>
+					<div class="hr"></div>
 					<section>
 						Day, Month Date, Year<br />
 						<h2>Event Name</h2>
 					</section>
-					<div class="eventSeparator"></div>
+					<div class="hr"></div>
 					<section>
 						Day, Month Date, Year<br />
 						<h2>Event Name</h2>
 					</section>
-					<div class="eventSeparator"></div>
+					<div class="hr"></div>
 					<section>
 						Day, Month Date, Year<br />
 						<h2>Event Name</h2>
 					</section>
-					<div class="eventSeparator"></div>
+					<div class="hr"></div>
 					<section>
 						Day, Month Date, Year<br />
 						<h2>Event Name</h2>
 					</section>
-					<div class="eventSeparator"></div>
+					<div class="hr"></div>
 					<section>
 						Day, Month Date, Year<br />
 						<h2>Event Name</h2>
 					</section>
-					<div class="eventSeparator"></div>
+					<div class="hr"></div>
 				</section>
 				<!-- END Recent Events container -->
 			</div>
@@ -317,12 +321,26 @@
 		
 		<footer>
 			<script>
+				var nextOn, nextToOff;
+				
+				function preloadNextOn() {
+					nextOn = "/media/masterJoinOn.gif?" + new Date().getTime();
+					
+					new Image().src = nextOn;
+				}
+				preloadNextOn();
+
 				function masterJoinOn(item) {
-					item.style.backgroundImage = "url('/media/masterJoinOn.gif?" + new Date().getTime() + "')";
+					item.style.backgroundImage = "url('" + nextOn + "')";
+					nextToOff = "/media/masterJoinToOff.gif?" + new Date().getTime();
+					
+					new Image().src = nextToOff;
 				}
 
 				function masterJoinToOff(item) {
-					item.style.backgroundImage = "url('/media/masterJoinToOff.gif?" + new Date().getTime() + "')";
+					item.style.backgroundImage = "url('" + nextToOff + "')";
+
+					preloadNextOn();
 				}
 			</script>
 			<!--# if expr="${HTTP_USER_AGENT} == /Firefox/" -->
