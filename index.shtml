@@ -193,12 +193,14 @@
 			}
 			.hr {
 				background-image: url('/media/separator.jpg');
+				background-size: contain;
+				border: 1px solid red;
 				min-height: 3px;
-				padding-top: calc(calc(5px / 100%) * 100%);
 			}
 			#newsContainer .hr {
 				background-repeat: repeat-x;
 				margin-top: 1%;
+				padding-top: 1.11%;
 			}
 			/*.newsSeparator {
 				background-image: url('/media/separator.jpg');
@@ -220,6 +222,7 @@
 				background-position: center top;
 				background-repeat: no-repeat;
 				margin: auto;
+				padding-top: calc(calc(5 / 500) * 100%);
 				width: 50%;
 			}
 		</style>
@@ -236,7 +239,7 @@
 		</nav>
 		<!-- END Navigation -->
 
-		<div style="background-image: url('/media/borderTop.jpg'); background-position: center bottom; background-repeat: no-repeat; background-size: contain; background-size: 100% contain; height: 31px; margin: auto; max-width: var(--homeMaxWidth);"></div>
+		<div style="background-image: url('/media/borderTop.jpg'); background-position: center bottom; background-repeat: no-repeat; background-size: contain; height: 31px; margin: auto; max-width: var(--homeMaxWidth);"></div>
 		<!-- BEGIN Content -->
 		<main id="contentContainer"
 			style="
@@ -263,9 +266,9 @@
 			<!-- BEGIN Right column -->
 			<div style="
 				--colWidth: 500px;
+				--headingImageHeight: calc(calc(40 / 500) * 100%);
 				display: flex; align-items: flex-start; flex-basis: var(--colWidth); flex-flow: column nowrap;
-				max-width:  var(--colWidth);
-				--headingImageHeight: calc(calc(40 / 500) * 100%);">
+				max-width:  var(--colWidth);">
 				<h1 class="image hideText" style="background-image: url('/media/news.jpg'); padding-top: var(--headingImageHeight);" title="News">News</h1>
 				<!-- BEGIN News container -->
 				<section id="newsContainer" style="margin: auto; width: 90%;">

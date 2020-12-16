@@ -1,0 +1,60 @@
+			<!--#include virtual="header.html" -->
+			<!-- BEGIN HOME --> <table style="width: 905px;" class="main" cellspacing="0" cellpadding="0" id="home"> <!-- homepage uses a width of 905 unlike every other page, which is 965 pixels wide, because the extra space in between the left and right columns is too large. -->
+			<tr>
+			<td style="width: 300px; vertical-align: top; margin-left: 500px;">
+			<div style="height: 200px; background-image: url(masterJoinOff.jpg); background-repeat: no-repeat; cursor: pointer;" onclick="location.href='http://pkmasters.com/forum/viewtopic.php?f=4&amp;t=303#p3332';" onmouseover="this.style.backgroundImage = this.style.backgroundImage.replace(/Off.jpg|ToOff.gif/, 'On.gif');" onmouseout="this.style.backgroundImage = this.style.backgroundImage.replace(/On.gif/, 'ToOff.gif');">
+			</div> <!-- join -->
+			<div style="height: 150px; background-image: url(masterOfTheMonthOff.jpg); background-repeat: no-repeat; cursor: pointer;" class="separate" onclick="window.open('http://pkmasters.com/forum/memberlist.php?mode=viewprofile&amp;u=253');" onmouseover="toOn(this);" onmouseout="toOff(this);" title="Master of the Month: hold myHeart">
+			</div> <!-- masterOfTheMonth -->
+			<div style="height: 26px; background-image: url(memberlist.jpg); background-repeat: no-repeat;" class="separate" title="Memberlist">
+			</div> <!-- memberlist -->
+			<table style="height: 25px;" cellspacing="0" cellpadding="0">
+			<tr>
+			<td style="width: 225px; background-image: url(mainOff.jpg); background-repeat: no-repeat; cursor: pointer;" onclick="window.open('http://runehead.com/clans/ml.php?clan=P_K_Masters');" onmouseover="toOn(this);" onmouseout="toOff(this);" title="Main Memberlist">
+			</td> <!-- mainMemberlist -->
+			<td style="width: 75px; background-image: url(faOff.jpg); background-repeat: no-repeat; cursor: pointer;" onclick="window.open('http://runehead.com/clans/ml.php?clan=PKMasters_FA');" onmouseover="toOn(this);" onmouseout="toOff(this);" title="Future Applicant Memberlist">
+			</td> <!-- FA -->
+			</tr>
+			</table> <!-- Screw floats and absolute positioning.  Tables FTW. -->
+			<div style="height: 50px; background-image: url(historyOff.jpg); background-repeat: no-repeat; cursor: pointer;" class="separate" onclick="location.href = 'history.shtml';" onmouseover="toOn(this);" onmouseout="toOff(this);" title="History">
+			</div> <!-- history -->
+			<div style="height: 5px; background-image: url(separator.jpg); background-position: center bottom; background-repeat: repeat-x;" class="separate">
+			</div> <!-- separator above advertisement -->
+			<!-- Begin: AdBrite, Generated: 2009-11-08 21:31:32  -->
+			<script type="text/javascript">
+			<!--
+			var AdBrite_Title_Color = '4E616E';
+			var AdBrite_Text_Color = 'FFF';
+			var AdBrite_Background_Color = '000';
+			var AdBrite_Border_Color = '000';
+			var AdBrite_URL_Color = '4E616E';
+			try{var AdBrite_Iframe=window.top!=window.self?2:1;var AdBrite_Referrer=document.referrer==''?document.location:document.referrer;AdBrite_Referrer=encodeURIComponent(AdBrite_Referrer);}catch(e){var AdBrite_Iframe='';var AdBrite_Referrer='';}
+			-->
+			</script>
+			<script type="text/javascript">
+			<!--
+			document.write(String.fromCharCode(60,83,67,82,73,80,84));document.write(' src="http://ads.adbrite.com/mb/text_group.php?sid=767564&amp;zs=3330305f323530&amp;ifr='+AdBrite_Iframe+'&amp;ref='+AdBrite_Referrer+'" type="text/javascript">');
+			document.write(String.fromCharCode(60,47,83,67,82,73,80,84,62));
+			-->
+			</script>
+			<div style="text-align: center;"><a onclick="window.open('http://www.adbrite.com/mb/commerce/purchase_form.php?opid=767564&amp;afsid=1');">Your Ad Here</a></div>
+			<!-- End: AdBrite -->
+			</td> <!-- left -->
+			<td style="width: 105px;">
+			</td> <!-- separate left from right -->
+			<td style="width: 500px; vertical-align: top;">
+			<div style="height: 40px; background-image: url(news.jpg); background-repeat: no-repeat; background-position: center center;">
+			</div> <!-- News title -->
+			<div style="width: 450px; margin: auto;">
+			<script type="text/javascript" src="news.js"></script>
+			<div style="text-align: right;"><a class="url" onclick="location.href = 'newsArchive.shtml';" onmouseover="localOnMouseOver(this);" onmouseout="localOnMouseOut(this);">News Archive</a></div>
+			</div> <!-- News content -->
+			<div style="height: 40px; background-image: url(recentEvents.jpg); background-repeat: no-repeat; background-position: center center; margin-top: 40px;">
+			</div> <!-- Recent Events title -->
+			<div style="text-align: center;">
+			<script type="text/javascript" src="events.js"></script>
+			</div> <!-- Events content -->
+			</td> <!-- right -->
+			</tr>
+			<!-- END HOME --> </table>
+			<!--#include virtual="footer.html" -->
