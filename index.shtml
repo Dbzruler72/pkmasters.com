@@ -82,65 +82,62 @@
 				background-repeat: no-repeat;
 			}
 			/* <!--# if expr="$currPage == home" --> */
-			#navContainer > a:nth-child(1) {
+			#navContainer a:nth-child(1) {
 				background-image: url('/media/homeCurrentOff.gif');
-			}-->
-			#navContainer > a:nth-child(1):hover {
+			}
+			#navContainer a:nth-child(1):hover {
 				background-image: url('/media/homeCurrentOn.gif');
 			}
 			/* <!--# else --> */
-			#navContainer > a:nth-child(1) {
+			#navContainer a:nth-child(1) {
 				background-image: url('/media/homeOff.gif');
 			}
-			#navContainer > a:nth-child(1):hover {
+			#navContainer a:nth-child(1):hover {
 				background-image: url('/media/homeOn.gif');
 			}
 			/* <!--# endif --> */
-			#navContainer > a:nth-child(2) {
+			#navContainer a:nth-child(2) {
 				background-image: url('/media/joinOff.gif');
 			}
-			#navContainer > a:nth-child(2):hover {
+			#navContainer a:nth-child(2):hover {
 				background-image: url('/media/joinOn.gif');
 			}
 			/* <!--# if expr="$currPage == events" --> */
-			#navContainer > a:nth-child(3) {
+			#navContainer a:nth-child(3) {
 				background-image: url('/media/eventsCurrentOff.gif');
 			}
-			#navContainer > a:nth-child(3):hover {
+			#navContainer a:nth-child(3):hover {
 				background-image: url('/media/eventsCurrentOn.gif');
 			}
 			/* <!--# else --> */
-			#navContainer > a:nth-child(3) {
+			#navContainer a:nth-child(3) {
 				background-image: url('/media/eventsOff.gif');
 			}
-			#navContainer > a:nth-child(3):hover {
+			#navContainer a:nth-child(3):hover {
 				background-image: url('/media/eventsOn.gif');
 			}
 			/* <!--# endif --> */
-			#navContainer > a:nth-child(4) {
+			#navContainer a:nth-child(4) {
 				background-image: url('/media/forumOff.gif');
 			}
-			#navContainer > a:nth-child(4):hover {
+			#navContainer a:nth-child(4):hover {
 				background-image: url('/media/forumOn.gif');
 			}
 			/* <!--# if expr="$currPage == links" --> */
-			#navContainer > a:nth-child(5) {
+			#navContainer a:nth-child(5) {
 				background-image: url('/media/linksCurrentOff.gif');
 			}
-			#navContainer > a:nth-child(5):hover {
+			#navContainer a:nth-child(5):hover {
 				background-image: url('/media/linksCurrentOn.gif');
 			}
 			/* <!--# else --> */
-			#navContainer > a:nth-child(5) {
+			#navContainer a:nth-child(5) {
 				background-image: url('/media/linksOff.gif');
 			}
-			#navContainer > a:nth-child(5):hover {
+			#navContainer a:nth-child(5):hover {
 				background-image: url('/media/linksOn.gif');
 			}
 			/* <!--# endif --> */
-			#contentContainer > div > a {
-				display: block;
-			}
 			.colImageLink {
 				background-position: center center;
 				background-repeat: no-repeat;
@@ -154,19 +151,16 @@
 			.colImageLink:nth-of-type(2):hover {
 				background-image: url('/media/masterOfTheMonthOn.jpg');
 			}
-			#memberlistsContainer > a {
-				display: block;
-			}
-			#memberlistsContainer > a:nth-child(1) {
+			#memberlistsContainer a:nth-child(1) {
 				background-image: url('/media/mainOff.jpg');
 			}
-			#memberlistsContainer > a:nth-child(1):hover {
+			#memberlistsContainer a:nth-child(1):hover {
 				background-image: url('/media/mainOn.jpg');
 			}
-			#memberlistsContainer > a:nth-child(2) {
+			#memberlistsContainer a:nth-child(2) {
 				background-image: url('/media/faOff.jpg');
 			}
-			#memberlistsContainer > a:nth-child(2):hover {
+			#memberlistsContainer a:nth-child(2):hover {
 				background-image: url('/media/faOn.jpg');
 			}
 			.colImageLink:nth-of-type(3) {
@@ -181,21 +175,20 @@
 				background-size: contain;
 				width: 100%;
 			}
-			#newsContainer > article {
+			#newsContainer article {
 				margin-top: var(--rightCol_vspace);
 			}
-			#newsContainer > article > h2 {
+			#newsContainer h2 {
 				font-size: 15px;
-				font-weight: bold;
 				margin-left: 11.11%;
 			}
-			#newsContainer > article > p {
+			#newsContainer article > p {
 				text-align: justify;
 			}
-			#newsContainer > article > p:first-of-type {
+			#newsContainer article > p:first-of-type {
 				margin-top: var(--rightCol_vspace);
 			}
-			#newsContainer > article > address {
+			#newsContainer address {
 				font-style: normal;
 				margin-top: 3.33%;
 				text-align: right;
@@ -207,11 +200,11 @@
 				margin-top: 1%;
 				min-height: var(--minSeparatorHeight);
 			}
-			#recentEventsContainer > section {
+			#recentEventsContainer section {
 				text-align: center;
 				margin-top: var(--rightCol_vspace);
 			}
-			#recentEventsContainer > section > h2 {
+			#recentEventsContainer h2 {
 				margin-top: 0;
 				margin-bottom: 0;
 			}
