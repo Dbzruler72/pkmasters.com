@@ -1,0 +1,55 @@
+body {
+	--homeMaxWidth: 905px;
+	--leftCol_vspace: 6.67%;
+	--rightCol_vspace: 4%;
+}
+.contentContainerBorder {
+	max-width: var(--homeMaxWidth);
+}
+.colImageLink {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-top: var(--leftCol_vspace);
+	width: 100%;
+}
+.colImageLink:nth-of-type(2) { background-image: url('/media/masterOfTheMonthOff.jpg'); }
+.colImageLink:nth-of-type(2):hover { background-image: url('/media/masterOfTheMonthOn.jpg'); }
+#memberlistsContainer a:nth-child(1) { background-image: url('/media/mainOff.jpg'); }
+#memberlistsContainer a:nth-child(1):hover { background-image: url('/media/mainOn.jpg'); }
+#memberlistsContainer a:nth-child(2) { background-image: url('/media/faOff.jpg'); }
+#memberlistsContainer a:nth-child(2):hover { background-image: url('/media/faOn.jpg'); }
+.colImageLink:nth-of-type(3) { background-image: url('/media/historyOff.jpg'); }
+.colImageLink:nth-of-type(3):hover { background-image: url('/media/historyOn.jpg'); }
+#newsContainer article { margin-top: var(--rightCol_vspace); }
+#newsContainer h2 {
+	font-size: 1.5em;
+	margin-left: 11.11%;
+}
+#newsContainer article > p { text-align: justify; }
+#newsContainer article > p:first-of-type { margin-top: var(--rightCol_vspace); }
+#newsContainer address {
+	font-style: normal;
+	margin-top: 3.33%;
+	text-align: right;
+}
+#newsContainer .hr {
+	background-repeat: repeat-x;
+	margin-top: 1%;
+	padding-top: 1.11%;
+}
+#recentEventsContainer section {
+	text-align: center;
+	margin-top: var(--rightCol_vspace);
+}
+#recentEventsContainer h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#recentEventsContainer .hr {
+	background-position: center top;
+	background-repeat: no-repeat;
+	margin: auto;
+	padding-top: 1%;
+	width: 50%;
+}
