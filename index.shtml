@@ -44,7 +44,7 @@
 
 		<style>
 			* {
-				font-size: 11px;
+				font-size: 13pt;
 			}
 			a {
 				color: #4E616E;
@@ -60,8 +60,7 @@
 				color: #FFF;
 				background-color: #000;
 				font-family: Verdana, sans-serif;
-				font-size: 14pt;
-				letter-spacing: 0.3pt;
+				letter-spacing: 0.5pt;
 				line-height: 1.5;
 				margin: 0px;
 			}
@@ -132,7 +131,7 @@
 			}
 			#newsContainer article { margin-top: var(--rightCol_vspace); }
 			#newsContainer h2 {
-				font-size: 15px;
+				font-size: 1.5em;
 				margin-left: 11.11%;
 			}
 			#newsContainer article > p { text-align: justify; }
@@ -182,7 +181,6 @@
 
 		<div class="contentContainerBorder" style="background-image: url('/media/borderTop.jpg'); background-position: center bottom;"></div>
 		<!-- BEGIN Content -->
-		<!-- container needs to be a multiple of 30 to match lower border -->
 		<main id="contentContainer"
 			style="
 				background-image: url('/media/foreground.jpg'); background-position: center top; background-repeat: repeat-y; background-size: contain;
@@ -259,14 +257,18 @@
 					<div class="hr"></div>
 				</section>
 				<!-- END Recent Events container -->
-				<div id="adjuster"></div>
 			</div>
 			<!-- End Right column -->
 		</main>
 		<!-- END Content -->
 		<div class="contentContainerBorder" style="background-image: url('/media/borderBottom.jpg'); background-position: center top;"></div>
-		
-		<footer>
+		<footer style="text-align: center;">
+			<a href="/termsOfUse.shtml" title="Terms of Use">Terms of Use</a><br />
+			<!-- @TODO WCAB 2.1 validation icon link -->
+			Last Updated <!--# config timefmt="%A, %B %d, %Y --><!--# echo var="LAST_MODIFIED" --><br />
+			&copy; 2002&ndash;<!--# config timefmt="%Y" --><!--# echo var="DATE_GMT" --><br />
+			<span style="line-height: 1px; font-size: 1px; color: #000; text-align: right; display: block;" title="Tricks are for kids!  No tricks = no fun.">1Ph j00Z (4|\| r34D 7|-|1$, j00Z R 4\/\/3$0/\/\3. 53|\|D /\/\3 4 p/\/\ 0|\| 7|-|3 (L4|\| Ph0rU/\/\ :) 1'/\/\ (Ur10U$ 70 |&lt;|\|0\/\/ \/\/|-|0 j00Z r.</span>
+
 			<script>
 				let nextOn, nextToOff, imageID = 0;
 				
