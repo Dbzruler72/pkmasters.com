@@ -268,39 +268,6 @@
 		
 		<footer>
 			<script>
-				/**
-				 * Adjusts the main content container's height so that its background image aligns with the bottom border
-				 */
-				(function alignBottomBorder() {
-					const MAIN = document.getElementById('contentContainer');
-					const ADJUSTER = document.getElementById('adjuster');
-					const BGIMG_HEIGHT = 30; // incorrect because resizing changes the height
-					let currHeight = MAIN.clientHeight; // container height before adjustment
-					let missingHeight = BGIMG_HEIGHT - (MAIN.clientHeight % BGIMG_HEIGHT);
-					
-					function adjustHeight() {
-						ADJUSTER.style.height = missingHeight + 'px';
-					}
-					
-					if (missingHeight != BGIMG_HEIGHT)
-						adjustHeight();
-
-					window.addEventListener('resize', function (){
-						/*if (missingHeight != BGIMG_HEIGHT)
-							adjustHeight();*/
-						/*currHeight = MAIN.clientHeight;
-						missingHeight = BGIMG_HEIGHT - (MAIN.clientHeight % BGIMG_HEIGHT);*/
-					});
-					setInterval(function(){
-							const ccb = document.getElementsByClassName('contentContainerBorder')[1];
-							//document.getElementsByClassName('contentContainerBorder')[1].innerHTML = '(' + (MAIN.clientHeight + 30 - (MAIN.clientHeight % 30)) + ')';
-							ccb.innerHTML = currHeight + ', ';
-							ccb.innerHTML += missingHeight + ', ';
-							ccb.innerHTML += MAIN.clientHeight + ', ';
-						}, 1000);
-				})();
-				
-
 				let nextOn, nextToOff, imageID = 0;
 				
 				/**
