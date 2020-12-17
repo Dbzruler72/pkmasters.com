@@ -102,6 +102,13 @@
 			#navContainer a:nth-child(5) { background-image: url('/media/linksOff.gif'); }
 			#navContainer a:nth-child(5):hover { background-image: url('/media/linksOn.gif'); }
 			/* <!--# endif --> */
+			.contentContainerBorder {
+				background-repeat: no-repeat;
+				background-size: contain;
+				height: 31px;
+				margin: auto;
+				max-width: var(--homeMaxWidth);
+			}
 			.colImageLink {
 				background-position: center center;
 				background-repeat: no-repeat;
@@ -173,8 +180,9 @@
 		</nav>
 		<!-- END Navigation -->
 
-		<div style="background-image: url('/media/borderTop.jpg'); background-position: center bottom; background-repeat: no-repeat; background-size: contain; height: 31px; margin: auto; max-width: var(--homeMaxWidth);"></div>
+		<div class="contentContainerBorder" style="background-image: url('/media/borderTop.jpg'); background-position: center bottom;"></div>
 		<!-- BEGIN Content -->
+		<!-- container needs to be a multiple of 30 to match lower border -->
 		<main id="contentContainer"
 			style="
 				background-image: url('/media/foreground.jpg'); background-position: center top; background-repeat: repeat-y; background-size: contain;
@@ -251,15 +259,53 @@
 					<div class="hr"></div>
 				</section>
 				<!-- END Recent Events container -->
+				<div id="adjuster"></div>
 			</div>
 			<!-- End Right column -->
 		</main>
 		<!-- END Content -->
+		<div class="contentContainerBorder" style="background-image: url('/media/borderBottom.jpg'); background-position: center top;"></div>
 		
 		<footer>
 			<script>
-				var nextOn, nextToOff, imageID = 0;
+				/**
+				 * Adjusts the main content container's height so that its background image aligns with the bottom border
+				 */
+				(function alignBottomBorder() {
+					const MAIN = document.getElementById('contentContainer');
+					const ADJUSTER = document.getElementById('adjuster');
+					const BGIMG_HEIGHT = 30; // incorrect because resizing changes the height
+					let currHeight = MAIN.clientHeight; // container height before adjustment
+					let missingHeight = BGIMG_HEIGHT - (MAIN.clientHeight % BGIMG_HEIGHT);
+					
+					function adjustHeight() {
+						ADJUSTER.style.height = missingHeight + 'px';
+					}
+					
+					if (missingHeight != BGIMG_HEIGHT)
+						adjustHeight();
+
+					window.addEventListener('resize', function (){
+						/*if (missingHeight != BGIMG_HEIGHT)
+							adjustHeight();*/
+						/*currHeight = MAIN.clientHeight;
+						missingHeight = BGIMG_HEIGHT - (MAIN.clientHeight % BGIMG_HEIGHT);*/
+					});
+					setInterval(function(){
+							const ccb = document.getElementsByClassName('contentContainerBorder')[1];
+							//document.getElementsByClassName('contentContainerBorder')[1].innerHTML = '(' + (MAIN.clientHeight + 30 - (MAIN.clientHeight % 30)) + ')';
+							ccb.innerHTML = currHeight + ', ';
+							ccb.innerHTML += missingHeight + ', ';
+							ccb.innerHTML += MAIN.clientHeight + ', ';
+						}, 1000);
+				})();
 				
+
+				let nextOn, nextToOff, imageID = 0;
+				
+				/**
+				 * Preloads the image needed for the next mouseover event
+				 */
 				function preloadNextOn() {
 					nextOn = "/media/masterJoinOn.gif?" + imageID++;
 					
@@ -267,6 +313,9 @@
 				}
 				preloadNextOn();
 
+				/**
+				 * Changes the "off" image and preloads the next image for the next mouseover event
+				 */
 				function masterJoinOn(item) {
 					item.style.backgroundImage = "url('" + nextOn + "')";
 					nextToOff = "/media/masterJoinToOff.gif?" + imageID++;
@@ -274,6 +323,9 @@
 					new Image().src = nextToOff;
 				}
 
+				/**
+				 * Changes the "on" image and preloads the next image for the next mouseover event
+				 */
 				function masterJoinToOff(item) {
 					item.style.backgroundImage = "url('" + nextToOff + "')";
 
@@ -283,13 +335,13 @@
 			<!--# if expr="${HTTP_USER_AGENT} == /Firefox/" -->
 			<!-- BEGIN Prefetch.  Some browsers, like Firefox, don't prefetch images. -->
 			<script>
-				preload = [
+				let preload = [
 					'homeCurrentOn.gif', 'joinCurrentOn.gif', 'eventsCurrentOn.gif', 'forumCurrentOn.gif', 'linksCurrentOn.gif', 'homeOn.gif', 'joinOn.gif', 'eventsOn.gif', 'forumOn.gif', 'linksOn.gif',
 					
 					'faOn.jpg', 'historyOn.jpg', 'mainOn.jpg', 'masterOfTheMonthOn.jpg'
 				];
 				
-				for (var i = 0; i < preload.length; i++)
+				for (let i = 0; i < preload.length; i++)
 					new Image().src = '/media/' + preload[i];
 			</script>
 			<!-- END Prefetch -->
