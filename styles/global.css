@@ -1,0 +1,72 @@
+body {
+	--maxWidth: 965px;
+
+	color: #FFF;
+	background-color: #000;
+	font-family: Verdana, sans-serif;
+	letter-spacing: 0.5pt;
+	line-height: 1.5;
+	margin: 0px;
+}
+body, h2 {
+	font-size: 13pt;
+}
+a {
+	color: #4E616E;
+	text-decoration: none;
+}
+a:hover { text-decoration: underline overline; }
+.hideText {
+	font-size: 0px;
+	overflow: hidden;
+	text-indent: 100%;
+}
+#navContainer > a {
+	display: block;
+	width: 193px;
+	height: 43px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+/* <!--# if expr="$currPage == home" --> */
+#navContainer a:nth-child(1) { background-image: url('/media/homeCurrentOff.gif'); }
+#navContainer a:nth-child(1):hover { background-image: url('/media/homeCurrentOn.gif'); }
+/* <!--# else --> */
+#navContainer a:nth-child(1) { background-image: url('/media/homeOff.gif'); }
+#navContainer a:nth-child(1):hover { background-image: url('/media/homeOn.gif'); }
+/* <!--# endif --> */
+#navContainer a:nth-child(2) { background-image: url('/media/joinOff.gif'); }
+#navContainer a:nth-child(2):hover { background-image: url('/media/joinOn.gif'); }
+/* <!--# if expr="$currPage == events" --> */
+#navContainer a:nth-child(3) { background-image: url('/media/eventsCurrentOff.gif'); }
+#navContainer a:nth-child(3):hover { background-image: url('/media/eventsCurrentOn.gif'); }
+/* <!--# else --> */
+#navContainer a:nth-child(3) { background-image: url('/media/eventsOff.gif'); }
+#navContainer a:nth-child(3):hover { background-image: url('/media/eventsOn.gif'); }
+/* <!--# endif --> */
+#navContainer a:nth-child(4) { background-image: url('/media/forumOff.gif'); }
+#navContainer a:nth-child(4):hover { background-image: url('/media/forumOn.gif'); }
+/* <!--# if expr="$currPage == links" --> */
+#navContainer a:nth-child(5) { background-image: url('/media/linksCurrentOff.gif'); }
+#navContainer a:nth-child(5):hover { background-image: url('/media/linksCurrentOn.gif'); }
+/* <!--# else --> */
+#navContainer a:nth-child(5) { background-image: url('/media/linksOff.gif'); }
+#navContainer a:nth-child(5):hover { background-image: url('/media/linksOn.gif'); }
+/* <!--# endif --> */
+.contentContainerBorder {
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 31px;
+	margin: auto;
+	max-width: var(--maxWidth);
+}
+.hr {
+	background-image: url('/media/separator.jpg');
+	background-size: contain;
+}
+.image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+}

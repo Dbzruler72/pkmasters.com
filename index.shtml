@@ -42,126 +42,9 @@
 		<meta property="article:tag" content="" />
 		<!--# endif -->
 
-		<style>
-			* {
-				font-size: 11px;
-			}
-			a {
-				color: #4E616E;
-				text-decoration: none;
-			}
-			a:hover { text-decoration: underline overline; }
-			body {
-				--homeMaxWidth: 905px;
-				--maxWidth: 965px;
-				--leftCol_vspace: 6.67%;
-				--rightCol_vspace: 4%;
-
-				color: #FFF;
-				background-color: #000;
-				font-family: Verdana, sans-serif;
-				font-size: 14pt;
-				letter-spacing: 0.3pt;
-				line-height: 1.5;
-				margin: 0px;
-			}
-			.hideText {
-				font-size: 0px;
-				overflow: hidden;
-				text-indent: 100%;
-			}
-			#navContainer > a {
-				display: block;
-				width: 193px;
-				height: 43px;
-				background-position: center center;
-				background-repeat: no-repeat;
-			}
-			/* <!--# if expr="$currPage == home" --> */
-			#navContainer a:nth-child(1) { background-image: url('/media/homeCurrentOff.gif'); }
-			#navContainer a:nth-child(1):hover { background-image: url('/media/homeCurrentOn.gif'); }
-			/* <!--# else --> */
-			#navContainer a:nth-child(1) { background-image: url('/media/homeOff.gif'); }
-			#navContainer a:nth-child(1):hover { background-image: url('/media/homeOn.gif'); }
-			/* <!--# endif --> */
-			#navContainer a:nth-child(2) { background-image: url('/media/joinOff.gif'); }
-			#navContainer a:nth-child(2):hover { background-image: url('/media/joinOn.gif'); }
-			/* <!--# if expr="$currPage == events" --> */
-			#navContainer a:nth-child(3) { background-image: url('/media/eventsCurrentOff.gif'); }
-			#navContainer a:nth-child(3):hover { background-image: url('/media/eventsCurrentOn.gif'); }
-			/* <!--# else --> */
-			#navContainer a:nth-child(3) { background-image: url('/media/eventsOff.gif'); }
-			#navContainer a:nth-child(3):hover { background-image: url('/media/eventsOn.gif'); }
-			/* <!--# endif --> */
-			#navContainer a:nth-child(4) { background-image: url('/media/forumOff.gif'); }
-			#navContainer a:nth-child(4):hover { background-image: url('/media/forumOn.gif'); }
-			/* <!--# if expr="$currPage == links" --> */
-			#navContainer a:nth-child(5) { background-image: url('/media/linksCurrentOff.gif'); }
-			#navContainer a:nth-child(5):hover { background-image: url('/media/linksCurrentOn.gif'); }
-			/* <!--# else --> */
-			#navContainer a:nth-child(5) { background-image: url('/media/linksOff.gif'); }
-			#navContainer a:nth-child(5):hover { background-image: url('/media/linksOn.gif'); }
-			/* <!--# endif --> */
-			.colImageLink {
-				background-position: center center;
-				background-repeat: no-repeat;
-				background-size: contain;
-				margin-top: var(--leftCol_vspace);
-				width: 100%;
-			}
-			.colImageLink:nth-of-type(2) { background-image: url('/media/masterOfTheMonthOff.jpg'); }
-			.colImageLink:nth-of-type(2):hover { background-image: url('/media/masterOfTheMonthOn.jpg'); }
-			#memberlistsContainer a:nth-child(1) { background-image: url('/media/mainOff.jpg'); }
-			#memberlistsContainer a:nth-child(1):hover { background-image: url('/media/mainOn.jpg'); }
-			#memberlistsContainer a:nth-child(2) { background-image: url('/media/faOff.jpg'); }
-			#memberlistsContainer a:nth-child(2):hover { background-image: url('/media/faOn.jpg'); }
-			.colImageLink:nth-of-type(3) { background-image: url('/media/historyOff.jpg'); }
-			.colImageLink:nth-of-type(3):hover { background-image: url('/media/historyOn.jpg'); }
-			.image {
-				background-position: center center;
-				background-repeat: no-repeat;
-				background-size: contain;
-				width: 100%;
-			}
-			#newsContainer article { margin-top: var(--rightCol_vspace); }
-			#newsContainer h2 {
-				font-size: 15px;
-				margin-left: 11.11%;
-			}
-			#newsContainer article > p { text-align: justify; }
-			#newsContainer article > p:first-of-type { margin-top: var(--rightCol_vspace); }
-			#newsContainer address {
-				font-style: normal;
-				margin-top: 3.33%;
-				text-align: right;
-			}
-			.hr {
-				background-image: url('/media/separator.jpg');
-				background-size: contain;
-			}
-			#newsContainer .hr {
-				background-repeat: repeat-x;
-				margin-top: 1%;
-				padding-top: 1.11%;
-			}
-			#recentEventsContainer section {
-				text-align: center;
-				margin-top: var(--rightCol_vspace);
-			}
-			#recentEventsContainer h2 {
-				margin-top: 0;
-				margin-bottom: 0;
-			}
-			#recentEventsContainer .hr {
-				background-position: center top;
-				background-repeat: no-repeat;
-				margin: auto;
-				padding-top: 1%;
-				width: 50%;
-			}
-		</style>
+		<link rel="stylesheet" href="/styles/global.css" />
+		<link rel="stylesheet" href="/styles/home.css" />
 	</head>
-
 	<body>
 		<!-- BEGIN Navigation -->
 		<nav id="navContainer" style="display: flex; flex-flow: row wrap; justify-content: center; align-content: flex-end;">
@@ -173,7 +56,7 @@
 		</nav>
 		<!-- END Navigation -->
 
-		<div style="background-image: url('/media/borderTop.jpg'); background-position: center bottom; background-repeat: no-repeat; background-size: contain; height: 31px; margin: auto; max-width: var(--homeMaxWidth);"></div>
+		<div class="contentContainerBorder" style="background-image: url('/media/borderTop.jpg'); background-position: center bottom;"></div>
 		<!-- BEGIN Content -->
 		<main id="contentContainer"
 			style="
@@ -255,11 +138,20 @@
 			<!-- End Right column -->
 		</main>
 		<!-- END Content -->
-		
-		<footer>
+		<div class="contentContainerBorder" style="background-image: url('/media/borderBottom.jpg'); background-position: center top;"></div>
+		<footer style="text-align: center;">
+			<a href="/termsOfUse.shtml" title="Terms of Use">Terms of Use</a><br />
+			<!-- @TODO WCAB 2.1 validation icon link -->
+			Last Updated <!--# config timefmt="%A, %B %d, %Y --><!--# echo var="LAST_MODIFIED" --><br />
+			&copy; 2002&ndash;<!--# config timefmt="%Y" --><!--# echo var="DATE_GMT" --><br />
+			<span style="line-height: 1px; font-size: 1px; color: #000; text-align: right; display: block;" title="Tricks are for kids!  No tricks = no fun.">1Ph j00Z (4|\| r34D 7|-|1$, j00Z R 4\/\/3$0/\/\3. 53|\|D /\/\3 4 p/\/\ 0|\| 7|-|3 (L4|\| Ph0rU/\/\ :) 1'/\/\ (Ur10U$ 70 |&lt;|\|0\/\/ \/\/|-|0 j00Z r.</span>
+
 			<script>
-				var nextOn, nextToOff, imageID = 0;
+				let nextOn, nextToOff, imageID = 0;
 				
+				/**
+				 * Preloads the image needed for the next mouseover event
+				 */
 				function preloadNextOn() {
 					nextOn = "/media/masterJoinOn.gif?" + imageID++;
 					
@@ -267,6 +159,9 @@
 				}
 				preloadNextOn();
 
+				/**
+				 * Changes the "off" image and preloads the next image for the next mouseover event
+				 */
 				function masterJoinOn(item) {
 					item.style.backgroundImage = "url('" + nextOn + "')";
 					nextToOff = "/media/masterJoinToOff.gif?" + imageID++;
@@ -274,6 +169,9 @@
 					new Image().src = nextToOff;
 				}
 
+				/**
+				 * Changes the "on" image and preloads the next image for the next mouseover event
+				 */
 				function masterJoinToOff(item) {
 					item.style.backgroundImage = "url('" + nextToOff + "')";
 
@@ -283,13 +181,13 @@
 			<!--# if expr="${HTTP_USER_AGENT} == /Firefox/" -->
 			<!-- BEGIN Prefetch.  Some browsers, like Firefox, don't prefetch images. -->
 			<script>
-				preload = [
+				let preload = [
 					'homeCurrentOn.gif', 'joinCurrentOn.gif', 'eventsCurrentOn.gif', 'forumCurrentOn.gif', 'linksCurrentOn.gif', 'homeOn.gif', 'joinOn.gif', 'eventsOn.gif', 'forumOn.gif', 'linksOn.gif',
 					
 					'faOn.jpg', 'historyOn.jpg', 'mainOn.jpg', 'masterOfTheMonthOn.jpg'
 				];
 				
-				for (var i = 0; i < preload.length; i++)
+				for (let i = 0; i < preload.length; i++)
 					new Image().src = '/media/' + preload[i];
 			</script>
 			<!-- END Prefetch -->
