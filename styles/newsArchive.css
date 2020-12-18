@@ -1,3 +1,16 @@
-article h1 {
-	font-size: 1em;
+article > section {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
 }
+article h1 { font-size: 1em; }
+article > section > div:first-of-type {
+	width: 25px;
+	flex-shrink: 0.5;
+}
+article > section > section:first-of-type {
+	flex-shrink: 1.5;
+	text-align: right;
+}
+article > section > section a[rel=author] { font-weight: bold; }
+article > section > section time { font-weight: bold; }

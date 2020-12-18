@@ -54,11 +54,12 @@
 				line-height: 1.5;
 				margin: 0px;
 			}
-			a {
+			a[href] {
 				color: #4E616E;
 				text-decoration: none;
 			}
-			a:hover { text-decoration: underline overline; }
+			a[href]:hover { text-decoration: underline overline; }
+			address { font-style: normal; display: inline; }
 			h1 {
 				font-size: 1.5em;
 				margin: 0;
@@ -149,50 +150,16 @@
 		<!-- BEGIN Content -->
 		<main id="contentContainer">
 			<article>
-				<section style="display: flex; flex-flow: row wrap; justify-content: space-between;">
+				<section>
 					<h1>Temporary Multi-Clanning Policy Change</h1>
-					<address><time datetime="2020">2020</time></address>
+					<div></div>
+					<section>
+						<address>Posted by <a rel="author">Dbzruler72</a></address> on <time pubdate datetime="2009-11-12">Thursday, November 12, 2009</time>
+					</section>
 				</section>
-
-				<p>Test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test</p>
-				<p>Second paragraph test test test test test test test test test test test test test test test test</p>
-				<address>Posted by Dbzruler72 on <time datetime="YYYY-MM-DD HH:MM">date</time></address>
+				<p>In the beginning stages of rebuilding, our multi-clanning policy has temporarily changed.  From now until December 31, 2009, applicants in other F2P PKing clans may join.  Once 2010 begins, applicants in other F2P PKing clans will be rejected.  Members in the clan who joined before 2010 will retain full membership until he or she leaves the clan whereupon if he or she reapplied, the application would be treated normally.</p>
+				<p>Don't miss the chance.  <a href="http://pkmasters.com/forum/viewtopic.php?f=4&t=303">Apply before 2010 to take advantage of this.</a></p>
 			</article>
+			----
 		</main>
 		<!-- END Content -->
-		<div class="contentContainerBorder" style="background-image: url('/media/borderBottom.jpg'); background-position: center top;"></div>
-
-<!--#include virtual="header.html" -->
-<!-- BEGIN NEWS ARCHIVE --> <table class="main" cellspacing="0" cellpadding="0" id="newsArchive">
-<tr>
-<td>
-<script type="text/javascript">
-<!--
-for (i = 2009; i >= 2004; i--)
-{
-document.write('<a style="margin-right: 13px;" class="url" onclick="hideNews(); news' + i + '.style.display = \'\';" onmouseover="localOnMouseOver(this);" onmouseout="localOnMouseOut(this);">' + i + '</a>');
-}
--->
-</script>
-<div class="news" id="news2009">
-<script type="text/javascript" src="news2009.js"></script>
-</div> <!-- news2009 -->
-<div style="display: none;" class="news" id="news2008">
-<script type="text/javascript" src="news2008.js"></script>
-</div> <!-- news2008 -->
-<div style="display: none;" class="news" id="news2007">
-<script type="text/javascript" src="news2007.js"></script>
-</div> <!-- news2007 -->
-<div style="display: none;" class="news" id="news2006">
-<script type="text/javascript" src="news2006.js"></script>
-</div> <!-- news2006 -->
-<div style="display: none;" class="news" id="news2005">
-<script type="text/javascript" src="news2005.js"></script>
-</div> <!-- news2005 -->
-<div style="display: none;" class="news" id="news2004">
-<script type="text/javascript" src="news2004.js"></script>
-</div> <!-- news2004 -->
-</td>
-</tr>
-<!-- END NEWS ARCHIVE --> </table>
-<!--#include virtual="footer.html" -->
