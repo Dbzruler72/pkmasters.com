@@ -67,7 +67,7 @@
 				style="
 					--colWidth: 300px;
 					display: flex; align-items: flex-start; flex-basis: var(--colWidth); flex-flow: column nowrap;
-					max-width: var(--colWidth);">
+					max-width: var(--colWidth); padding-right: 1%;">
 				<a class="colImageLink hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" onmouseover="masterJoinOn(this);" onmouseout="masterJoinToOff(this);" style="background-image: url('/media/masterJoinOff.jpg'); margin-top: 0px; padding-top: calc(calc(200 / 300) * 100%);" title="Become a master.  Join.">Join  *-P.K.Masters-*</a>
 				<a class="colImageLink hideText" href="/forum/memberlist.php?mode=viewprofile&u=253" style="padding-top: 50%;" title="Master of the Month: hold myHeart">Master of the Month: hold myHeart</a>
 				<div class="image hideText" style="background-image: url('/media/memberlist.jpg'); margin-top: var(--leftCol_vspace); padding-top: calc(calc(26 / 300) * 100%);" title="Memberlist">Memberlist</div>

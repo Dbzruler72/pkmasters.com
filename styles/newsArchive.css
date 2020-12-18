@@ -3,12 +3,10 @@ article > section {
 	flex-flow: row nowrap;
 	justify-content: space-between;
 }
+article header { padding-right: 30px; }
 article h1 {
 	margin-bottom: 1em;
-	font-size: 1em; }
-article > section > div:first-of-type {
-	width: 30px;
-	flex-shrink: 0.5;
+	font-size: 1em;
 }
 article footer {
 	flex-shrink: 1.5;
