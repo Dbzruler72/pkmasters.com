@@ -1,10 +1,17 @@
 body {
-	--homeMaxWidth: 905px;
+	--maxWidth: 905px;
 	--leftCol_vspace: 6.67%;
 	--rightCol_vspace: 4%;
 }
 .contentContainerBorder {
-	max-width: var(--homeMaxWidth);
+	max-width: var(--maxWidth);
+}
+#contentContainer {
+	display: flex;
+	align-items:flex-start;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	max-width: var(--maxWidth);
 }
 .colImageLink {
 	background-position: center center;

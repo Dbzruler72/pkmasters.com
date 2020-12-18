@@ -105,6 +105,14 @@
 				margin: auto;
 				max-width: var(--maxWidth);
 			}
+			#contentContainer {
+				background-image: url('/media/foreground.jpg');
+				background-position: center top;
+				background-repeat: repeat-y;
+				background-size: contain;
+				margin: auto;
+				max-width: var(--maxWidth);
+			}
 			.hr {
 				background-image: url('/media/separator.jpg');
 				background-size: contain;
@@ -118,6 +126,8 @@
 		</style>
 		<!--# if expr="$currPage == home" -->
 		<link rel="stylesheet" href="/styles/home.css" />
+		<!--# elif expr=$currPage == newsArchive" -->
+		<link rel="stylesheet" href="/styles/newsArchive.css" />
 		<!--# endif -->
 	</head>
 	<body>
@@ -132,11 +142,7 @@
 		<!-- END Navigation -->
 		<div class="contentContainerBorder" style="background-image: url('/media/borderTop.jpg'); background-position: center bottom;"></div>
 		<!-- BEGIN Content -->
-		<main id="contentContainer"
-			style="
-				background-image: url('/media/foreground.jpg'); background-position: center top; background-repeat: repeat-y; background-size: contain;
-				display: flex; align-items: flex-start; flex-flow: row nowrap; justify-content: space-between;
-				margin: auto; max-width: var(--homeMaxWidth);">
+		<main id="contentContainer">
 			<!-- BEGIN Left column -->
 			<div
 				style="
