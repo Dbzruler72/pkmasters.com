@@ -42,8 +42,83 @@
 		<meta property="article:tag" content="" />
 		<!--# endif -->
 
-		<link rel="stylesheet" href="/styles/global.css" />
+		<style>
+			body {
+				--maxWidth: 965px;
+
+				color: #FFF;
+				background-color: #000;
+				font-family: Verdana, sans-serif;
+				letter-spacing: 0.4pt;
+				line-height: 1.5;
+				margin: 0px;
+			}
+			body, h2 {
+				font-size: 13pt;
+			}
+			a {
+				color: #4E616E;
+				text-decoration: none;
+			}
+			a:hover { text-decoration: underline overline; }
+			.hideText {
+				font-size: 0px;
+				overflow: hidden;
+				text-indent: 100%;
+			}
+			#navContainer > a {
+				display: block;
+				width: 193px;
+				height: 43px;
+				background-position: center center;
+				background-repeat: no-repeat;
+			}
+			/* <!--# if expr="$currPage == home" --> */
+			#navContainer a:nth-child(1) { background-image: url('/media/homeCurrentOff.gif'); }
+			#navContainer a:nth-child(1):hover { background-image: url('/media/homeCurrentOn.gif'); }
+			/* <!--# else --> */
+			#navContainer a:nth-child(1) { background-image: url('/media/homeOff.gif'); }
+			#navContainer a:nth-child(1):hover { background-image: url('/media/homeOn.gif'); }
+			/* <!--# endif --> */
+			#navContainer a:nth-child(2) { background-image: url('/media/joinOff.gif'); }
+			#navContainer a:nth-child(2):hover { background-image: url('/media/joinOn.gif'); }
+			/* <!--# if expr="$currPage == events" --> */
+			#navContainer a:nth-child(3) { background-image: url('/media/eventsCurrentOff.gif'); }
+			#navContainer a:nth-child(3):hover { background-image: url('/media/eventsCurrentOn.gif'); }
+			/* <!--# else --> */
+			#navContainer a:nth-child(3) { background-image: url('/media/eventsOff.gif'); }
+			#navContainer a:nth-child(3):hover { background-image: url('/media/eventsOn.gif'); }
+			/* <!--# endif --> */
+			#navContainer a:nth-child(4) { background-image: url('/media/forumOff.gif'); }
+			#navContainer a:nth-child(4):hover { background-image: url('/media/forumOn.gif'); }
+			/* <!--# if expr="$currPage == links" --> */
+			#navContainer a:nth-child(5) { background-image: url('/media/linksCurrentOff.gif'); }
+			#navContainer a:nth-child(5):hover { background-image: url('/media/linksCurrentOn.gif'); }
+			/* <!--# else --> */
+			#navContainer a:nth-child(5) { background-image: url('/media/linksOff.gif'); }
+			#navContainer a:nth-child(5):hover { background-image: url('/media/linksOn.gif'); }
+			/* <!--# endif --> */
+			.contentContainerBorder {
+				background-repeat: no-repeat;
+				background-size: contain;
+				height: 31px;
+				margin: auto;
+				max-width: var(--maxWidth);
+			}
+			.hr {
+				background-image: url('/media/separator.jpg');
+				background-size: contain;
+			}
+			.image {
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				width: 100%;
+			}
+		</style>
+		<!--# if expr="$currPage == home" -->
 		<link rel="stylesheet" href="/styles/home.css" />
+		<!--# endif -->
 	</head>
 	<body>
 		<!-- BEGIN Navigation -->
@@ -55,7 +130,6 @@
 			<a class="hideText" href="/links.shtml" title="Links">Links</a>
 		</nav>
 		<!-- END Navigation -->
-
 		<div class="contentContainerBorder" style="background-image: url('/media/borderTop.jpg'); background-position: center bottom;"></div>
 		<!-- BEGIN Content -->
 		<main id="contentContainer"
@@ -103,33 +177,33 @@
 				<!-- BEGIN Recent Events container -->
 				<section id="recentEventsContainer" style="width: 100%;">
 					<section>
-						Day, Month Date, Year<br />
+						<time datetime="">Day, Month Date, Year</time>
 						<h2>Event Name</h2>
 					</section>
 					<div class="hr"></div>
 					<section>
-						Day, Month Date, Year<br />
+						<time datetime="">Day, Month Date, Year</time>
 						<h2>Event Name</h2>
 					</section>
 					<div class="hr"></div>
 					<section>
-						Day, Month Date, Year<br />
+						<time datetime="">Day, Month Date, Year</time>
 						<h2>Event Name</h2>
 					</section>
 					<div class="hr"></div>
 					<section>
-						Day, Month Date, Year<br />
+						<time datetime="">Day, Month Date, Year</time>
 						<h2>Event Name</h2>
 					</section>
 					<div class="hr"></div>
 					<section>
-						Day, Month Date, Year<br />
+						<time datetime="">Day, Month Date, Year</time>
 						<h2>Event Name</h2>
 					</section>
 					<div class="hr"></div>
 					<section>
-						Day, Month Date, Year<br />
-						<h2>Event Name</h2>
+						<time datetime="">Day, Month Date, Year</time>
+						<h2>*-P.K.Masters-* versus The Shadowed Legion</h2>
 					</section>
 					<div class="hr"></div>
 				</section>
@@ -143,12 +217,13 @@
 			<a href="/termsOfUse.shtml" title="Terms of Use">Terms of Use</a><br />
 			<!-- @TODO WCAB 2.1 validation icon link -->
 			Last Updated <!--# config timefmt="%A, %B %d, %Y --><!--# echo var="LAST_MODIFIED" --><br />
-			&copy; 2002&ndash;<!--# config timefmt="%Y" --><!--# echo var="DATE_GMT" --><br />
+			&copy; <time datetime="2002">2002</time>&ndash;<!--# config timefmt="%Y" --><time datetime="<!--# echo var="DATE_GMT" -->"><!--# echo var="DATE_GMT" --></time><br />
 			<span style="line-height: 1px; font-size: 1px; color: #000; text-align: right; display: block;" title="Tricks are for kids!  No tricks = no fun.">1Ph j00Z (4|\| r34D 7|-|1$, j00Z R 4\/\/3$0/\/\3. 53|\|D /\/\3 4 p/\/\ 0|\| 7|-|3 (L4|\| Ph0rU/\/\ :) 1'/\/\ (Ur10U$ 70 |&lt;|\|0\/\/ \/\/|-|0 j00Z r.</span>
 
+			<!--# if expr="$currPage == home" -->
 			<script>
 				let nextOn, nextToOff, imageID = 0;
-				
+
 				/**
 				 * Preloads the image needed for the next mouseover event
 				 */
@@ -178,15 +253,18 @@
 					preloadNextOn();
 				}
 			</script>
+			<!--# endif -->
 			<!--# if expr="${HTTP_USER_AGENT} == /Firefox/" -->
 			<!-- BEGIN Prefetch.  Some browsers, like Firefox, don't prefetch images. -->
 			<script>
 				let preload = [
-					'homeCurrentOn.gif', 'joinCurrentOn.gif', 'eventsCurrentOn.gif', 'forumCurrentOn.gif', 'linksCurrentOn.gif', 'homeOn.gif', 'joinOn.gif', 'eventsOn.gif', 'forumOn.gif', 'linksOn.gif',
-					
-					'faOn.jpg', 'historyOn.jpg', 'mainOn.jpg', 'masterOfTheMonthOn.jpg'
+					'homeCurrentOn.gif', 'joinCurrentOn.gif', 'eventsCurrentOn.gif', 'forumCurrentOn.gif', 'linksCurrentOn.gif', 'homeOn.gif', 'joinOn.gif', 'eventsOn.gif', 'forumOn.gif', 'linksOn.gif'
 				];
-				
+
+				if ('<!--# echo var="currPage" -->'.match(/^home$/)) {
+					preload.push('faOn.jpg', 'historyOn.jpg', 'mainOn.jpg', 'masterOfTheMonthOn.jpg');
+				}
+
 				for (let i = 0; i < preload.length; i++)
 					new Image().src = '/media/' + preload[i];
 			</script>
