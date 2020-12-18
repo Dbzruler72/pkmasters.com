@@ -16,7 +16,7 @@ Work in progress.  See the [dev branch](../../tree/dev) for the latest update.
 
 
 # Dependencies
-* Support for server-side includes.  Examples: Apache, Nginx
+* Support for server-side includes.  Examples: Apache, nginx
 
 
 # License

@@ -1,52 +1,52 @@
-<!--# set var="title" value="News Archive |  *-P.K.Masters-*  clan" -->
-<!--# set var="description" value="The RuneScape PKing clan, led by Dbzruler72, that reigned from 2002 to 2010." -->
-<!--# set var="currPage" value="newsArchive" -->
-<!--# set var="isArticle" value="false" -->
+<!--#set var="title" value="News Archive |  *-P.K.Masters-*  clan" -->
+<!--#set var="description" value="The RuneScape PKing clan, led by Dbzruler72, that reigned from 2002 to 2010." -->
+<!--#set var="currPage" value="newsArchive" -->
+<!--#set var="isArticle" value="false" -->
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
-		<title><!--# echo var="title" --></title>
-		<meta name="description" content="<!--# echo var="description" -->" />
+		<title><!--#echo var="title" --></title>
+		<meta name="description" content="<!--#echo var="description" -->" />
 		<meta name="author" content="Dbzruler72" />
 		<meta name="copyright" content="Dbzruler72" />
 		<meta name="generator" content="Notepad2, Visual Studio Code" />
 		<meta name="rating" content="general" />
-		<!--# if expr="$currPage == events" -->
+		<!--#if expr="$currPage == events" -->
 		<meta name="robots" content="follow, index" />
-		<!--# else -->
+		<!--#else -->
 		<meta name="robots" content="follow, index, noimageindex" />
-		<!--# endif -->
+		<!--#endif -->
 		
-		<meta property="og:title" content="<!--# echo var="title" -->" />
-		<meta property="og:description" content="<!--# echo var="description" -->" />
+		<meta property="og:title" content="<!--#echo var="title" -->" />
+		<meta property="og:description" content="<!--#echo var="description" -->" />
 		<meta property="og:type" content="website" />
 		<meta property="og:image" content="/media/banner.gif" />
 		<meta property="og:url" content="https://pkmasters.com/" />
 		<meta property="og:locale" content="en_US" />
-		<!--# if expr="$currPage != home" -->
+		<!--#if expr="$currPage != home" -->
 		<meta property="og:site_name" content="*-P.K.Masters-*  clan" />
-		<!--# endif -->
-		<meta property="twitter:title" content="<!--# echo var="title" -->" />
-		<meta property="twitter:description" content="<!--# echo var="description" -->" />
+		<!--#endif -->
+		<meta property="twitter:title" content="<!--#echo var="title" -->" />
+		<meta property="twitter:description" content="<!--#echo var="description" -->" />
 		<meta property="twitter:image" content="/media/banner.gif" />
 		
-		<!--# if expr="$isArticle == true" -->
+		<!--#if expr="$isArticle == true" -->
 		<meta property="article:author" content="" />
 		<meta property="article:expiration_time" content="" />
-		<meta property="article:modified_time" content="<!--# echo var="LAST_MODIFIED" --> />
+		<meta property="article:modified_time" content="<!--#echo var="LAST_MODIFIED" --> />
 		<meta property="article:published_time" content="" />
 		<meta property="article:section" content="" />
 		<meta property="article:tag" content="" />
-		<!--# endif -->
+		<!--#endif -->
 
 		<link rel="stylesheet" href="/styles/global.css" /> <!-- @TEMP -->
-		<!--# if expr="$currPage == home" -->
-		<!--# elif expr="$currPage == newsArchive" -->
+		<!--#if expr="$currPage == home" -->
+		<!--#elif expr="$currPage == newsArchive" -->
 		<link rel="stylesheet" href="/styles/newsArchive.css" />
-		<!--# endif -->
+		<!--#endif -->
 	</head>
 	<body>
 		<!-- BEGIN Navigation -->
