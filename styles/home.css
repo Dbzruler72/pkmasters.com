@@ -34,7 +34,7 @@ body {
 }
 #newsContainer article > p { text-align: justify; }
 #newsContainer article > p:first-of-type { margin-top: var(--rightCol_vspace); }
-#newsContainer section { display: block; text-align: right; }
+#newsContainer footer { text-align: right; }
 #newsContainer address {
 	margin-top: 3.33%;
 	text-align: right;

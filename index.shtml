@@ -54,12 +54,14 @@
 				line-height: 1.5;
 				margin: 0px;
 			}
-			a[href] {
+			a {
 				color: #4E616E;
 				text-decoration: none;
 			}
-			a[href]:hover { text-decoration: underline overline; }
-			address { font-style: normal; display: inline; }
+			a:hover { text-decoration: underline overline; }
+			address {
+				font-style: normal;
+				display: inline; }
 			h1 {
 				font-size: 1.5em;
 				margin: 0;
@@ -181,12 +183,14 @@
 				<!-- BEGIN News container -->
 				<section id="newsContainer" style="margin: auto; width: 90%;">
 					<article>
-						<h2>Title</h2>
+						<header>
+							<h2>Title</h2>
+						</header>
 						<p>Test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test</p>
 						<p>Second paragraph test test test test test test test test test test test test test test test test</p>
-						<section>
-							<address>Posted by <a rel="author">Dbzruler72</a></address> on <time pubdate datetime="YYYY-MM-DD HH:MM">date</time>
-						</section>
+						<footer>
+							<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="YYYY-MM-DD HH:MM">date</time>
+						</footer>
 					</article>
 					<div class="hr"></div>
 					<div style="text-align: right;"><a href="/newsArchive.shtml" title="News Archive">News Archive</a></div>
@@ -232,7 +236,7 @@
 		</main>
 		<!-- END Content -->
 		<div class="contentContainerBorder" style="background-image: url('/media/borderBottom.jpg'); background-position: center top;"></div>
-		<footer style="text-align: center;">
+		<footer role="contentinfo" style="text-align: center;">
 			<a href="/termsOfUse.shtml" title="Terms of Use">Terms of Use</a><br />
 			<!-- @TODO WCAB 2.1 validation icon link -->
 			Last Updated <!--# config timefmt="%A, %B %d, %Y --><!--# echo var="LAST_MODIFIED" --><br />

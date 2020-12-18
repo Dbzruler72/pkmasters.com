@@ -54,12 +54,14 @@
 				line-height: 1.5;
 				margin: 0px;
 			}
-			a[href] {
+			a {
 				color: #4E616E;
 				text-decoration: none;
 			}
-			a[href]:hover { text-decoration: underline overline; }
-			address { font-style: normal; display: inline; }
+			a:hover { text-decoration: underline overline; }
+			address {
+				font-style: normal;
+				display: inline; }
 			h1 {
 				font-size: 1.5em;
 				margin: 0;
@@ -155,15 +157,16 @@
 		<main id="contentContainer">
 			<article>
 				<section>
-					<h1>Temporary Multi-Clanning Policy Change</h1>
+					<header>
+						<h1>Temporary Multi-Clanning Policy Change</h1>
+					</header>
 					<div></div>
-					<section>
-						<address>Posted by <a rel="author">Dbzruler72</a></address> on <time pubdate datetime="2009-11-12">Thursday, November 12, 2009</time>
-					</section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2009-11-12">Thursday, November 12, 2009</time>
+					</footer>
 				</section>
 				<p>In the beginning stages of rebuilding, our multi-clanning policy has temporarily changed.  From now until December 31, 2009, applicants in other F2P PKing clans may join.  Once 2010 begins, applicants in other F2P PKing clans will be rejected.  Members in the clan who joined before 2010 will retain full membership until he or she leaves the clan whereupon if he or she reapplied, the application would be treated normally.</p>
 				<p>Don't miss the chance.  <a href="http://pkmasters.com/forum/viewtopic.php?f=4&t=303">Apply before 2010 to take advantage of this.</a></p>
 			</article>
-			----
 		</main>
 		<!-- END Content -->

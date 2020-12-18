@@ -10,9 +10,9 @@ article > section > div:first-of-type {
 	width: 30px;
 	flex-shrink: 0.5;
 }
-article > section > section:first-of-type {
+article footer {
 	flex-shrink: 1.5;
 	text-align: right;
 }
-article > section > section a[rel=author] { font-weight: bold; }
-article > section > section time { font-weight: bold; }
+article footer a[rel=author] { font-weight: bold; }
+article footer time { font-weight: bold; }
