@@ -54,11 +54,20 @@
 				line-height: 1.5;
 				margin: 0px;
 			}
-			a {
+			a[href] {
 				color: #4E616E;
 				text-decoration: none;
 			}
-			a:hover { text-decoration: underline overline; }
+			a[href]:hover { text-decoration: underline overline; }
+			address { font-style: normal; display: inline; }
+			h1 {
+				font-size: 1.5em;
+				margin: 0;
+			}
+			h2 {
+				font-size: 1.25em;
+				margin: 0;
+			}
 			.hideText {
 				font-size: 0px;
 				overflow: hidden;
@@ -111,8 +120,6 @@
 				margin: auto;
 				max-width: var(--maxWidth);
 			}
-			h1 { margin: 0; }
-			h2 { margin: 0; }
 			.hr {
 				background-image: url('/media/separator.jpg');
 				background-size: contain;
@@ -173,7 +180,9 @@
 						<h2>Title</h2>
 						<p>Test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test</p>
 						<p>Second paragraph test test test test test test test test test test test test test test test test</p>
-						<address>Posted by Dbzruler72 on <time datetime="YYYY-MM-DD HH:MM">date</time></address>
+						<section>
+							<address>Posted by <a rel="author">Dbzruler72</a></address> on <time pubdate datetime="YYYY-MM-DD HH:MM">date</time>
+						</section>
 					</article>
 					<div class="hr"></div>
 					<div style="text-align: right;"><a href="/newsArchive.shtml" title="News Archive">News Archive</a></div>

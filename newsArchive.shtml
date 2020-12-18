@@ -59,6 +59,14 @@
 				text-decoration: none;
 			}
 			a:hover { text-decoration: underline overline; }
+			h1 {
+				font-size: 1.5em;
+				margin: 0;
+			}
+			h2 {
+				font-size: 1.25em;
+				margin: 0;
+			}
 			.hideText {
 				font-size: 0px;
 				overflow: hidden;
@@ -111,8 +119,6 @@
 				margin: auto;
 				max-width: var(--maxWidth);
 			}
-			h1 { margin: 0; }
-			h2 { margin: 0; }
 			.hr {
 				background-image: url('/media/separator.jpg');
 				background-size: contain;
@@ -142,8 +148,16 @@
 		<div class="contentContainerBorder" style="background-image: url('/media/borderTop.jpg'); background-position: center bottom;"></div>
 		<!-- BEGIN Content -->
 		<main id="contentContainer">
-			<h1><time datetime="2020">2020</time></h1>
-			
+			<article>
+				<section style="display: flex; flex-flow: row wrap; justify-content: space-between;">
+					<h1>Temporary Multi-Clanning Policy Change</h1>
+					<address><time datetime="2020">2020</time></address>
+				</section>
+
+				<p>Test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test</p>
+				<p>Second paragraph test test test test test test test test test test test test test test test test</p>
+				<address>Posted by Dbzruler72 on <time datetime="YYYY-MM-DD HH:MM">date</time></address>
+			</article>
 		</main>
 		<!-- END Content -->
 		<div class="contentContainerBorder" style="background-image: url('/media/borderBottom.jpg'); background-position: center top;"></div>
