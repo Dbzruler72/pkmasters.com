@@ -49,12 +49,10 @@
 				color: #FFF;
 				background-color: #000;
 				font-family: Verdana, sans-serif;
-				letter-spacing: 0.4pt;
+				font-size: 13pt;
+				letter-spacing: 0.3pt;
 				line-height: 1.5;
 				margin: 0px;
-			}
-			body, h2 {
-				font-size: 13pt;
 			}
 			a {
 				color: #4E616E;
@@ -105,6 +103,16 @@
 				margin: auto;
 				max-width: var(--maxWidth);
 			}
+			#contentContainer {
+				background-image: url('/media/foreground.jpg');
+				background-position: center top;
+				background-repeat: repeat-y;
+				background-size: contain;
+				margin: auto;
+				max-width: var(--maxWidth);
+			}
+			h1 { margin: 0; }
+			h2 { margin: 0; }
 			.hr {
 				background-image: url('/media/separator.jpg');
 				background-size: contain;
@@ -117,7 +125,8 @@
 			}
 		</style>
 		<!--# if expr="$currPage == home" -->
-		<link rel="stylesheet" href="/styles/home.css" />
+		<!--# elif expr="$currPage == newsArchive" -->
+		<link rel="stylesheet" href="/styles/newsArchive.css" />
 		<!--# endif -->
 	</head>
 	<body>
@@ -133,7 +142,8 @@
 		<div class="contentContainerBorder" style="background-image: url('/media/borderTop.jpg'); background-position: center bottom;"></div>
 		<!-- BEGIN Content -->
 		<main id="contentContainer">
-
+			<h1><time datetime="2020">2020</time></h1>
+			
 		</main>
 		<!-- END Content -->
 		<div class="contentContainerBorder" style="background-image: url('/media/borderBottom.jpg'); background-position: center top;"></div>

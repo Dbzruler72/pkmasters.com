@@ -8,7 +8,7 @@ body {
 }
 #contentContainer {
 	display: flex;
-	align-items:flex-start;
+	align-items: flex-start;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	max-width: var(--maxWidth);
@@ -30,7 +30,6 @@ body {
 .colImageLink:nth-of-type(3):hover { background-image: url('/media/historyOn.jpg'); }
 #newsContainer article { margin-top: var(--rightCol_vspace); }
 #newsContainer h2 {
-	font-size: 1.5em;
 	margin-left: 11.11%;
 }
 #newsContainer article > p { text-align: justify; }
@@ -50,6 +49,7 @@ body {
 	margin-top: var(--rightCol_vspace);
 }
 #recentEventsContainer h2 {
+	font-size: 1em;
 	margin-top: 0;
 	margin-bottom: 0;
 }
