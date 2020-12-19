@@ -30,7 +30,6 @@ p {
 	margin-bottom: 0.75rem;
 }
 .hideText {
-	font-size: 0px;
 	overflow: hidden;
 	text-indent: 100%;
 }
@@ -80,6 +79,7 @@ p {
 	background-size: contain;
 	margin: auto;
 	max-width: var(--maxWidth);
+	overflow: hidden;
 }
 .hr {
 	background-image: url('/media/separator.jpg');
