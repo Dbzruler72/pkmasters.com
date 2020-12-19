@@ -21,7 +21,7 @@ article h1 {
 	font-size: 1rem;
 }
 article p {
-	text-indent: 5.18%;
+	text-indent: var(--pIndent);
 }
 article footer {
 	flex-shrink: 1.5;

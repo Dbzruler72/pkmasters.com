@@ -1,6 +1,7 @@
 html { font-size: 12.5pt; }
 body {
 	--maxWidth: 965px;
+	--pIndent: 5.18%;
 
 	color: #FFF;
 	background-color: #000;

@@ -1,6 +1,6 @@
 <!--#set var="title" value="2008 News |  *-P.K.Masters-*  clan" -->
 <!--#set var="description" value="Clan news from 2008" -->
-<!--#set var="currPage" value="newsArchive2008" -->
+<!--#set var="currPage" value="newsArchive" -->
 <!--#set var="isArticle" value="false" -->
 
 <!DOCTYPE html>
