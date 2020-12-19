@@ -1,49 +1,53 @@
-<!--# set var="title" value="*-P.K.Masters-*  clan" -->
-<!--# set var="description" value="The RuneScape PKing clan, led by Dbzruler72, that reigned from 2002 to 2010." -->
-<!--# set var="currPage" value="home" -->
-<!--# set var="isArticle" value="false" -->
+<!--#set var="title" value="*-P.K.Masters-*  clan" -->
+<!--#set var="description" value="The RuneScape PKing clan, led by Dbzruler72, that reigned from 2002 to 2010." -->
+<!--#set var="currPage" value="home" -->
+<!--#set var="isArticle" value="false" -->
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
-		<title><!--# echo var="title" --></title>
-		<meta name="description" content="<!--# echo var="description" -->" />
+		<title><!--#echo var="title" --></title>
+		<meta name="description" content="<!--#echo var="description" -->" />
 		<meta name="author" content="Dbzruler72" />
 		<meta name="copyright" content="Dbzruler72" />
 		<meta name="generator" content="Notepad2, Visual Studio Code" />
 		<meta name="rating" content="general" />
-		<!--# if expr="$currPage == events" -->
+		<!--#if expr="$currPage == events" -->
 		<meta name="robots" content="follow, index" />
-		<!--# else -->
+		<!--#else -->
 		<meta name="robots" content="follow, index, noimageindex" />
-		<!--# endif -->
+		<!--#endif -->
 		
-		<meta property="og:title" content="<!--# echo var="title" -->" />
-		<meta property="og:description" content="<!--# echo var="description" -->" />
+		<meta property="og:title" content="<!--#echo var="title" -->" />
+		<meta property="og:description" content="<!--#echo var="description" -->" />
 		<meta property="og:type" content="website" />
 		<meta property="og:image" content="/media/banner.gif" />
 		<meta property="og:url" content="https://pkmasters.com/" />
 		<meta property="og:locale" content="en_US" />
-		<!--# if expr="$currPage != home" -->
+		<!--#if expr="$currPage != home" -->
 		<meta property="og:site_name" content="*-P.K.Masters-*  clan" />
-		<!--# endif -->
-		<meta property="twitter:title" content="<!--# echo var="title" -->" />
-		<meta property="twitter:description" content="<!--# echo var="description" -->" />
+		<!--#endif -->
+		<meta property="twitter:title" content="<!--#echo var="title" -->" />
+		<meta property="twitter:description" content="<!--#echo var="description" -->" />
 		<meta property="twitter:image" content="/media/banner.gif" />
 		
-		<!--# if expr="$isArticle == true" -->
+		<!--#if expr="$isArticle == true" -->
 		<meta property="article:author" content="" />
 		<meta property="article:expiration_time" content="" />
-		<meta property="article:modified_time" content="<!--# echo var="LAST_MODIFIED" --> />
+		<meta property="article:modified_time" content="<!--#echo var="LAST_MODIFIED" --> />
 		<meta property="article:published_time" content="" />
 		<meta property="article:section" content="" />
 		<meta property="article:tag" content="" />
-		<!--# endif -->
+		<!--#endif -->
 
-		<link rel="stylesheet" href="/styles/global.css" />
+		<link rel="stylesheet" href="/styles/global.css" /> <!-- @TEMP -->
+		<!--#if expr="$currPage == home" -->
 		<link rel="stylesheet" href="/styles/home.css" />
+		<!--#elif expr="$currPage == newsArchive" -->
+		<link rel="stylesheet" href="/styles/newsArchive.css" />
+		<!--#endif -->
 	</head>
 	<body>
 		<!-- BEGIN Navigation -->
@@ -55,20 +59,15 @@
 			<a class="hideText" href="/links.shtml" title="Links">Links</a>
 		</nav>
 		<!-- END Navigation -->
-
 		<div class="contentContainerBorder" style="background-image: url('/media/borderTop.jpg'); background-position: center bottom;"></div>
 		<!-- BEGIN Content -->
-		<main id="contentContainer"
-			style="
-				background-image: url('/media/foreground.jpg'); background-position: center top; background-repeat: repeat-y; background-size: contain;
-				display: flex; align-items: flex-start; flex-flow: row nowrap; justify-content: space-between;
-				margin: auto; max-width: var(--homeMaxWidth);">
+		<main id="contentContainer">
 			<!-- BEGIN Left column -->
 			<div
 				style="
 					--colWidth: 300px;
 					display: flex; align-items: flex-start; flex-basis: var(--colWidth); flex-flow: column nowrap;
-					max-width: var(--colWidth);">
+					max-width: var(--colWidth); padding-right: 1%;">
 				<a class="colImageLink hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" onmouseover="masterJoinOn(this);" onmouseout="masterJoinToOff(this);" style="background-image: url('/media/masterJoinOff.jpg'); margin-top: 0px; padding-top: calc(calc(200 / 300) * 100%);" title="Become a master.  Join.">Join  *-P.K.Masters-*</a>
 				<a class="colImageLink hideText" href="/forum/memberlist.php?mode=viewprofile&u=253" style="padding-top: 50%;" title="Master of the Month: hold myHeart">Master of the Month: hold myHeart</a>
 				<div class="image hideText" style="background-image: url('/media/memberlist.jpg'); margin-top: var(--leftCol_vspace); padding-top: calc(calc(26 / 300) * 100%);" title="Memberlist">Memberlist</div>
@@ -90,46 +89,50 @@
 				<!-- BEGIN News container -->
 				<section id="newsContainer" style="margin: auto; width: 90%;">
 					<article>
-						<h2>Title</h2>
+						<header>
+							<h2>Title</h2>
+						</header>
 						<p>Test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test</p>
 						<p>Second paragraph test test test test test test test test test test test test test test test test</p>
-						<address>Posted by Dbzruler72 on <time datetime="YYYY-MM-DD HH:MM">date</time></address>
+						<footer>
+							<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="YYYY-MM-DD HH:MM">date</time>
+						</footer>
 					</article>
 					<div class="hr"></div>
-					<div style="text-align: right;"><a href="/newsArchive.shtml" title="News Archive">News Archive</a></div>
+					<div style="text-align: right;"><a href="/newsArchive.shtml">News Archive</a></div>
 				</section>
 				<!-- END News container -->
 				<h1 class="image hideText" style="background-image: url('/media/recentEvents.jpg'); margin-top: calc(var(--rightCol_vspace) * 2); padding-top: var(--headingImageHeight);" title="Recent Events">Recent Events</h1>
 				<!-- BEGIN Recent Events container -->
 				<section id="recentEventsContainer" style="width: 100%;">
 					<section>
-						Day, Month Date, Year<br />
+						<time datetime="">Day, Month Date, Year</time>
 						<h2>Event Name</h2>
 					</section>
 					<div class="hr"></div>
 					<section>
-						Day, Month Date, Year<br />
+						<time datetime="">Day, Month Date, Year</time>
 						<h2>Event Name</h2>
 					</section>
 					<div class="hr"></div>
 					<section>
-						Day, Month Date, Year<br />
+						<time datetime="">Day, Month Date, Year</time>
 						<h2>Event Name</h2>
 					</section>
 					<div class="hr"></div>
 					<section>
-						Day, Month Date, Year<br />
+						<time datetime="">Day, Month Date, Year</time>
 						<h2>Event Name</h2>
 					</section>
 					<div class="hr"></div>
 					<section>
-						Day, Month Date, Year<br />
+						<time datetime="">Day, Month Date, Year</time>
 						<h2>Event Name</h2>
 					</section>
 					<div class="hr"></div>
 					<section>
-						Day, Month Date, Year<br />
-						<h2>Event Name</h2>
+						<time datetime="">Day, Month Date, Year</time>
+						<h2>*-P.K.Masters-* versus The Shadowed Legion</h2>
 					</section>
 					<div class="hr"></div>
 				</section>
@@ -139,16 +142,17 @@
 		</main>
 		<!-- END Content -->
 		<div class="contentContainerBorder" style="background-image: url('/media/borderBottom.jpg'); background-position: center top;"></div>
-		<footer style="text-align: center;">
-			<a href="/termsOfUse.shtml" title="Terms of Use">Terms of Use</a><br />
-			<!-- @TODO WCAB 2.1 validation icon link -->
-			Last Updated <!--# config timefmt="%A, %B %d, %Y --><!--# echo var="LAST_MODIFIED" --><br />
-			&copy; 2002&ndash;<!--# config timefmt="%Y" --><!--# echo var="DATE_GMT" --><br />
+		<footer role="contentinfo" style="text-align: center;">
+			<a href="/termsOfUse.shtml">Terms of Use</a><br />
+			<!-- @TODO WCAG 2.1 validation icon link -->
+			Last Updated <!--#config timefmt="%A, %B %d, %Y --><!--#echo var="LAST_MODIFIED" --><br />
+			&copy; <time datetime="2002">2002</time>&ndash;<!--#config timefmt="%Y" --><time datetime="<!--#echo var="DATE_GMT" -->"><!--#echo var="DATE_GMT" --></time><br />
 			<span style="line-height: 1px; font-size: 1px; color: #000; text-align: right; display: block;" title="Tricks are for kids!  No tricks = no fun.">1Ph j00Z (4|\| r34D 7|-|1$, j00Z R 4\/\/3$0/\/\3. 53|\|D /\/\3 4 p/\/\ 0|\| 7|-|3 (L4|\| Ph0rU/\/\ :) 1'/\/\ (Ur10U$ 70 |&lt;|\|0\/\/ \/\/|-|0 j00Z r.</span>
 
+			<!--#if expr="$currPage == home" -->
 			<script>
 				let nextOn, nextToOff, imageID = 0;
-				
+
 				/**
 				 * Preloads the image needed for the next mouseover event
 				 */
@@ -178,20 +182,23 @@
 					preloadNextOn();
 				}
 			</script>
-			<!--# if expr="${HTTP_USER_AGENT} == /Firefox/" -->
+			<!--#endif -->
+			<!--#if expr="${HTTP_USER_AGENT} == /Firefox/" -->
 			<!-- BEGIN Prefetch.  Some browsers, like Firefox, don't prefetch images. -->
 			<script>
 				let preload = [
-					'homeCurrentOn.gif', 'joinCurrentOn.gif', 'eventsCurrentOn.gif', 'forumCurrentOn.gif', 'linksCurrentOn.gif', 'homeOn.gif', 'joinOn.gif', 'eventsOn.gif', 'forumOn.gif', 'linksOn.gif',
-					
-					'faOn.jpg', 'historyOn.jpg', 'mainOn.jpg', 'masterOfTheMonthOn.jpg'
+					'homeCurrentOn.gif', 'joinCurrentOn.gif', 'eventsCurrentOn.gif', 'forumCurrentOn.gif', 'linksCurrentOn.gif', 'homeOn.gif', 'joinOn.gif', 'eventsOn.gif', 'forumOn.gif', 'linksOn.gif'
 				];
-				
+
+				if ('<!--#echo var="currPage" -->'.match(/^home$/)) {
+					preload.push('faOn.jpg', 'historyOn.jpg', 'mainOn.jpg', 'masterOfTheMonthOn.jpg');
+				}
+
 				for (let i = 0; i < preload.length; i++)
 					new Image().src = '/media/' + preload[i];
 			</script>
 			<!-- END Prefetch -->
-			<!--# endif -->
+			<!--#endif -->
 		</footer>
 	</body>
 </html>

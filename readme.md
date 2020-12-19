@@ -2,7 +2,9 @@
 
 
 # \*-P.K.Masters-\*  website
-After closing the clan in 2010, I left the website and forum largely untouched, aside from minor forum updates on the back end.  Over the past 10 years, I've felt particularly bad that the website Events page sat contentless.  I had discovered inconsistent behavior in Firefox and Internet Explorer that crashed the browsers, so I removed the content altogether, hoping to fix the page one day.  That day has come!  Old  \*-P.K.M-\*  members deserve a working website to remember the old days.
+After closing the clan in 2010, I left the website and forum largely untouched, aside from minor forum updates on the back end.  Over the past 10 years, I've felt particularly bad that the website Events page sat contentless.  I had discovered inconsistent behavior in Firefox and Internet Explorer that crashed the browsers, so I removed the content altogether, hoping to fix the page one day.
+
+That day has come!  Old  \*-P.K.M-\*  members deserve a working website to remember the old days.
 
 
 # Plans
@@ -10,11 +12,24 @@ I'm rewriting the entire website while preserving the original aesthetic, bad de
 
 
 # Current Status
-Work in progress.  See the [dev branch](../../tree/dev) for the latest update.
+Done
+- Home page
+- News archive
+
+Work in progress
+- Links
+
+To be done
+- Events
+- History
+- Tiberian Sun
+- Terms
+
+See the [dev branch](../../tree/dev) for the latest update.
 
 
 # Dependencies
-* Support for server-side includes.  Examples: Apache, Nginx
+* Support for server-side includes.  Examples: Apache, nginx
 
 
 # License

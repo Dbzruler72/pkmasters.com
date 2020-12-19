@@ -1,0 +1,17 @@
+article:not(:first-of-type) { margin-top: 3rem;  }
+article > section {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+article header { padding-right: 30px; }
+article h1 {
+	font-size: 1rem;
+}
+article footer {
+	flex-shrink: 1.5;
+	text-align: right;
+}
+article footer a[rel=author] { font-weight: bold; }
+article footer time { font-weight: bold; }
