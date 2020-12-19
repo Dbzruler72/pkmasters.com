@@ -18,7 +18,7 @@ Done
 - Links
 
 Work in progress
-- Terms
+- Terms of Use
 
 To be done
 - Events
