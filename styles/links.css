@@ -1,0 +1,14 @@
+#contentContainer p:nth-of-type(odd) img { float: left; }
+#contentContainer p:nth-of-type(even) img { float: right; }
+p {
+	text-align: justify;
+	vertical-align: text-top;
+}
+p:first-of-type { margin-top: 0; }
+.hr {
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-top: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}

@@ -1,19 +1,75 @@
-<!--#include virtual="header.html" -->
-<!-- BEGIN LINKS --> <table class="main" cellspacing="0" cellpadding="0" id="links">
-<tr>
-<td>
-<div class="link"><a onclick="window.open('http://tip.it/runescape/');"><img src="tipIt.gif" style="border: none; float: left;" alt="Rune Tips" /></a>Widely credited as the first ever RuneScape fansite, Tip.It offers skill and quest guides, maps, calculators, databases, and of course, tips.  Originally founded by STEEL Corporation Inc. Dmonik, BlueRose13x, Lightning, Starlude, Xentia, Kibble, Rodrigo, DOC IRON 9, Sir Beachy, Stud6900, Hitman X, and Silverion in 2001.</div>
-<div class="linkSeparator"></div>
-<div class="link"><a onclick="window.open('http://zybez.net/');"><img src="zybez.png" style="border: none; float: right;" alt="Zybez Runescape Help" /></a>Zybez was created in 2001 to provide tips, tricks, and general help.  As quoted from the Zybez website, their "main goal since day one has been to focus on quality and innovation."</div>
-<div class="linkSeparator"></div>
-<div class="link"><a onclick="window.open('http://worldplayonline.com/');"><img src="worldPlayOnline.png" style="border: none; float: left;" alt="World Play Online" /></a>As quoted from WPO's website: "World Play Online was produced with only 1 single goal. That goal is to be the hybrid nitch between most fansites and our belief that the gamers should get most of the glory for the games. We are here to bring live information from the gaming world along with updated information on teams that play our favorite games. We have put forth hundreds of man hours to take this site to the next generation of technology for our audience. We believe in what we do and we will become one of the Top Gaming Sites Online!"</div>
-<div class="linkSeparator"></div>
-<div class="link"><a onclick="window.open('http://opera.com/');"><img src="opera.png" style="border: none; float: right;" alt="Opera" /></a>Both a web browser and internet suite, Opera is known for its strict adherence to web standards and innovations now imitated by many popular browsers such as Firefox, Internet Explorer, Safari, and Google Chrome.  As well as web browsing, Opera can send and receive e-mail via its built-in e-mail client, use IRC, download via BitTorrent, read web feeds, and allow almost full customization of its interface.  Despite its speed and rife and diverse functionality, Opera continues to hold less than three percent of total desktop browser market share.<br />
-<br />
-For complete compatibility of this website, use this browser.</div>
-<div class="linkSeparator"></div>
-<div class="link"><a onclick="window.open('http://tsm8.com/');"><img src="tsm8.png" style="border: none; float: left;" alt="Free TeamSpeak Channels" /></a>Tsm8 provides our free TeamSpeak channel.  To receive one of your own, simply request and obey the rules.</div>
-</td>
-</tr>
-<!-- END LINKS --> </table>
-<!--#include virtual="footer.html" -->
+<!--#set var="title" value="*-P.K.Masters-*  clan" -->
+<!--#set var="description" value="The RuneScape and Tiberian Sun clan, led by Dbzruler72, that prevailed from 2002 to 2010." -->
+<!--#set var="currPage" value="links" -->
+<!--#set var="isArticle" value="false" -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
+		<title><!--#echo var="title" --></title>
+		<meta name="description" content="<!--#echo var="description" -->" />
+		<meta name="author" content="Dbzruler72" />
+		<meta name="copyright" content="Dbzruler72" />
+		<meta name="generator" content="Notepad2, Visual Studio Code" />
+		<meta name="rating" content="general" />
+		<!--#if expr="$currPage == events" -->
+		<meta name="robots" content="follow, index" />
+		<!--#else -->
+		<meta name="robots" content="follow, index, noimageindex" />
+		<!--#endif -->
+		
+		<meta property="og:title" content="<!--#echo var="title" -->" />
+		<meta property="og:description" content="<!--#echo var="description" -->" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="/media/banner.gif" />
+		<meta property="og:url" content="https://pkmasters.com/" />
+		<meta property="og:locale" content="en_US" />
+		<!--#if expr="$currPage != home" -->
+		<meta property="og:site_name" content="*-P.K.Masters-*  clan" />
+		<!--#endif -->
+		<meta property="twitter:title" content="<!--#echo var="title" -->" />
+		<meta property="twitter:description" content="<!--#echo var="description" -->" />
+		<meta property="twitter:image" content="/media/banner.gif" />
+		
+		<!--#if expr="$isArticle == true" -->
+		<meta property="article:author" content="" />
+		<meta property="article:expiration_time" content="" />
+		<meta property="article:modified_time" content="<!--#echo var="LAST_MODIFIED" --> />
+		<meta property="article:published_time" content="" />
+		<meta property="article:section" content="" />
+		<meta property="article:tag" content="" />
+		<!--#endif -->
+
+		<link rel="stylesheet" href="/styles/global.css" /> <!-- @TEMP -->
+		<!--#if expr="$currPage == home" -->
+		<!--#elif expr="$currPage == newsArchive" -->
+		<!--#elif expr="$currPage == links" -->
+		<link rel="stylesheet" href="/styles/links.css" />
+		<!--#endif -->
+	</head>
+	<body>
+		<!-- BEGIN Navigation -->
+		<nav id="navContainer" style="display: flex; flex-flow: row wrap; justify-content: center; align-content: flex-end;">
+			<a class="hideText" href="/" title="Home">Home</a>
+			<a class="hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" title="Join">Join</a>
+			<a class="hideText" href="/events.shtml" title="Events">Events</a>
+			<a class="hideText" href="/forum/" title="Forum">Forum</a>
+			<a class="hideText" href="/links.shtml" title="Links">Links</a>
+		</nav>
+		<!-- END Navigation -->
+		<div class="contentContainerBorder" style="background-image: url('/media/borderTop.jpg'); background-position: center bottom;"></div>
+		<!-- BEGIN Content -->
+		<main id="contentContainer">
+			<p><a href="http://tip.it/runescape/"><img alt="Rune Tips" src="/media/tipIt.gif" /></a>Widely credited as the first ever RuneScape fansite, Tip.It offers skill and quest guides, maps, calculators, databases, and of course, tips.  Originally founded by STEEL Corporation Inc. Dmonik, BlueRose13x, Lightning, Starlude, Xentia, Kibble, Rodrigo, DOC IRON 9, Sir Beachy, Stud6900, Hitman X, and Silverion in 2001.</p>
+			<div class="hr"></div>
+			<p><a href="http://zybez.net/"><img alt="Zybez Runescape Help" src="/media/zybez.png" /></a>Zybez was created in 2001 to provide tips, tricks, and general help.  As quoted from the Zybez website, their "main goal since day one has been to focus on quality and innovation."</p>
+			<div class="hr"></div>
+			<p><a href="http://worldplayonline.com/"><img alt="World Play Online" src="/media/worldPlayOnline.png" /></a>As quoted from WPO's website: "World Play Online was produced with only 1 single goal. That goal is to be the hybrid nitch between most fansites and our belief that the gamers should get most of the glory for the games. We are here to bring live information from the gaming world along with updated information on teams that play our favorite games. We have put forth hundreds of man hours to take this site to the next generation of technology for our audience. We believe in what we do and we will become one of the Top Gaming Sites Online!"</p>
+			<div class="hr"></div>
+			<p><a href="http://opera.com/"><img alt="Opera" src="/media/opera.png" /></a>Both a web browser and internet suite, Opera is known for its strict adherence to web standards and innovations now imitated by many popular browsers such as Firefox, Internet Explorer, Safari, and Google Chrome.  As well as web browsing, Opera can send and receive e-mail via its built-in e-mail client, use IRC, download via BitTorrent, read web feeds, and allow almost full customization of its interface.  Despite its speed and rife and diverse functionality, Opera continues to hold less than three percent of total desktop browser market share.</p>
+			<div class="hr"></div>
+			<p><a href="http://tsm8.com/"><img alt="Free TeamSpeak Channels" src="/media/tsm8.png" /></a>Tsm8 provides our free TeamSpeak channel.  To receive one of your own, simply request and obey the rules.</p>
+		</main>
+		<!-- END Content -->
