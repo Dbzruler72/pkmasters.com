@@ -9,7 +9,7 @@ li {
 	display: inline;
 	margin-right: 13px;
 }
-article { margin-top: 3rem; }
+article { margin-top: 2rem; }
 article > section {
 	display: flex;
 	flex-flow: row nowrap;
@@ -26,3 +26,8 @@ article footer {
 }
 article footer a[rel=author] { font-weight: bold; }
 article footer time { font-weight: bold; }
+.hr {
+	
+	background-repeat: no-repeat;
+	padding-top: 5px;
+}
