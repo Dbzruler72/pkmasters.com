@@ -1,0 +1,272 @@
+<!--#set var="title" value="News Archive |  *-P.K.Masters-*  clan" -->
+<!--#set var="description" value="All published clan news" -->
+<!--#set var="currPage" value="newsArchive" -->
+<!--#set var="isArticle" value="false" -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
+		<title><!--#echo var="title" --></title>
+		<meta name="description" content="<!--#echo var="description" -->" />
+		<meta name="author" content="Dbzruler72" />
+		<meta name="copyright" content="Dbzruler72" />
+		<meta name="generator" content="Notepad2, Visual Studio Code" />
+		<meta name="rating" content="general" />
+		<!--#if expr="$currPage == events" -->
+		<meta name="robots" content="follow, index" />
+		<!--#else -->
+		<meta name="robots" content="follow, index, noimageindex" />
+		<!--#endif -->
+		
+		<meta property="og:title" content="<!--#echo var="title" -->" />
+		<meta property="og:description" content="<!--#echo var="description" -->" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="/media/banner.gif" />
+		<meta property="og:url" content="https://pkmasters.com/" />
+		<meta property="og:locale" content="en_US" />
+		<!--#if expr="$currPage != home" -->
+		<meta property="og:site_name" content="*-P.K.Masters-*  clan" />
+		<!--#endif -->
+		<meta property="twitter:title" content="<!--#echo var="title" -->" />
+		<meta property="twitter:description" content="<!--#echo var="description" -->" />
+		<meta property="twitter:image" content="/media/banner.gif" />
+		
+		<!--#if expr="$isArticle == true" -->
+		<meta property="article:author" content="" />
+		<meta property="article:expiration_time" content="" />
+		<meta property="article:modified_time" content="<!--#echo var="LAST_MODIFIED" --> />
+		<meta property="article:published_time" content="" />
+		<meta property="article:section" content="" />
+		<meta property="article:tag" content="" />
+		<!--#endif -->
+
+		<link rel="stylesheet" href="/styles/global.css" /> <!-- @TEMP -->
+		<!--#if expr="$currPage == home" -->
+		<!--#elif expr="$currPage == newsArchive" -->
+		<link rel="stylesheet" href="/styles/newsArchive.css" />
+		<!--#endif -->
+	</head>
+	<body>
+		<!-- BEGIN Navigation -->
+		<nav id="navContainer" style="display: flex; flex-flow: row wrap; justify-content: center; align-content: flex-end;">
+			<a class="hideText" href="/" title="Home">Home</a>
+			<a class="hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" title="Join">Join</a>
+			<a class="hideText" href="/events.shtml" title="Events">Events</a>
+			<a class="hideText" href="/forum/" title="Forum">Forum</a>
+			<a class="hideText" href="/links.shtml" title="Links">Links</a>
+		</nav>
+		<!-- END Navigation -->
+		<div class="contentContainerBorder" style="background-image: url('/media/borderTop.jpg'); background-position: center bottom;"></div>
+		<!-- BEGIN Content -->
+		<main id="contentContainer">
+			<!-- @TODO news year template -->
+			<ul>
+				<li><a href="/newsArchive.shtml">2020</a></li>
+				<li><a href="/news/2009.shtml">2009</a></li>
+				<li><a href="/news/2008.shtml">2008</a></li>
+				<li><a href="/news/2007.shtml">2007</a></li>
+				<li><a href="/news/2006.shtml">2006</a></li>
+				<li><a href="/news/2005.shtml">2005</a></li>
+				<li><a href="/news/2004.shtml">2004</a></li>
+			</ul>
+			<article>
+				<section>
+					<header>
+						<h1>Event Update</h1>
+					</header>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-12-31">Monday, December 31, 2007</time>
+					</footer>
+				</section>
+				<p>The lack of updates for the past two months has come to a halt.  Today, almost all of the events since the last update have been added to the events page in the RuneScape section.  This includes six miniwar wins &amp; three holiday-related events.</p>
+			</article>
+			<article>
+				<section>
+					<header>
+						<h1>Site Makeover</h1>
+					</header>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-10-26">Friday, October 26, 2007</time>
+					</footer>
+				</section>
+				<p>Tons of changes have been implemented over the clan website.  Most noticeably is the extreme change of background color.  There has been a graphical &amp; navigation change; graphics have been improved &amp; the navigation should now be clearer.  The polls page has been removed &amp; a poll has been moved to the homepage, which you can see in the bottom right corner.</div><div class="paragraph">The history pages of the parkour &amp; RuneScape sections have been <i>completely</i> revised.  Check those out if you want to read a much better version (with even more information).</p>
+				<p>Many new events have been added to the RuneScape section, so have fun with those.  The Picture of the Month &amp; Theme of the Month for RuneScape will be updated in November, as there won't be any time to update them until then.  Have fun with the new look!</p>
+			</article>
+			<article>
+				<section>
+					<header>
+						<h1>Website Down</h1>
+					</header>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-10-12">Friday, October 12, 2007</time>
+					</footer>
+				</section>
+				<p>Many have noticed that the website has not been loading well or not loading at all for the past three weeks.  That problems was resolved last week, but you may still experience slow loading.  Almost all the links will be unavailable until there's enough time to fix them.</p>
+			</article>
+			<article>
+				<section>
+					<header>
+						<h1>Event Updates</h1>
+					</header>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-09-22">Saturday, September 22, 2007</time>
+					</footer>
+				</section>
+				<p>It has been quite a while since the last update.  To make up for this, I've added mostly all the events in from August &amp; September.  Unfortunately, not all September events were recorded properly, so they will not be added.</p>
+			</article>
+			<article>
+				<section>
+					<header>
+						<h1>Militos Deci versus Tal Shiar Alliance</h1>
+					</header>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-07-23">Monday, July 23, 2007</time>
+					</footer>
+				</section>
+				<p>Militos Deci &amp; Tal Shiar Alliance went to war yesterday.  Militos Deci invited  *-P.K.Masters-*  to help.  The war was crashed, &amp; later decided as a draw.  All the pictures, information, &amp; video are on the events page in the RuneScape section.</p>
+			</article>
+			<article>
+				<section>
+					<header>
+						<h1>War &amp; Theme of the Month</h1>
+					</header>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-07-18">Wednesday, July 18, 2007</time>
+					</footer>
+				</section>
+				<p>After a week or so of preparation, we warred Saradomin's Army yesterday.  It was crashed, but find out who did on the events page in the RuneScape section.  The war's pictures, attendance, notes, video, etc. are all in the RuneScape section too.</p>
+				<p>This month's Theme of the Month had been voted on earlier this month, but I haven't been able to post up the story until today.  In this Theme of the Month story, u will find that a new type of players arise very early in RuneScape.</p>
+			</article>
+			<article>
+				<section>
+					<header>
+						<h1>Abridged Azure</h1>
+					</header>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-06-23">Saturday, June 23, 2007</time>
+					</footer>
+				</section>
+				<p>June's Theme of the Month event took place today.  What a blue war it was.  To see all pictures, the video, &amp; other information check out the events page in the RuneScape section.</p>
+			</article>
+			<article>
+				<section>
+					<header>
+						<h1>Speed &amp; Security</h1>
+					</header>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-06-12">Tuesday, June 12, 2007</time>
+					</footer>
+				</section>
+				<p>In yesterday's update, I mentioned the website having a huge update that would make loading time very small.  As u navigate, the pages should load much faster than before.  U will see that the effects on images &amp; some links are gone--this is part of the update.  Navigation has been optimized for 56k connections &amp; slow processors.</p>
+				<p>Better security has also been implemented.  In the Terms of Use, it clearly states JavaScript must be enabled at all times while on the  *-P.K.Masters-*  website.  Apparently, some user don't think the Terms of Use apply to them.  Therefore, the website is now under heavy security.  So don't try to pull anymore tricks!</p>
+				<p>The Theme of the Month archives in the RuneScape section have been modified to specificlally fit the years.  I hope that should shrug off some confusion.  U will also notice that the Recent Updates section (the one u are reading now) has been changed a little.  This will attract more attention to the latest updates.</p>
+				<p>On a final note, if any problems occur on the website at all, please <a href="">report the bug to me</a>.  U may find that some links are broken or are directed to the wrong place.</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-06-11">Monday, June 11, 2007</time>
+					</footer>
+				</section>
+				<p>Quite a few updates are being added in today.  To start, a planned PK Run-In against a team lead by Tmmc2 happened Saturday, June 9, 2007.  Check out the interesting details on the events page in the RuneScape section.  CTET hosted another event: Summer Day.  Hot it was, but we cooled off with a Water Balloon Fight to end our exciting day.  The information, pictures, &amp; videos of those two events can be found on the events page in the RuneScape section.  In other news, over the next week there will be a huge update which will increase loading time significantly.  This should fix the problems some users have been having.</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-06-04">Monday, June 4, 2007</time>
+					</footer>
+				</section>
+				<p>Tip.It's very own CTET hosted Clan Pyro-Mania!  *-P.K.Masters-*  was one of the four clans that entered.  Did we end up standing in the spotlight or standing a step down from the winning clan congratulating them?  Check out the event on the events page in the RuneScape section.</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-05-26">Saturday, May 26, 2007</time>
+					</footer>
+				</section>
+				<p>An official PK Trip was held earlier today.  Why not check it out on the events page in the RuneScape section?</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-05-21">Monday, May 21, 2007</time>
+					</footer>
+				</section>
+				<p>The second annual Multi Site Steel War took place Saturday, May 19, 2007.  *-P.K.M-* of course attended, supporting Tip.It.  RuneScape Community ended up winning.  This event's information &amp; pictures have been added to the events page in the RuneScape section.</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-05-16">Wednesday, May 16, 2007</time>
+					</footer>
+				</section>
+				<p>We've been having a little fun lately, &amp; Mickyb13 ended up submitting a pretty funny, edited picture for this month's Picture of the Month.  Anxious to read this month's Theme of the Month story?  It's currently being developed because it's actually two in one.  Never has this happened before, but it is planned to have a nice twist.</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-04-29">Sunday, April 29, 2007</time>
+					</footer>
+				</section>
+				<p>An unofficial PKtrip last week led to a successful turnout.  We ran into TeamSweden.  Then "Rf" logged in &amp; ended it.  Later that day, we won a PK Run-In with Clan Hopeless which scattered after five or so minutes after two casualties.  Yesterday, the Theme of the Month event was the Two-Handed war.  Before that, we held a funeral for an ex-clan member: Justrs.  All information on both events can be found on the events page in the RuneScape section.</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-04-17">Tuesday, April 17, 2007</time>
+					</footer>
+				</section>
+				<p>First of all, since a security update a while ago, many users have suddenly had problems viewing the website.  They would get the "404 error" page.  This should now be fixed.  The three pictures that give access to the three sections of the website have also been updated.  They no longer have that annoying feeling from the switching of text.  Finally, the history page in the Parkour/Free Running section has been added.  I had actually typed the history a few months back but never had time to add it to the website.  Enjoy reading my Parkour history!</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-04-09">Monday, April 9, 2007</time>
+					</footer>
+				</section>
+				<p>April's Picture of the Month has been updated.  The Theme of the Month for April has also been updated.  What lurks at night in Falador?  Check out April's Theme of the Month to find out.</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-03-15">Thursday, March 15, 2007</time>
+					</footer>
+				</section>
+				<p>After the mysterious new section of the clan website, everyone will now know what it's all about.  The first  *-P.K.Masters-*  Parkour &amp; Free Running video has been released.  Go check out the events page on the Parkour/Free Running section.  Enjoy!</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-03-10">Saturday, March 10, 2007</time>
+					</footer>
+				</section>
+				<p>There will be no Theme of the Month this month, we've been having problems &amp; are now recovering.  Nonetheless, I have found time to make navigation a bit easier &amp; faster.  The events page for RuneScape are now categorized by years.  This should reduce the loading time significantly &amp; the page requires less scrolling.  The news archives on the homepage have also been reordered by years.  Also, an official PKtrip has been added to the RuneScape events page.  Wondering where February's Theme of the Month event is?  I actually haven't been able to get to it yet, so it will be added soon.  Stated in previous news entries, Pictures of the Month will only be clan-related from now on.  So this month's Picture of the Month has been added.  There has also been a change to the clan members/allies/enemies page.  It's getting to be a hassle updating the page over &amp; over again each time a new member joins.  So, the page will just have to be the  *-P.K.Masters-*  RSHSC page.</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-02-24">Sunday, February 24, 2007</time>
+					</footer>
+				</section>
+				<p>Sorry it's late, but I have finally found time to put up February's Theme of the Month story.  Enjoy!  The  *-P.K.Masters-*  chat page is a bit different now.  U should no longer have to download SwiftSwitch or mIRC to enter the chat.  All u have to do now is put in the correct chat channel &amp; screen name &amp; u can chat with the clan.</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-02-01">Thursday, February 1, 2007</time>
+					</footer>
+				</section>
+				<p>I've been pretty busy for the last month, so I'm sorry there haven't been any new updated.  Let's start with an announcement about the Picture of the Month.  This is the last month that non-clan-related pictures will be the Picture of the Month.  Starting March, the Picture of the Month will be clan-related.  Three new events have been added to the events page on the RuneScape section of the clan website.  "ra" accounts are back so for those "ra" fans, enjoy!  For those who have been keeping up with RuneScape clan news, u may have heard that the OoC <span style="font-size: 11px;">(Order of Cabbage)</span> had reached two million cabbage.  Because of their great achievement, January's Theme of the Month was cabbage.  Speaking of the Theme of the Month, voting is still underway for February's Theme of the Month.  The story will come out soon.</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2007-01-01">Monday, January 1, 2007</time>
+					</footer>
+				</section>
+				<p>Time to start the new year off right.  Liked the Pre-Halloween PKtrip?  We decided to have a Post-Christmas PKtrip.  This PKtrip had less clan members attending than usual, but it was successful.  The  *-P.K.Masters-*  Post-Christmas PKtrip is now on the events page of the RuneScape section of the clan website.  We had a few run-ins so enjoy those.  The pics, video, &amp; rest of info is on there as well.  January's Theme of the Month story has been added to the Theme of the Month page of the RuneScape section of the website.  Have a jolly <i>green</i> time reading it!</p>
+			</article>
+		</main>
+		<!-- END Content -->

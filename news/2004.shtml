@@ -1,0 +1,261 @@
+<!--#set var="title" value="News Archive |  *-P.K.Masters-*  clan" -->
+<!--#set var="description" value="All published clan news" -->
+<!--#set var="currPage" value="newsArchive" -->
+<!--#set var="isArticle" value="false" -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
+		<title><!--#echo var="title" --></title>
+		<meta name="description" content="<!--#echo var="description" -->" />
+		<meta name="author" content="Dbzruler72" />
+		<meta name="copyright" content="Dbzruler72" />
+		<meta name="generator" content="Notepad2, Visual Studio Code" />
+		<meta name="rating" content="general" />
+		<!--#if expr="$currPage == events" -->
+		<meta name="robots" content="follow, index" />
+		<!--#else -->
+		<meta name="robots" content="follow, index, noimageindex" />
+		<!--#endif -->
+		
+		<meta property="og:title" content="<!--#echo var="title" -->" />
+		<meta property="og:description" content="<!--#echo var="description" -->" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="/media/banner.gif" />
+		<meta property="og:url" content="https://pkmasters.com/" />
+		<meta property="og:locale" content="en_US" />
+		<!--#if expr="$currPage != home" -->
+		<meta property="og:site_name" content="*-P.K.Masters-*  clan" />
+		<!--#endif -->
+		<meta property="twitter:title" content="<!--#echo var="title" -->" />
+		<meta property="twitter:description" content="<!--#echo var="description" -->" />
+		<meta property="twitter:image" content="/media/banner.gif" />
+		
+		<!--#if expr="$isArticle == true" -->
+		<meta property="article:author" content="" />
+		<meta property="article:expiration_time" content="" />
+		<meta property="article:modified_time" content="<!--#echo var="LAST_MODIFIED" --> />
+		<meta property="article:published_time" content="" />
+		<meta property="article:section" content="" />
+		<meta property="article:tag" content="" />
+		<!--#endif -->
+
+		<link rel="stylesheet" href="/styles/global.css" /> <!-- @TEMP -->
+		<!--#if expr="$currPage == home" -->
+		<!--#elif expr="$currPage == newsArchive" -->
+		<link rel="stylesheet" href="/styles/newsArchive.css" />
+		<!--#endif -->
+	</head>
+	<body>
+		<!-- BEGIN Navigation -->
+		<nav id="navContainer" style="display: flex; flex-flow: row wrap; justify-content: center; align-content: flex-end;">
+			<a class="hideText" href="/" title="Home">Home</a>
+			<a class="hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" title="Join">Join</a>
+			<a class="hideText" href="/events.shtml" title="Events">Events</a>
+			<a class="hideText" href="/forum/" title="Forum">Forum</a>
+			<a class="hideText" href="/links.shtml" title="Links">Links</a>
+		</nav>
+		<!-- END Navigation -->
+		<div class="contentContainerBorder" style="background-image: url('/media/borderTop.jpg'); background-position: center bottom;"></div>
+		<!-- BEGIN Content -->
+		<main id="contentContainer">
+			<!-- @TODO news year template -->
+			<ul>
+				<li><a href="/newsArchive.shtml">2020</a></li>
+				<li><a href="/news/2009.shtml">2009</a></li>
+				<li><a href="/news/2008.shtml">2008</a></li>
+				<li><a href="/news/2007.shtml">2007</a></li>
+				<li><a href="/news/2006.shtml">2006</a></li>
+				<li><a href="/news/2005.shtml">2005</a></li>
+				<li><a href="/news/2004.shtml">2004</a></li>
+			</ul>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-12-26">12-26-04</time>
+					</footer>
+				</section>
+				<p>now dat christmas is ovr i took off da bakrounds of all da pages &amp; put them bak 2 their regular 1.i also changd da forums bak 2 their regular color cuz christmas is ovr</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-12-23">12-23-04</time>
+					</footer>
+				</section>
+				<p>i just changd da backround of da homepage 2&nbsp;for it&nbsp;2 hav&nbsp;a lil christmas look since its almost christmas.i also changd da forum colors 2 make it a lil mor christmasy</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-12-18">12-18-04</time>
+					</footer>
+				</section>
+				<p>finally!!!!!<img alt="Exclamation mark" src="/media/freewebs/exclamation.gif" /><img alt="Exclamation mark" src="/media/freewebs/exclamation.gif" />real forums!!!!!!!!!!!!!!!!!i put up our permanent forums!!!so now u can hav topics &amp; everything.just clik on da forums link &amp; register.&nbsp;<img alt="Big grin smiley" src="/media/freewebs/biggrin.gif" />yay finally..............im so happy<img alt="Big grin smiley" src="/media/freewebs/biggrin.gif" /><img alt="Raspberry smiley" src="/media/freewebs/tongue.gif" /><img alt="Laughing smiley" src="/media/freewebs/laugh.gif" /><img alt="Cool sunglasses smiley" src="/media/freewebs/cool.gif" /></p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-12-14">12-14-04</time>
+					</footer>
+				</section>
+				<p>i added&nbsp;neils new TS/F sn &amp; vampchica &amp; bob 0 new AIM sn</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-12-06">12-6-04</time>
+					</footer>
+				</section>
+				<p>i added sleepyjo2, sleepyjo,&amp; shutup__hi AIM sn 2 da clan membrs page</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-11-30">11-30-04</time>
+					</footer>
+				</section>
+				<p>i added a new clan membr 4 TS/F!!!!!!!!!!every1 welcum our newest TS/F membr shrtballa<img alt="Exclamation mark" alt="Exclamation mark" src="/media/freewebs/exclamation.gif" /><img alt="Exclamation mark" src="/media/freewebs/exclamation.gif" /><img alt="Exclamation mark" src="/media/freewebs/exclamation.gif" /><img alt="Exclamation mark" src="/media/freewebs/exclamation.gif" /><img alt="Exclamation mark" src="/media/freewebs/exclamation.gif" />i also added every1s email &amp; AIM sn on da TS/F clan membrs list.shrtballa&nbsp;AIM sn&nbsp;&amp; email is in it</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-11-22">11-22-04</time>
+					</footer>
+				</section>
+				<p>finally<img alt="Exclamation mark" src="/media/freewebs/exclamation.gif" /><img alt="Exclamation mark" src="/media/freewebs/exclamation.gif" /><img alt="Exclamation mark" src="/media/freewebs/exclamation.gif" /><img alt="Exclamation mark" src="/media/freewebs/exclamation.gif" />i finally got a forums on da forums page.so u can use it winevr u want.....so plz use them<img alt="Big grin smiley" src="/media/freewebs/biggrin.gif" />.they r not permanent though....im gonna replace them wit real forums.but 4 now ill use those</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-11-21">11-21-04</time>
+					</footer>
+				</section>
+				<p>i changd da&nbsp;bakround of da homepage</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-08-23">8-23-04</time>
+					</footer>
+				</section>
+				<p>i added a thingy dat translates da page&nbsp;2 anothr languag if&nbsp;da persun who sees it is japanese or chinese or wutevr&nbsp;<img alt="Laughing smiley" alt="Laughing smiley" src="/media/freewebs/laugh.gif" />&nbsp;&nbsp;&amp; anothr thing dat can translate sum text or sumthn like dat &amp; anothr page.......also i removed da downloads page cuz it wuldnt wrk<img alt="Annoyed smiley" src="/media/freewebs/dry.gif" /> &amp; replaced it wit a forum page.but im stil tryn 2 wrk out da HTML code 4 it.so it wil b cumn&nbsp;soon<img alt="Exclamation mark" src="/media/freewebs/exclamation.gif" /><img alt="Exclamation mark" src="/media/freewebs/exclamation.gif" /><img alt="Exclamation mark" src="/media/freewebs/exclamation.gif" /><img alt="Exclamation mark" src="/media/freewebs/exclamation.gif" />&nbsp;<img alt="Exclamation mark" src="/media/freewebs/exclamation.gif" /><img alt="Raspberry smiley" src="/media/freewebs/tongue.gif" />(da translation thingys r on da bottom of almost all da pages)</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-08-29">8-29-04</time>
+					</footer>
+				</section>
+				<p>i copyrighted da clan website &amp; clan so no1 can copy da name or website</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-08-12">8-12-04</time>
+					</footer>
+				</section>
+				<p>i put in da clan allies &amp; enemys on my front page....also da links 2 RuneScape &amp; my unofical&nbsp; TS/F batle clan page thingy</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-08-07">8-7-04</time>
+					</footer>
+				</section>
+				<p>i changd da logo of our website. i made it on Adobe Photoshop. it looks really kewl.</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-07-13">7-13-04</time>
+					</footer>
+				</section>
+				<p>i changed da layout of da website &amp; our logo so i hope u like it</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-06-18">6-18-04</time>
+					</footer>
+				</section>
+				<p>i took out da logos of RS TBS &amp; TBS batl clan logo cuz it wuz takn up room. i also removed a clan membr in RuneScape wich wuz winneroveru cuz he quit RuneScape. he sed ther wuz a bettr game then dat.<img alt="Laughing smiley" src="/media/freewebs/laugh.gif" />lol lmao rofl... RuneScape is da best game in da wrld &amp; then TiberianSun/Firestorm............ wel da othr thing is i found&nbsp;out cloud198s email so i put it by his name in da clan membrs section undr RuneScape clan membrs<img alt="Big grin smiley" src="/media/freewebs/biggrin.gif" /></p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-06-16">6-16-04</time>
+					</footer>
+				</section>
+				<p>i made a new page 4 my batl clan wars 4 RuneScape &amp; TiberianSun/Firestorm......da page wil have da date 4 dat particulr clan war da clan membrs who fot wethr we won or not heres an example<br /><i>RuneScape:</i><br /><i>date:6-16-04</i><br /><i>clan membrs who fot:dbzruler72,dbz4ever10,darkhalo1991,shut up&nbsp; hi,justin ruler,pifwafwi</i><br /><i># of ppl we killed:2</i><br />______________________________________________________________________<br /><i>TiberianSun/Firestorm:</i><br /><i>date:6-16-04</i><br /><i>clan membrs who fot:dbzrulr72,dbz4evr10</i><br /><i>clan we fot:Tiberian World Squad[TomMic]</i><br /><i>clan membrs we fot in dat clan:witteman1,tomraay</i><br /><i>won or lost:won</i><br /><i>map playd on: The Home Of The *-P.K.Masters-*by:Dbzrulr72</i><br /><i>playd on TiberianSun or TiberianSun Firestorm:TiberianSun</i><br />dats wut it wuld look like on da page<br /></p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-06-10">6-10-04</time>
+					</footer>
+				</section>
+				<p>i deleated da "clan membrs in TiberianSun/Firestorm" link in my website &amp; put it all 2gethr now called "clan membrs" clan membrs 4 TiberianSun/Firestorm r at da bottom of dat page....</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-06-07">6-7-04</time>
+					</footer>
+				</section>
+				<p>i made sum really kewl changes wit da effects wit da mouse &amp; da bakround so i hope ya like it</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-05-31">5-31-04</time>
+					</footer>
+				</section>
+				<p>i finally have a chat room on da home page!!!! so every1 can now use dat!&nbsp;u dont hafta type in a pswrd. so da guestbook isnt a chat room nemor its just a guestbook so have fun wit da new chat room<img alt="Exclamation mark" src="/media/freewebs/exclamation.gif" /></p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-05-27">5-27-04</time>
+					</footer>
+				</section>
+				<p>i added da clan members 4 RuneScape email &amp; AIM sn so u can finally contact them</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-05-25">5-25-04</time>
+					</footer>
+				</section>
+				<p>i added da new clan membr wich is pifwafwi</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-05-22">5-22-04</time>
+					</footer>
+				</section>
+				<p>i remove da RuneScape link in da navbar cuz it wuz takn up room</p>
+				<p>i finally have a countr up on da homepage:)</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-05-19">5-19-04</time>
+					</footer>
+				</section>
+				<p>i change da bakround 4 da updates page</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2004-05-16">5-16-04</time>
+					</footer>
+				</section>
+				<p>every1 plz use da guestbook as a chat rm rite now bcuz my chat rm isnt wrkn rite now</p>
+				<p>ill try 2 fix it</p>
+			</article>
+		</main>
+		<!-- END Content -->

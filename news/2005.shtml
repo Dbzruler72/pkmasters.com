@@ -1,0 +1,251 @@
+<!--#set var="title" value="News Archive |  *-P.K.Masters-*  clan" -->
+<!--#set var="description" value="All published clan news" -->
+<!--#set var="currPage" value="newsArchive" -->
+<!--#set var="isArticle" value="false" -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
+		<title><!--#echo var="title" --></title>
+		<meta name="description" content="<!--#echo var="description" -->" />
+		<meta name="author" content="Dbzruler72" />
+		<meta name="copyright" content="Dbzruler72" />
+		<meta name="generator" content="Notepad2, Visual Studio Code" />
+		<meta name="rating" content="general" />
+		<!--#if expr="$currPage == events" -->
+		<meta name="robots" content="follow, index" />
+		<!--#else -->
+		<meta name="robots" content="follow, index, noimageindex" />
+		<!--#endif -->
+		
+		<meta property="og:title" content="<!--#echo var="title" -->" />
+		<meta property="og:description" content="<!--#echo var="description" -->" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="/media/banner.gif" />
+		<meta property="og:url" content="https://pkmasters.com/" />
+		<meta property="og:locale" content="en_US" />
+		<!--#if expr="$currPage != home" -->
+		<meta property="og:site_name" content="*-P.K.Masters-*  clan" />
+		<!--#endif -->
+		<meta property="twitter:title" content="<!--#echo var="title" -->" />
+		<meta property="twitter:description" content="<!--#echo var="description" -->" />
+		<meta property="twitter:image" content="/media/banner.gif" />
+		
+		<!--#if expr="$isArticle == true" -->
+		<meta property="article:author" content="" />
+		<meta property="article:expiration_time" content="" />
+		<meta property="article:modified_time" content="<!--#echo var="LAST_MODIFIED" --> />
+		<meta property="article:published_time" content="" />
+		<meta property="article:section" content="" />
+		<meta property="article:tag" content="" />
+		<!--#endif -->
+
+		<link rel="stylesheet" href="/styles/global.css" /> <!-- @TEMP -->
+		<!--#if expr="$currPage == home" -->
+		<!--#elif expr="$currPage == newsArchive" -->
+		<link rel="stylesheet" href="/styles/newsArchive.css" />
+		<!--#endif -->
+	</head>
+	<body>
+		<!-- BEGIN Navigation -->
+		<nav id="navContainer" style="display: flex; flex-flow: row wrap; justify-content: center; align-content: flex-end;">
+			<a class="hideText" href="/" title="Home">Home</a>
+			<a class="hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" title="Join">Join</a>
+			<a class="hideText" href="/events.shtml" title="Events">Events</a>
+			<a class="hideText" href="/forum/" title="Forum">Forum</a>
+			<a class="hideText" href="/links.shtml" title="Links">Links</a>
+		</nav>
+		<!-- END Navigation -->
+		<div class="contentContainerBorder" style="background-image: url('/media/borderTop.jpg'); background-position: center bottom;"></div>
+		<!-- BEGIN Content -->
+		<main id="contentContainer">
+			<!-- @TODO news year template -->
+			<ul>
+				<li><a href="/newsArchive.shtml">2020</a></li>
+				<li><a href="/news/2009.shtml">2009</a></li>
+				<li><a href="/news/2008.shtml">2008</a></li>
+				<li><a href="/news/2007.shtml">2007</a></li>
+				<li><a href="/news/2006.shtml">2006</a></li>
+				<li><a href="/news/2005.shtml">2005</a></li>
+				<li><a href="/news/2004.shtml">2004</a></li>
+			</ul>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-12-30">12-30-05</time>
+					</footer>
+				</section>
+				<p>the website background has returned 2 normal cuz its after the holidays.i hope every1 had a good 1&nbsp;<img alt="Big grin smiley" src="/media/freewebs/biggrin.gif" />.ive also removed the ghosts flying round on some pages 2 make them load alot faster.on the homepage ive added a Snow effect but i will remove it when the Winter season is over</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-12-16">12-16-05</time>
+					</footer>
+				</section>
+				<p>ive finally made the Official&nbsp; *-P.K.Masters-*&nbsp; banner.&nbsp; If dis logo is duplicated or altered newhere else, report the website &amp;/or person back 2 me!</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-12-15">12-15-05</time>
+					</footer>
+				</section>
+				<p>ive changed the blackground of the whole website 2 show some spirit 4 the holidays!</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-12-04">12-4-05</time>
+					</footer>
+				</section>
+				<p>i edited the events page so the RuneScape &amp; TiberianSun/Firestorm events r separated</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-12-03">12-3-05</time>
+					</footer>
+				</section>
+				<p>the chat room on the homepage has been removed &amp; replaced.the new chat room is under the new page called " *-P.K.Masters-* chat "</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-10-21">10-21-05</time>
+					</footer>
+				</section>
+				<p>the " clan members " page has now been renamed 2 " clan members/allies/enemys ".also the allies &amp; enemys part has been removed from the homepage &amp; added 2 the page " clan members/allies/enemys "</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-08-12">8-12-05</time>
+					</footer>
+				</section>
+				<p>the forums hav been working now 4 quite a while.i also changed the msg on the marquee msg.its only minor changes.i also removed the " da " part on the forums</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-06-09">6-9-05</time>
+					</footer>
+				</section>
+				<p>i changed da bakground so it loads up alot faster.also da forums r upgrading right now 2 version 4 so dat wont b working til 1 or 2 mor days</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-06-08">6-8-05</time>
+					</footer>
+				</section>
+				<p>i put up&nbsp;<em>another</em> chat room on da homepage but dis 1 is better.</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-06-01">6-1-05</time>
+					</footer>
+				</section>
+				<p>i just put up a new chat room</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-05-30">5-30-05</time>
+					</footer>
+				</section>
+				<p>i changed " batl clan wars &amp; events " 2 just " events "&nbsp;.i also re ordered every event so da most recent ones r at da top</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-05-14">5-14-05</time>
+					</footer>
+				</section>
+				<p>i added anothr event in da batl clan wars &amp; events......man we had a good time</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-04-02">4-2-05</time>
+					</footer>
+				</section>
+				<p>i put up&nbsp;a new counter&nbsp;<img alt="Big grin smiley" src="/media/freewebs/biggrin.gif" /></p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-04-01">4-1-05</time>
+					</footer>
+				</section>
+				<p>i changd every1s position on da clan membrs page</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-03-21">3-21-05</time>
+					</footer>
+				</section>
+				<p>i made a new downloads page &amp; i added da RuneScape windows client &amp; my 2nd *-P.K.Masters-* clan map</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-03-20">3-20-05</time>
+					</footer>
+				</section>
+				<p>i put up da allys section cuz we hav a new ally in TiberianSun/Firestorm!!<img alt="Big grin smiley" src="/media/freewebs/biggrin.gif" /></p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-01-28">1-28-05</time>
+					</footer>
+				</section>
+				<p>i changd da countr cuz sum ppl sed it wuznt wrkn so i hope u like da new 1</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-01-27">1-27-05</time>
+					</footer>
+				</section>
+				<p>i changd da bakround of all pages so da page will loadup&nbsp;ALOT fastr.also i removed da "contact me" page &amp; da "gestbook" page cuz it wuz just taken up room &amp; i didnt really need it.I ALSO PUT UP A NEW LINK WICH IS A RuneScape clans index.(i made it)</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-01-25">1-25-04</time>
+					</footer>
+				</section>
+				<p>i moved da counter 2 da top cuz a clan membr sed it wuld b better 4 da site</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-01-16">1-16-05</time>
+					</footer>
+				</section>
+				<p>i removed da Webs album cuz i put pics on it dat wuz copyrited by Jagex.......sry.i also put da 95.7 da beat link so u can listen 2 it</p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-01-15">1-15-05</time>
+					</footer>
+				</section>
+				<p>i changd da logo.i also changd da counter cuz da website crashed &amp; sumthn wuz rong wit da countr &amp; i fixed da website.also bcuz i did dat....da page loads up fastr<img alt="Big grin smiley" src="/media/freewebs/biggrin.gif" /></p>
+			</article>
+			<article>
+				<section>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2005-01-12">1-12-05</time>
+					</footer>
+				</section>
+				<p>i took off da bakround 2 da homepage cuz it wuz makn everything lag.i also changd da blatl clan wars 2 batl clan wars &amp; events cuz now my clan is gonna hav drop parties &amp; othr things 2.i also put da type undr it so u can c wut kind of event it wuz.also i made a news,announcments,&amp; updates section undr da forums so now ne update or wutevr&nbsp;dats related 2 da forums is gonna b undr dat section</p>
+			</article>
+		</main>
+		<!-- END Content -->
