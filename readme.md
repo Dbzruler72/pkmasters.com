@@ -14,13 +14,13 @@ I'm rewriting the entire website while preserving the original aesthetic, bad de
 # Current Status
 Done
 - Home page
+- News archive
 
 Work in progress
-- News Archive
+- Links
 
 To be done
 - Events
-- Links
 - History
 - Tiberian Sun
 - Terms
