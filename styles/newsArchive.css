@@ -1,12 +1,13 @@
+article:not(:first-of-type) { margin-top: 3rem;  }
 article > section {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
+	margin-bottom: 1rem;
 }
 article header { padding-right: 30px; }
 article h1 {
-	margin-bottom: 1em;
-	font-size: 1em;
+	font-size: 1rem;
 }
 article footer {
 	flex-shrink: 1.5;

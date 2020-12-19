@@ -144,7 +144,7 @@
 		<div class="contentContainerBorder" style="background-image: url('/media/borderBottom.jpg'); background-position: center top;"></div>
 		<footer role="contentinfo" style="text-align: center;">
 			<a href="/termsOfUse.shtml">Terms of Use</a><br />
-			<!-- @TODO WCAB 2.1 validation icon link -->
+			<!-- @TODO WCAG 2.1 validation icon link -->
 			Last Updated <!--#config timefmt="%A, %B %d, %Y --><!--#echo var="LAST_MODIFIED" --><br />
 			&copy; <time datetime="2002">2002</time>&ndash;<!--#config timefmt="%Y" --><time datetime="<!--#echo var="DATE_GMT" -->"><!--#echo var="DATE_GMT" --></time><br />
 			<span style="line-height: 1px; font-size: 1px; color: #000; text-align: right; display: block;" title="Tricks are for kids!  No tricks = no fun.">1Ph j00Z (4|\| r34D 7|-|1$, j00Z R 4\/\/3$0/\/\3. 53|\|D /\/\3 4 p/\/\ 0|\| 7|-|3 (L4|\| Ph0rU/\/\ :) 1'/\/\ (Ur10U$ 70 |&lt;|\|0\/\/ \/\/|-|0 j00Z r.</span>

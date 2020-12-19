@@ -12,7 +12,20 @@ I'm rewriting the entire website while preserving the original aesthetic, bad de
 
 
 # Current Status
-Work in progress.  See the [dev branch](../../tree/dev) for the latest update.
+Done
+- Home page
+
+Work in progress
+- News Archive
+
+To be done
+- Events
+- Links
+- History
+- Tiberian Sun
+- Terms
+
+See the [dev branch](../../tree/dev) for the latest update.
 
 
 # Dependencies
