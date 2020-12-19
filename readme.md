@@ -16,12 +16,12 @@ Done
 - Home page
 - News archive
 - Links
-
-Work in progress
 - Terms of Use
 
-To be done
+Work in progress
 - Events
+
+To be done
 - History
 - Tiberian Sun
 
