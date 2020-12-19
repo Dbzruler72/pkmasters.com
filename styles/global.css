@@ -1,6 +1,7 @@
 html { font-size: 12.5pt; }
 body {
 	--maxWidth: 965px;
+	--pIndent: 5.18%;
 
 	color: #FFF;
 	background-color: #000;
@@ -30,7 +31,6 @@ p {
 	margin-bottom: 0.75rem;
 }
 .hideText {
-	font-size: 0px;
 	overflow: hidden;
 	text-indent: 100%;
 }
@@ -80,6 +80,7 @@ p {
 	background-size: contain;
 	margin: auto;
 	max-width: var(--maxWidth);
+	overflow: hidden;
 }
 .hr {
 	background-image: url('/media/separator.jpg');

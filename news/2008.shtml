@@ -1,5 +1,5 @@
-<!--#set var="title" value="News Archive |  *-P.K.Masters-*  clan" -->
-<!--#set var="description" value="All published clan news" -->
+<!--#set var="title" value="2008 News |  *-P.K.Masters-*  clan" -->
+<!--#set var="description" value="Clan news from 2008" -->
 <!--#set var="currPage" value="newsArchive" -->
 <!--#set var="isArticle" value="false" -->
 
@@ -74,13 +74,39 @@
 			<article>
 				<section>
 					<header>
-						<h1></h1>
+						<h1>Parkour &amp; RuneScape</h1>
 					</header>
 					<footer>
-						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime=""></time>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2008-06-28">Saturday, June 28, 2008</time>
 					</footer>
 				</section>
-				<p></p>
+				<p>Whew!  It has been <i>quite</i> a while since the last update in May, no, no...April?  No, no...Mar-March?  For three months, the site went without an update, with the exceptions of a few minor adjustments.</p>
+				<p>Today, I caught up on everything, &amp; I'm sure you'll be pleased.  To start, May's Master of the Month has been updated, &amp; you may find that in the RuneScape section.  In addition, 28 varied events have found their way to the Events page in the RuneScape section.  You may ask why "varied" is used; well, many new types of events, such as Arcanists, Revenant Hunting, Fire Fests, &amp; many more have made themselves as part of our schedule.  In light of this event update, our RuneScape war record has seen a modification.  Although we can no longer hold the title of Undefeated, our war record is still wonderful.</p>
+				<p>The first parkour video has arrived!  Finally, our main stream videos are coming out--no more of that free running shtuff (ugh...).  The video, called  *-P.K.Masters-*  Evasion, describes itself: evasion!  Head over to the parkour section of the website, &amp; you will find what parkour is really used for (and it's not to be flashy).  Have fun, &amp; thank summer for giving me the time to do this update.</p>
+			</article>
+			<div class="hr"></div>
+			<article>
+				<section>
+					<header>
+						<h1>Master of the Month</h1>
+					</header>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2008-03-17">Monday, March 17, 2008</time>
+					</footer>
+				</section>
+				<p>Enjoy our newest feature: Master of the Month.  The Master of the Month is based on activity, attitude, &amp; overall performance.  The first ever Master of the Month is Angry555!  You may see his profile in the RuneScape section.</p>
+			</article>
+			<div class="hr"></div>
+			<article>
+				<section>
+					<header>
+						<h1>Event Update</h1>
+					</header>
+					<footer>
+						<address>Posted by <a href="" rel="author">Dbzruler72</a></address> on <time datetime="2008-03-02">Sunday, March 2, 2008</time>
+					</footer>
+				</section>
+				<p>All events up until now have been updated in the RuneScape section.  The scoreboard has also been updated with all our new records.</p>
 			</article>
 		</main>
 		<!-- END Content -->

@@ -15,15 +15,15 @@ I'm rewriting the entire website while preserving the original aesthetic, bad de
 Done
 - Home page
 - News archive
+- Links
+- Terms of Use
 
 Work in progress
-- Links
+- Events
 
 To be done
-- Events
 - History
 - Tiberian Sun
-- Terms
 
 See the [dev branch](../../tree/dev) for the latest update.
 

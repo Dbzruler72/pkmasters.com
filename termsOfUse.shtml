@@ -1,12 +1,70 @@
-<!--#include virtual="header.html" -->
-<!-- BEGIN TERMS OF USE --> <table class="main" cellspacing="0" cellpadding="0" id="termsOfUse">
-<tr>
-<td>
-<p style="text-indent: 50px;">Administrators have no responsibility for forum user content such as posts, private messages, or external websites that are posted.  Content from external links may be protected by copyright and intellectual property laws of the United States and/or other countries.  Administrators have the right to delete, modify, and prevent usage of certain features.  Administrators also have the right to disable, delete, and edit user profiles.</p>
-<p style="text-indent: 50px;">Users may not reproduce copyrighted, registered, or trademarked material found on the  *-P.K.Masters-*  website or forum.  Users found reproducing copyrighted, registered, or trademarked material are subject to legal consequences.</p>
-<p style="text-indent: 50px;">The use of cookies amd storage of IP addresses to identify specfic computers that access the website log user activity to help improve specific areas.</p>
-<p style="text-indent: 50px;">Users who do not comply with these terms will not be granted use of this website.</p>
-</td>
-</tr>
-<!-- END TERMS OF USE --> </table>
-<!--#include virtual="footer.html" -->
+<!--#set var="title" value="Terms of Use |  *-P.K.Masters-*  clan" -->
+<!--#set var="description" value="The legal agreements between the  *-P.K.Masters-*  website providers and you, the user." -->
+<!--#set var="currPage" value="termsOfUse" -->
+<!--#set var="isArticle" value="false" -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
+		<title><!--#echo var="title" --></title>
+		<meta name="description" content="<!--#echo var="description" -->" />
+		<meta name="author" content="Dbzruler72" />
+		<meta name="copyright" content="Dbzruler72" />
+		<meta name="generator" content="Notepad2, Visual Studio Code" />
+		<meta name="rating" content="general" />
+		<!--#if expr="$currPage == events" -->
+		<meta name="robots" content="follow, index" />
+		<!--#else -->
+		<meta name="robots" content="follow, index, noimageindex" />
+		<!--#endif -->
+		
+		<meta property="og:title" content="<!--#echo var="title" -->" />
+		<meta property="og:description" content="<!--#echo var="description" -->" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="/media/banner.gif" />
+		<meta property="og:url" content="https://pkmasters.com/" />
+		<meta property="og:locale" content="en_US" />
+		<!--#if expr="$currPage != home" -->
+		<meta property="og:site_name" content="*-P.K.Masters-*  clan" />
+		<!--#endif -->
+		<meta property="twitter:title" content="<!--#echo var="title" -->" />
+		<meta property="twitter:description" content="<!--#echo var="description" -->" />
+		<meta property="twitter:image" content="/media/banner.gif" />
+		
+		<!--#if expr="$isArticle == true" -->
+		<meta property="article:author" content="" />
+		<meta property="article:expiration_time" content="" />
+		<meta property="article:modified_time" content="<!--#echo var="LAST_MODIFIED" --> />
+		<meta property="article:published_time" content="" />
+		<meta property="article:section" content="" />
+		<meta property="article:tag" content="" />
+		<!--#endif -->
+
+		<link rel="stylesheet" href="/styles/global.css" /> <!-- @TEMP -->
+		<!--#if expr="$currPage == home" -->
+		<!--#elif expr="$currPage == newsArchive" -->
+		<!--#elif expr="$currPage == links" -->
+		<!--#elif expr="$currPage == termsOfUse" -->
+		<link rel="stylesheet" href="/styles/termsOfUse.css" />
+		<!--#endif -->
+	</head>
+	<body>
+		<!-- BEGIN Navigation -->
+		<nav id="navContainer" style="display: flex; flex-flow: row wrap; justify-content: center; align-content: flex-end;">
+			<a class="hideText" href="/" title="Home">Home</a>
+			<a class="hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" title="Join">Join</a>
+			<a class="hideText" href="/events.shtml" title="Events">Events</a>
+			<a class="hideText" href="/forum/" title="Forum">Forum</a>
+			<a class="hideText" href="/links.shtml" title="Links">Links</a>
+		</nav>
+		<!-- END Navigation -->
+		<div class="contentContainerBorder" style="background-image: url('/media/borderTop.jpg'); background-position: center bottom;"></div>
+		<!-- BEGIN Content -->
+		<main id="contentContainer">
+			<p>Administrators have no responsibility for forum user content such as posts, private messages, or external websites that are posted.  Content from external links may be protected by copyright and intellectual property laws of the United States and/or other countries.  Administrators have the right to delete, modify, and prevent usage of certain features.  Administrators also have the right to disable, delete, and edit user profiles.</p>
+			<p>Users may not reproduce copyrighted, registered, or trademarked material found on the  *-P.K.Masters-*  website or forum.  Users found reproducing copyrighted, registered, or trademarked material are subject to legal consequences.</p>
+			<p>The use of cookies amd storage of IP addresses to identify specfic computers that access the website log user activity to help improve specific areas.</p>
+			<p>Users who do not comply with these terms will not be granted use of this website.</p>
+		</main>

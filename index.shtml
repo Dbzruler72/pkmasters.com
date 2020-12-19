@@ -1,5 +1,5 @@
 <!--#set var="title" value="*-P.K.Masters-*  clan" -->
-<!--#set var="description" value="The RuneScape PKing clan, led by Dbzruler72, that reigned from 2002 to 2010." -->
+<!--#set var="description" value="The RuneScape and Tiberian Sun clan, led by Dbzruler72, that prevailed from 2002 to 2010." -->
 <!--#set var="currPage" value="home" -->
 <!--#set var="isArticle" value="false" -->
 
@@ -47,6 +47,10 @@
 		<link rel="stylesheet" href="/styles/home.css" />
 		<!--#elif expr="$currPage == newsArchive" -->
 		<link rel="stylesheet" href="/styles/newsArchive.css" />
+		<!--#elif expr="$currPage == links" -->
+		<link rel="stylesheet" href="/styles/links.css" />
+		<!--#elif expr="$currPage == termsOfUse" -->
+		<link rel="stylesheet" href="/styles/termsOfUse.css" />
 		<!--#endif -->
 	</head>
 	<body>
