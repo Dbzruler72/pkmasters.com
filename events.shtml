@@ -1,3 +1,113 @@
+<!--#set var="title" value="Events |  *-P.K.Masters-*  clan" -->
+<!--#set var="description" value="RuneScape events that we held or participated in" -->
+<!--#set var="currPage" value="events" -->
+<!--#set var="isArticle" value="false" -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
+		<title><!--#echo var="title" --></title>
+		<meta name="description" content="<!--#echo var="description" -->" />
+		<meta name="author" content="Dbzruler72" />
+		<meta name="copyright" content="Dbzruler72" />
+		<meta name="generator" content="Notepad2, Visual Studio Code" />
+		<meta name="rating" content="general" />
+		<!--#if expr="$currPage == events" -->
+		<meta name="robots" content="follow, index" />
+		<!--#else -->
+		<meta name="robots" content="follow, index, noimageindex" />
+		<!--#endif -->
+		
+		<meta property="og:title" content="<!--#echo var="title" -->" />
+		<meta property="og:description" content="<!--#echo var="description" -->" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="/media/banner.gif" />
+		<meta property="og:url" content="https://pkmasters.com/" />
+		<meta property="og:locale" content="en_US" />
+		<!--#if expr="$currPage != home" -->
+		<meta property="og:site_name" content="*-P.K.Masters-*  clan" />
+		<!--#endif -->
+		<meta property="twitter:title" content="<!--#echo var="title" -->" />
+		<meta property="twitter:description" content="<!--#echo var="description" -->" />
+		<meta property="twitter:image" content="/media/banner.gif" />
+		
+		<!--#if expr="$isArticle == true" -->
+		<meta property="article:author" content="" />
+		<meta property="article:expiration_time" content="" />
+		<meta property="article:modified_time" content="<!--#echo var="LAST_MODIFIED" --> />
+		<meta property="article:published_time" content="" />
+		<meta property="article:section" content="" />
+		<meta property="article:tag" content="" />
+		<!--#endif -->
+
+		<link rel="stylesheet" href="/styles/global.css" /> <!-- @TEMP -->
+		<!--#if expr="$currPage == home" -->
+		<!--#elif expr="$currPage == newsArchive" -->
+		<!--#elif expr="$currPage == links" -->
+		<!--#elif expr="$currPage == termsOfUse" -->
+		<!--#elif expr="$currPage == events" -->
+		<link rel="stylesheet" href="/styles/events.css" />
+		<!--#endif -->
+	</head>
+	<body>
+		<!-- BEGIN Navigation -->
+		<nav id="navContainer" style="display: flex; flex-flow: row wrap; justify-content: center; align-content: flex-end;">
+			<a class="hideText" href="/" title="Home">Home</a>
+			<a class="hideText" href="/forum/viewtopic.php?f=4&t=303#p3332" title="Join">Join</a>
+			<a class="hideText" href="/events.shtml" title="Events">Events</a>
+			<a class="hideText" href="/forum/" title="Forum">Forum</a>
+			<a class="hideText" href="/links.shtml" title="Links">Links</a>
+		</nav>
+		<!-- END Navigation -->
+		<div class="contentContainerBorder" style="background-image: url('/media/borderTop.jpg'); background-position: center bottom;"></div>
+		<!-- BEGIN Content -->
+		<main id="contentContainer" style="margin-bottom: 50px;">
+			<ul id="yearList">
+				<li><a href="#2011">2011</a></li>
+				<li><a href="#2010">2010</a></li>
+				<li><a href="#2009">2009</a></li>
+				<li><a href="#2008">2008</a></li>
+				<li><a href="#2007">2007</a></li>
+				<li><a href="#2006">2006</a></li>
+			</ul>
+			<section id="eventList">
+				<ul id="2011">
+					<li>Event Name</li>
+					<li>Event Name</li>
+				</li>
+				<ul id="2010">
+				</ul>
+				<ul id="2009">
+					<li></li>
+				</ul>
+				<ul id="2008">
+					<li></li>
+				</ul>
+				<ul id="2007">
+					<li></li>
+				</ul>
+				<ul id="2006">
+					<li></li>
+				</ul>
+			</section>
+			<section id="currImage">
+				<img alt="" src="" />
+			</section>
+			<section id="imageList">
+				<section id="YYYYMMDD">
+					<section id="YYYYMMDD_info">
+						<!-- event info -->
+					</section>
+					<img alt="" id="YYYYMMDD_1" src="" />
+					<img alt="" id="YYYYMMDD_2" src="" />
+				</section>
+			</section>
+		</main>
+		
+
+
 <!--#include virtual="header.html" -->
 <!-- BEGIN EVENTS --> <table class="main" cellspacing="0" cellpadding="0" id="events">
 <tr>

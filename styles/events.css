@@ -1,0 +1,24 @@
+#yearList #eventList ul {
+	display: inline;
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0px;
+}
+#yearList li {
+	display: inline;
+	margin-right: 13px;
+}
+#eventList, #currImage, #imageList { display: none; }
+#eventList li {
+	display: block;
+}
+#imageList > section > section, img {
+	/* @TODO predefine dimensions to prevent reflow */
+}
+#currImage {
+	/* @TODO predefine dimensions to prevent reflow */
+}
+#imageList {
+	/* @TODO predefine dimensions to prevent reflow */
+}
