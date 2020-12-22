@@ -1,4 +1,7 @@
-#yearList #eventList ul {
+:target {
+	display: block !important;
+}
+#yearList, #eventList ul {
 	display: inline;
 	font-weight: normal;
 	margin-top: 0;
@@ -9,7 +12,16 @@
 	display: inline;
 	margin-right: 13px;
 }
-#eventList, #currImage, #imageList { display: none; }
+#eventList ul {
+	--columns: 3;
+	
+	display: none;
+	columns: var(--columns) calc((var(--maxWidth) / var(--columns)) - calc(var(--columns) * 1em));
+}
+#eventList ul {
+	/*column-count: 3;
+	column-width: ;*/
+}
 #eventList li {
 	display: block;
 }
