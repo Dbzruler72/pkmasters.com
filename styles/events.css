@@ -1,7 +1,7 @@
 :target {
 	display: block !important;
 }
-#yearList, #eventList ul {
+#yearList{
 	display: inline;
 	font-weight: normal;
 	margin-top: 0;
@@ -12,18 +12,27 @@
 	display: inline;
 	margin-right: 13px;
 }
-#eventList ul {
+#eventList > section {
 	--columns: 3;
 	
 	display: none;
 	columns: var(--columns) calc((var(--maxWidth) / var(--columns)) - calc(var(--columns) * 1em));
 }
-#eventList ul {
-	/*column-count: 3;
-	column-width: ;*/
+#eventList a {
+	color: inherit;
+	display: inline-block;
+	padding: 10px;
+	width: 100%;
 }
-#eventList li {
-	display: block;
+#eventList a:hover {
+	background: rgba(20, 50, 72, 0.3);
+	text-decoration: none;
+}
+#currImage > * {
+	display: none;
+}
+#imageList > section {
+	display: none;
 }
 #imageList > section > section, img {
 	/* @TODO predefine dimensions to prevent reflow */

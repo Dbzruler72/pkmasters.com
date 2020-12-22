@@ -73,77 +73,51 @@
 				<li><a href="#e2006">2006</a></li>
 			</ul>
 			<section id="eventList">
-				<ul id="e2011">
-					<li>Reunion PK Trip</li>
-					<li>*-P.K.Masters-*  Division: "ra" Accounts. 2nd Three-Day Streak (Day 3)</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-				</ul>
-				<ul id="e2010">
-					<li>*-P.K.Masters-*  versus FD</li>
-					<li>PK Drill</li>
-				</ul>
-				<ul id="e2009">
-					<li></li>
-				</ul>
-				<ul id="e2008">
-					<li></li>
-				</ul>
-				<ul id="e2007">
-					<li></li>
-				</ul>
-				<ul id="e2006">
-					<li></li>
-				</ul>
+				<section id="e2011">
+					<a href="#e20110205">Reunion PK Tripasdf asdfasdf asdd fasd fsad f</a>
+					<a href="">*-P.K.Masters-*  Division: "ra" Accounts. 2nd Three-Day Streak (Day 3)</a>
+				</section>
+				<section id="e2010">
+					<a>*-P.K.Masters-*  versus FD</a>
+					<a>PK Drill</a>
+				</section>
+				<section id="e2009">
+					<a></a>
+				</section>
+				<section id="e2008">
+					<a></a>
+				</section>
+				<section id="e2007">
+					<a></a>
+				</section>
+				<section id="e2006">
+					<a></a>
+				</section>
 			</section>
 			<section id="currImage">
 				<img alt="" src="" />
+				<section>
+					<section id="e20110205_info">
+						A reunion PK Trip.
+					</section>
+				</section>
 			</section>
 			<section id="imageList">
 				<section id="e20110205">
-					<section id="e20110205_info">
-						<!-- event info -->
-					</section>
-					<img alt="" id="e20110205_1" src="/pkm/event/2011/feb/sat5/" />
-					<img alt="" id="e20110205_2" src="" />
-					<img alt="" id="e20110205_3" src="" />
-					<img alt="" id="e20110205_4" src="" />
-					<img alt="" id="e20110205_5" src="" />
-					<img alt="" id="e20110205_6" src="" />
-					<img alt="" id="e20110205_7" src="" />
-					<img alt="" id="e20110205_8" src="" />
-					<img alt="" id="e20110205_9" src="" />
-					<img alt="" id="e20110205_10" src="" />
-					<img alt="" id="e20110205_11" src="" />
-					<img alt="" id="e20110205_12" src="" />
-					<img alt="" id="e20110205_13" src="" />
+					<a id="e20110205_info-thumb" href="#e20110205_info">Event Information</a>
+					<img alt="" id="e20110205_1-thumb" src="/pkm/event/2011/feb/sat5/pkmReunionPKTripSatFeb52011001.png" />
+					<img alt="" id="e20110205_2-thumb" src="" />
+					<img alt="" id="e20110205_3-thumb" src="" />
+					<img alt="" id="e20110205_4-thumb" src="" />
+					<img alt="" id="e20110205_5-thumb" src="" />
+					<img alt="" id="e20110205_6-thumb" src="" />
+					<img alt="" id="e20110205_7-thumb" src="" />
+					<img alt="" id="e20110205_8-thumb" src="" />
+					<img alt="" id="e20110205_9-thumb" src="" />
+					<img alt="" id="e20110205_10-thumb" src="" />
+					<img alt="" id="e20110205_11-thumb" src="" />
+					<img alt="" id="e20110205_12-thumb" src="" />
+					<img alt="" id="e20110205_13-thumb" src="" />
 				</section>
 				<section id="YYYYMMDD">
 					<section id="YYYYMMDD_info">
