@@ -1,12 +1,11 @@
 :target {
 	display: block !important;
 }
-#yearList{
-	display: inline;
-	font-weight: normal;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-left: 0px;
+body {
+	--linkPadding: 10px;
+}
+img {
+	max-width: 100%;
 }
 #yearList li {
 	display: inline;
@@ -21,18 +20,44 @@
 #eventList a {
 	color: inherit;
 	display: inline-block;
-	padding: 10px;
+	padding: var(--linkPadding);
 	width: 100%;
 }
 #eventList a:hover {
 	background: rgba(20, 50, 72, 0.3);
 	text-decoration: none;
 }
+@media screen and (orientation: landscape) {
+	#contentContainer > section:not(#eventList):target {
+		flex-flow: row-reverse wrap;
+	}
+}
+@media screen and (orientation: portrait) {
+	#contentContainer > section:not(#eventList):target {
+		flex-flow: row wrap;
+	}
+}
+#contentContainer > section:not(#eventList) {
+	display: none;
+	justify-content: space-between;
+}
+#contentContainer > section:not(#eventList):target {
+	display: flex !important;
+}
 #currImage > * {
 	display: none;
 }
-#imageList > section {
-	display: none;
+#imageList {
+	flex-basis: 20%;
+}
+#imageList > section > * {
+	display: block;
+	width: 100%;
+	border: 1px solid red;
+}
+#imageList > section > a[href$="_info"] {
+	box-sizing: border-box;
+	padding: var(--linkPadding);
 }
 #imageList > section > section, img {
 	/* @TODO predefine dimensions to prevent reflow */

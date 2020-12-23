@@ -64,7 +64,7 @@
 		<div class="contentContainerBorder" style="background-image: url('/media/borderTop.jpg'); background-position: center bottom;"></div>
 		<!-- BEGIN Content -->
 		<main id="contentContainer" style="margin-bottom: 50px;">
-			<ul id="yearList">
+			<ul id="yearList" style="	display: inline; font-weight: normal; margin-top: 0; margin-bottom: 0; padding-left: 0px;">
 				<li><a href="#e2011">2011</a></li>
 				<li><a href="#e2010">2010</a></li>
 				<li><a href="#e2009">2009</a></li>
@@ -94,37 +94,30 @@
 					<a></a>
 				</section>
 			</section>
-			<section id="currImage">
-				<img alt="" src="" />
-				<section>
+			<section id="e20110205">
+				<section id="currImage">
+					<img alt="" src="/pkm/event/2011/feb/sat5/pkmReunionPKTripSatFeb52011001.png" />
 					<section id="e20110205_info">
 						A reunion PK Trip.
 					</section>
 				</section>
-			</section>
-			<section id="imageList">
-				<section id="e20110205">
-					<a id="e20110205_info-thumb" href="#e20110205_info">Event Information</a>
-					<img alt="" id="e20110205_1-thumb" src="/pkm/event/2011/feb/sat5/pkmReunionPKTripSatFeb52011001.png" />
-					<img alt="" id="e20110205_2-thumb" src="" />
-					<img alt="" id="e20110205_3-thumb" src="" />
-					<img alt="" id="e20110205_4-thumb" src="" />
-					<img alt="" id="e20110205_5-thumb" src="" />
-					<img alt="" id="e20110205_6-thumb" src="" />
-					<img alt="" id="e20110205_7-thumb" src="" />
-					<img alt="" id="e20110205_8-thumb" src="" />
-					<img alt="" id="e20110205_9-thumb" src="" />
-					<img alt="" id="e20110205_10-thumb" src="" />
-					<img alt="" id="e20110205_11-thumb" src="" />
-					<img alt="" id="e20110205_12-thumb" src="" />
-					<img alt="" id="e20110205_13-thumb" src="" />
-				</section>
-				<section id="YYYYMMDD">
-					<section id="YYYYMMDD_info">
-						<!-- event info -->
+				<section id="imageList">
+					<section id="e20110205">
+						<a id="e20110205_info-thumb" href="#e20110205_info">Event Information</a>
+						<img alt="" id="e20110205_1-thumb" src="/pkm/event/2011/feb/sat5/pkmReunionPKTripSatFeb52011001.png" />
+						<img alt="" id="e20110205_2-thumb" src="" />
+						<img alt="" id="e20110205_3-thumb" src="" />
+						<img alt="" id="e20110205_4-thumb" src="" />
+						<img alt="" id="e20110205_5-thumb" src="" />
+						<img alt="" id="e20110205_6-thumb" src="" />
+						<img alt="" id="e20110205_7-thumb" src="" />
+						<img alt="" id="e20110205_8-thumb" src="" />
+						<img alt="" id="e20110205_9-thumb" src="" />
+						<img alt="" id="e20110205_10-thumb" src="" />
+						<img alt="" id="e20110205_11-thumb" src="" />
+						<img alt="" id="e20110205_12-thumb" src="" />
+						<img alt="" id="e20110205_13-thumb" src="" />
 					</section>
-					<img alt="" id="YYYYMMDD_1" src="" />
-					<img alt="" id="YYYYMMDD_2" src="" />
 				</section>
 			</section>
 		</main>
