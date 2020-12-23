@@ -64,35 +64,35 @@
 		<div class="contentContainerBorder" style="background-image: url('/media/borderTop.jpg'); background-position: center bottom;"></div>
 		<!-- BEGIN Content -->
 		<main id="contentContainer" style="margin-bottom: 50px;">
-			<ul id="yearList" style="	display: inline; font-weight: normal; margin-top: 0; margin-bottom: 0; padding-left: 0px;">
-				<li><a href="#e2011">2011</a></li>
-				<li><a href="#e2010">2010</a></li>
-				<li><a href="#e2009">2009</a></li>
-				<li><a href="#e2008">2008</a></li>
-				<li><a href="#e2007">2007</a></li>
-				<li><a href="#e2006">2006</a></li>
-			</ul>
+			<nav id="yearList">
+				<a href="#e2011">2011</a>
+				<a href="#e2010">2010</a>
+				<a href="#e2009">2009</a>
+				<a href="#e2008">2008</a>
+				<a href="#e2007">2007</a>
+				<a href="#e2006">2006</a>
+			</nav>
 			<section id="eventList">
-				<section id="e2011">
+				<nav id="e2011">
 					<a href="#e20110205">Reunion PK Tripasdf asdfasdf asdd fasd fsad f</a>
 					<a href="">*-P.K.Masters-*  Division: "ra" Accounts. 2nd Three-Day Streak (Day 3)</a>
-				</section>
-				<section id="e2010">
+				</nav>
+				<nav id="e2010">
 					<a>*-P.K.Masters-*  versus FD</a>
 					<a>PK Drill</a>
-				</section>
-				<section id="e2009">
+				</nav>
+				<nav id="e2009">
 					<a></a>
-				</section>
-				<section id="e2008">
+				</nav>
+				<nav id="e2008">
 					<a></a>
-				</section>
-				<section id="e2007">
+				</nav>
+				<nav id="e2007">
 					<a></a>
-				</section>
-				<section id="e2006">
+				</nav>
+				<nav id="e2006">
 					<a></a>
-				</section>
+				</nav>
 			</section>
 			<section id="e20110205">
 				<section id="currImage">

@@ -7,11 +7,11 @@ body {
 img {
 	max-width: 100%;
 }
-#yearList li {
-	display: inline;
+#yearList a {
+	display: inline-block;
 	margin-right: 13px;
 }
-#eventList > section {
+#eventList > nav {
 	--columns: 3;
 	
 	display: none;

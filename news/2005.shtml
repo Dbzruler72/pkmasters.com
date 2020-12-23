@@ -62,15 +62,15 @@
 		<!-- BEGIN Content -->
 		<main id="contentContainer">
 			<!-- @TODO news year template -->
-			<ul>
-				<li><a href="/newsArchive.shtml">2020</a></li>
-				<li><a href="/news/2009.shtml">2009</a></li>
-				<li><a href="/news/2008.shtml">2008</a></li>
-				<li><a href="/news/2007.shtml">2007</a></li>
-				<li><a href="/news/2006.shtml">2006</a></li>
-				<li><a href="/news/2005.shtml">2005</a></li>
-				<li><a href="/news/2004.shtml">2004</a></li>
-			</ul>
+			<nav>
+				<a href="/newsArchive.shtml">2020</a>
+				<a href="/news/2009.shtml">2009</a>
+				<a href="/news/2008.shtml">2008</a>
+				<a href="/news/2007.shtml">2007</a>
+				<a href="/news/2006.shtml">2006</a>
+				<a href="/news/2005.shtml">2005</a>
+				<a href="/news/2004.shtml">2004</a>
+			</nav>
 			<article>
 				<section>
 					<footer>
