@@ -40,6 +40,9 @@ img {
 #contentContainer > section:not(#eventList) {
 	display: none;
 	justify-content: space-between;
+	height: 100%;
+	border: 2px solid #FFF;
+	box-sizing: border-box;
 }
 #contentContainer > section:not(#eventList):target {
 	display: flex !important;

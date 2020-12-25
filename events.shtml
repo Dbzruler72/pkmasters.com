@@ -2,6 +2,7 @@
 <!--#set var="description" value="RuneScape events that we held or participated in" -->
 <!--#set var="currPage" value="events" -->
 <!--#set var="isArticle" value="false" -->
+<!--#set var="eventInfoText" value="Event Information" -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -103,21 +104,22 @@
 				</section>
 				<section id="imageList">
 					<section id="e20110205">
-						<a id="e20110205_info-thumb" href="#e20110205_info">Event Information</a>
+						<a id="e20110205_info-thumb">Event Information</a>
 						<img alt="" id="e20110205_1-thumb" src="/pkm/event/2011/feb/sat5/pkmReunionPKTripSatFeb52011001.png" />
-						<img alt="" id="e20110205_2-thumb" src="" />
-						<img alt="" id="e20110205_3-thumb" src="" />
-						<img alt="" id="e20110205_4-thumb" src="" />
-						<img alt="" id="e20110205_5-thumb" src="" />
-						<img alt="" id="e20110205_6-thumb" src="" />
-						<img alt="" id="e20110205_7-thumb" src="" />
-						<img alt="" id="e20110205_8-thumb" src="" />
-						<img alt="" id="e20110205_9-thumb" src="" />
-						<img alt="" id="e20110205_10-thumb" src="" />
-						<img alt="" id="e20110205_11-thumb" src="" />
-						<img alt="" id="e20110205_12-thumb" src="" />
-						<img alt="" id="e20110205_13-thumb" src="" />
+						<img alt="" id="e20110205_2-thumb" src="/pkm/event/2011/feb/sat5/pkmReunionPKTripSatFeb52011002.png" />
+						<img alt="" id="e20110205_3-thumb" src="/pkm/event/2011/feb/sat5/pkmReunionPKTripSatFeb52011003.png" />
+						<img alt="" id="e20110205_4-thumb" src="/pkm/event/2011/feb/sat5/pkmReunionPKTripSatFeb52011004.png" />
+						<img alt="" id="e20110205_5-thumb" src="/pkm/event/2011/feb/sat5/pkmReunionPKTripSatFeb52011005.png" />
+						<img alt="" id="e20110205_6-thumb" src="/pkm/event/2011/feb/sat5/pkmReunionPKTripSatFeb52011006.png" />
+						<img alt="" id="e20110205_7-thumb" src="/pkm/event/2011/feb/sat5/pkmReunionPKTripSatFeb52011007.png" />
+						<img alt="" id="e20110205_8-thumb" src="/pkm/event/2011/feb/sat5/pkmReunionPKTripSatFeb52011008.png" />
+						<img alt="" id="e20110205_9-thumb" src="/pkm/event/2011/feb/sat5/pkmReunionPKTripSatFeb52011009.png" />
+						<img alt="" id="e20110205_10-thumb" src="/pkm/event/2011/feb/sat5/pkmReunionPKTripSatFeb52011010.png" />
+						<img alt="" id="e20110205_11-thumb" src="/pkm/event/2011/feb/sat5/pkmReunionPKTripSatFeb52011011.png" />
+						<img alt="" id="e20110205_12-thumb" src="/pkm/event/2011/feb/sat5/pkmReunionPKTripSatFeb52011012.png" />
+						<img alt="" id="e20110205_13-thumb" src="/pkm/event/2011/feb/sat5/pkmReunionPKTripSatFeb52011013.png" />
 					</section>
 				</section>
 			</section>
 		</main>
+		<script src="/scripts/events.js"></script>
